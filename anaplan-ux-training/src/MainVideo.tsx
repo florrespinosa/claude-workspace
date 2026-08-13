@@ -6,7 +6,8 @@ import { scenes, FPS, WIDTH, HEIGHT } from "./data/scenes";
 import durationsJson from "./data/durations.json";
 import { Scene } from "./components/Scene";
 
-const TRANSITION_FRAMES = 12;
+// Short clean crossfade only (~0.27s at 30fps) — no zoom/wipe/slide transitions.
+const TRANSITION_FRAMES = 8;
 
 type Durations = Record<string, { durationSec: number; source: string }>;
 const durations = durationsJson as Durations;

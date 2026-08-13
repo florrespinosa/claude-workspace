@@ -3,7 +3,9 @@ import { AbsoluteFill, Sequence, useVideoConfig } from "remotion";
 import { createTikTokStyleCaptions } from "@remotion/captions";
 import type { Caption } from "@remotion/captions";
 
-const SWITCH_CAPTIONS_EVERY_MS = 1600;
+// Shorter window keeps each caption page to a handful of words so it
+// reliably fits on at most two lines.
+const SWITCH_CAPTIONS_EVERY_MS = 1200;
 
 export const Captions: React.FC<{ captions: Caption[] }> = ({ captions }) => {
   const { fps } = useVideoConfig();
@@ -46,15 +48,15 @@ const CaptionBar: React.FC<{ text: string }> = ({ text }) => {
       style={{
         justifyContent: "flex-end",
         alignItems: "center",
-        paddingBottom: 96,
+        paddingBottom: 110,
       }}
     >
       <div
         style={{
-          maxWidth: "78%",
-          padding: "16px 32px",
+          maxWidth: "70%",
+          padding: "14px 30px",
           borderRadius: 14,
-          backgroundColor: "rgba(9, 22, 41, 0.72)",
+          backgroundColor: "rgba(9, 22, 41, 0.78)",
           backdropFilter: "blur(4px)",
           boxShadow: "0 6px 24px rgba(0,0,0,0.25)",
         }}
@@ -64,12 +66,17 @@ const CaptionBar: React.FC<{ text: string }> = ({ text }) => {
             margin: 0,
             fontFamily: "'Inter', 'Segoe UI', Arial, sans-serif",
             fontWeight: 600,
-            fontSize: 40,
+            fontSize: 36,
             lineHeight: 1.3,
             color: "#FFFFFF",
             textAlign: "center",
             letterSpacing: 0.2,
             whiteSpace: "pre-wrap",
+            // Hard safety net: never render more than 2 lines.
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 2,
+            overflow: "hidden",
           }}
         >
           {text}
