@@ -1,0 +1,42 @@
+{
+  "scene-1": {
+    "durationSec": 10,
+    "source": "fallback-estimate"
+  },
+  "scene-2": {
+    "durationSec": 12,
+    "source": "fallback-estimate"
+  },
+  "scene-4": {
+    "durationSec": 38,
+    "source": "fallback-estimate"
+  },
+  "scene-5": {
+    "durationSec": 34,
+    "source": "fallback-estimate"
+  },
+  "scene-6": {
+    "durationSec": 25,
+    "source": "fallback-estimate"
+  },
+  "scene-7": {
+    "durationSec": 20,
+    "source": "fallback-estimate"
+  },
+  "scene-8": {
+    "durationSec": 15,
+    "source": "fallback-estimate"
+  },
+  "scene-9": {
+    "durationSec": 22,
+    "source": "fallback-estimate"
+  },
+  "scene-10a": {
+    "durationSec": 11.9,
+    "source": "fallback-estimate"
+  },
+  "scene-10b": {
+    "durationSec": 9.6,
+    "source": "fallback-estimate"
+  }
+}
