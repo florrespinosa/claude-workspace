@@ -3,11 +3,12 @@ import { CalculateMetadataFunction } from "remotion";
 import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { scenes, FPS, WIDTH, HEIGHT } from "./data/scenes";
+import { SCENE_TRANSITION_FRAMES } from "./data/transitions";
 import durationsJson from "./data/durations.json";
 import { Scene } from "./components/Scene";
 
-// Short clean crossfade only (~0.27s at 30fps) — no zoom/wipe/slide transitions.
-const TRANSITION_FRAMES = 8;
+// Major section change: ~0.7s clean crossfade — no zoom/wipe/slide transitions.
+const TRANSITION_FRAMES = SCENE_TRANSITION_FRAMES;
 
 type Durations = Record<string, { durationSec: number; source: string }>;
 const durations = durationsJson as Durations;

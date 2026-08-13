@@ -1,23 +1,15 @@
 import React from "react";
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, staticFile, useVideoConfig } from "remotion";
 import { Video } from "@remotion/media";
 import type { MediaAsset } from "../data/scenes";
 import { WIDTH, HEIGHT } from "../data/scenes";
 
-/** Crossfade in/out per asset — short cut, no zoom/pan (~0.27s at 30fps). */
-const FADE_FRAMES = 8;
+// Crossfades between assets are handled by the wrapping <TransitionSeries>
+// in Scene.tsx (see src/data/transitions.ts for the exact durations) — this
+// component always renders at full opacity.
 
 /** Corporate light-blue/cyan tint used to wash the blurred background layer. */
 const TINT_OVERLAY = "linear-gradient(160deg, rgba(15,64,120,0.38), rgba(56,167,197,0.30))";
-
-function fadeOpacity(frame: number, durationInFrames: number) {
-  return interpolate(
-    frame,
-    [0, FADE_FRAMES, Math.max(durationInFrames - FADE_FRAMES, FADE_FRAMES + 1), durationInFrames],
-    [0, 1, 1, 0],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
-  );
-}
 
 /** Fit `width x height` inside `boxW x boxH` preserving aspect ratio (contain, no crop). */
 function fitContain(width: number, height: number, boxW: number, boxH: number) {
@@ -26,11 +18,7 @@ function fitContain(width: number, height: number, boxW: number, boxH: number) {
 }
 
 export const FramedMedia: React.FC<{ asset: MediaAsset; assetIndex: number }> = ({ asset }) => {
-  const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const durationInFrames = Math.round(asset.durationSec * fps);
-  const opacity = fadeOpacity(frame, durationInFrames);
-
   const src = staticFile(`media/${asset.file}`);
   const isVideo = asset.type === "video";
   const trimBefore = Math.round((asset.trimBeforeSec ?? 0) * fps);
@@ -42,7 +30,7 @@ export const FramedMedia: React.FC<{ asset: MediaAsset; assetIndex: number }> = 
     // scene's corporate background.
     const fitted = fitContain(asset.width, asset.height, WIDTH, HEIGHT);
     return (
-      <AbsoluteFill style={{ opacity, justifyContent: "center", alignItems: "center" }}>
+      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ width: fitted.width, height: fitted.height }}>
           {isVideo ? (
             <Video
@@ -65,7 +53,7 @@ export const FramedMedia: React.FC<{ asset: MediaAsset; assetIndex: number }> = 
   const fitted = fitContain(asset.width, asset.height, WIDTH * 0.86, HEIGHT * 0.82);
 
   return (
-    <AbsoluteFill style={{ opacity }}>
+    <AbsoluteFill>
       {/* Blurred background duplicate — background layer only, never the foreground */}
       <AbsoluteFill style={{ transform: "scale(1.35)", filter: "blur(70px) saturate(1.15)" }}>
         {isVideo ? (

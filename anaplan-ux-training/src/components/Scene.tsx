@@ -1,6 +1,9 @@
 import React, { useMemo } from "react";
-import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, staticFile, useVideoConfig } from "remotion";
+import { TransitionSeries, linearTiming } from "@remotion/transitions";
+import { fade } from "@remotion/transitions/fade";
 import type { SceneDef } from "../data/scenes";
+import { intraSceneTransitionFrames } from "../data/transitions";
 import { SceneBackground } from "./SceneBackground";
 import { FramedMedia } from "./FramedMedia";
 import { Captions } from "./Captions";
@@ -18,23 +21,37 @@ export const Scene: React.FC<{
 
   const captions = useMemo(() => estimateCaptions(scene.narration, durationSec), [scene.narration, durationSec]);
 
-  let cursorFrame = 0;
+  // Soft crossfades between assets (via TransitionSeries) overlap adjacent
+  // sequences, which shortens the total shown time. Pad the last asset by
+  // that overlap so the inner timeline still fills the scene's full
+  // allotted duration exactly.
+  const assetFrames = scene.assets.map((a) => Math.round(a.durationSec * fps));
+  const transitionFrames = scene.assets.slice(1).map((_, i) => intraSceneTransitionFrames(scene.assets[i], scene.assets[i + 1]));
+  const totalOverlap = transitionFrames.reduce((s, f) => s + f, 0);
+  if (assetFrames.length > 0) {
+    assetFrames[assetFrames.length - 1] += totalOverlap;
+  }
 
   return (
     <AbsoluteFill>
       <SceneBackground />
       {hasVoiceover && <Audio src={staticFile(`voiceover/${scene.id}.mp3`)} />}
 
-      {scene.assets.map((asset, index) => {
-        const assetDurationFrames = Math.round(asset.durationSec * fps);
-        const from = cursorFrame;
-        cursorFrame += assetDurationFrames;
-        return (
-          <Sequence key={asset.file} from={from} durationInFrames={assetDurationFrames} layout="none">
-            <FramedMedia asset={asset} assetIndex={index} />
-          </Sequence>
-        );
-      })}
+      <TransitionSeries>
+        {scene.assets.map((asset, index) => (
+          <React.Fragment key={asset.file}>
+            <TransitionSeries.Sequence durationInFrames={assetFrames[index]}>
+              <FramedMedia asset={asset} assetIndex={index} />
+            </TransitionSeries.Sequence>
+            {index < scene.assets.length - 1 && (
+              <TransitionSeries.Transition
+                presentation={fade()}
+                timing={linearTiming({ durationInFrames: transitionFrames[index] })}
+              />
+            )}
+          </React.Fragment>
+        ))}
+      </TransitionSeries>
 
       {!bookend && <TopicBadge title={scene.title} />}
       <Captions captions={captions} />

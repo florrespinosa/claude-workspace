@@ -17,7 +17,7 @@ const { scenes } = await import(path.join(root, "src/data/scenes.ts"));
 const { estimateCaptions } = await import(path.join(root, "src/captions/estimate.ts"));
 const durations = JSON.parse(await readFile(path.join(root, "src/data/durations.json"), "utf8"));
 
-const TRANSITION_SEC = 8 / 30; // must match MainVideo.tsx TRANSITION_FRAMES / FPS
+const TRANSITION_SEC = 21 / 30; // must match SCENE_TRANSITION_FRAMES in src/data/transitions.ts
 const SWITCH_CAPTIONS_EVERY_MS = 1200; // must match Captions.tsx
 
 function srtTimestamp(ms) {
