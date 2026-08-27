@@ -1,0 +1,62 @@
+[
+  {
+    "id": "slide1",
+    "visual": "SLIDE 1.jpg",
+    "text": "Welcome to Keyrus AI Agents, inside Keyrus AI Studio. Three agents, one delivery lifecycle. From the first meeting to go-live — powered by AI."
+  },
+  {
+    "id": "slide2",
+    "visual": "SLIDE 2.jpg",
+    "text": "Every agent supports a different phase of an Anaplan engagement, so the question is: what do you need to do right now? If you need to UNDERSTAND, you start with the Discovery Agent — it captures and structures client needs from meetings and source files: recapping meetings, capturing requirements, cross-checking client inputs and building user stories. Once the needs are clear and you need to DESIGN, the Anaplan SA Co-Builder Agent turns those requirements into an Anaplan design — creating the architecture, defining modules and formulas, working with an existing model and helping you build directly in Anaplan."
+  },
+  {
+    "id": "slide3",
+    "visual": "SLIDE 3.jpg",
+    "text": "And when the model is already built and you need to EXPLAIN or TEST it, the Anaplan Model Knowledge Agent explains and documents that build — explaining the UX and its functionality, tracing the backend logic, generating test scripts and producing KT and client guides. That last one is the most complete of the three — and it's the one we'll dive into now."
+  },
+  {
+    "id": "slide4",
+    "visual": "SLIDE 4.jpg",
+    "text": "So let's meet the Anaplan Model Knowledge Agent. This agent sits on top of an already-built Anaplan model and its interface. It ingests the backend and UX metadata just once, and from there it answers functional and technical questions and generates deliverables: test scripts, client-facing user guides, and knowledge transfer documents. Use it whenever you need to understand or document a model that's already built — what a page does, what's behind a button, which modules it uses, or how data flows between modules and actions."
+  },
+  {
+    "id": "mk1",
+    "visual": "MK - 1.mp4",
+    "text": "Getting started is simple."
+  },
+  {
+    "id": "video1_test",
+    "visual": "VIDEO 1 TEST SCRIPTS.mp4",
+    "text": "You upload the six mandatory files together, at the start of the conversation. These files come from an extraction script inside the QA app — which you'll find in the Tools section of the platform. Once uploaded, you never need to upload them again — the agent reuses them throughout the whole conversation. Once uploaded the files, we ask it to generate the test scripts for a UX or a whole Anaplan category. We are asked once whether there's anything particular to consider and whether to keep the default test types or use others."
+  },
+  {
+    "id": "video2_test",
+    "visual": "VIDEO 2 TEST SCRIPTS.mp4",
+    "text": "In seconds, it returns a downloadable Excel with the test cases — and it keeps adding to that same file, one category at a time."
+  },
+  {
+    "id": "video_query",
+    "visual": "VIDEO QUERY.mp4",
+    "text": "It also answers questions about the model's global backend structure. We can ask which module is referenced the most in the model, what a specific module references or is referenced by, which actions touch a module, or where a module's data ultimately comes from, tracing both formulas and actions. Also, it can generate a dependent tree for module references and build a schema showing references in and out."
+  },
+  {
+    "id": "video1_kt",
+    "visual": "VIDEO 1 KT.mp4",
+    "text": "And when it's time to document, we can ask it to generate a user guide for a section, or a full training document for the whole model."
+  },
+  {
+    "id": "video2_kt",
+    "visual": "VIDEO 2 KT.mp4",
+    "text": "The agent generates a knowledge transfer document in Word format with a global architecture overview — purpose, overall architecture, data flows, terminology, rules — generated once per session, plus per-category sections naming the real backend modules and actions behind each page. And that's just part of it."
+  },
+  {
+    "id": "slide5",
+    "visual": "SLIDE 5.jpg",
+    "text": "The agent brings nine key capabilities: module and page discovery, functional and technical explanations, test script generation and deep-dives, user guides, knowledge transfer documents, backend structure queries, a fully interactive Q&A session, and optional visual context from PDFs or images. Inside the agent you'll also find related prompts — suggestions designed for exactly what you're doing, for every use case."
+  },
+  {
+    "id": "closing",
+    "visual": "CLOSING SLIDE.png",
+    "text": "Explain, test and document a complete Anaplan model — all in one agent, with Anaplan Model Knowledge."
+  }
+]

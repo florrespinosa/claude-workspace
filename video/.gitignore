@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Large source media (screen recordings, slides, narration, generated music).
+# These are the raw inputs for the render; regenerate/re-upload rather than
+# tracking large binaries in git.
+public/assets/
+public/*.wav
+whisper.cpp/

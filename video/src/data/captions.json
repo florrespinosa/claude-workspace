@@ -1,0 +1,548 @@
+[
+  {
+    "text": "Welcome to Keyrus AI Agents,",
+    "start": 0.0,
+    "end": 2.022,
+    "segment": "slide1"
+  },
+  {
+    "text": "inside Keyrus AI Studio.",
+    "start": 2.022,
+    "end": 3.755,
+    "segment": "slide1"
+  },
+  {
+    "text": "Three agents, one delivery lifecycle.",
+    "start": 3.755,
+    "end": 6.426,
+    "segment": "slide1"
+  },
+  {
+    "text": "From the first meeting to go-live \u2014",
+    "start": 6.426,
+    "end": 8.953,
+    "segment": "slide1"
+  },
+  {
+    "text": "powered by AI.",
+    "start": 8.953,
+    "end": 9.964,
+    "segment": "slide1"
+  },
+  {
+    "text": "Every agent supports a different phase of an Anaplan engagement,",
+    "start": 9.964,
+    "end": 14.014,
+    "segment": "slide2"
+  },
+  {
+    "text": "so the question is:",
+    "start": 14.014,
+    "end": 15.217,
+    "segment": "slide2"
+  },
+  {
+    "text": "what do you need to do right now?",
+    "start": 15.217,
+    "end": 17.305,
+    "segment": "slide2"
+  },
+  {
+    "text": "If you need to UNDERSTAND,",
+    "start": 17.305,
+    "end": 18.95,
+    "segment": "slide2"
+  },
+  {
+    "text": "you start with the Discovery Agent \u2014",
+    "start": 18.95,
+    "end": 21.228,
+    "segment": "slide2"
+  },
+  {
+    "text": "it captures and structures client needs from meetings",
+    "start": 21.228,
+    "end": 24.583,
+    "segment": "slide2"
+  },
+  {
+    "text": "and source files:",
+    "start": 24.583,
+    "end": 25.658,
+    "segment": "slide2"
+  },
+  {
+    "text": "recapping meetings, capturing requirements,",
+    "start": 25.658,
+    "end": 28.38,
+    "segment": "slide2"
+  },
+  {
+    "text": "cross-checking client inputs and building user stories.",
+    "start": 28.38,
+    "end": 31.86,
+    "segment": "slide2"
+  },
+  {
+    "text": "Once the needs are clear and you need to DESIGN,",
+    "start": 31.86,
+    "end": 34.898,
+    "segment": "slide2"
+  },
+  {
+    "text": "the Anaplan SA Co-Builder Agent turns those requirements",
+    "start": 34.898,
+    "end": 38.442,
+    "segment": "slide2"
+  },
+  {
+    "text": "into an Anaplan design \u2014",
+    "start": 38.442,
+    "end": 39.96,
+    "segment": "slide2"
+  },
+  {
+    "text": "creating the architecture, defining modules and formulas,",
+    "start": 39.96,
+    "end": 43.568,
+    "segment": "slide2"
+  },
+  {
+    "text": "working with an existing model and helping you",
+    "start": 43.568,
+    "end": 46.479,
+    "segment": "slide2"
+  },
+  {
+    "text": "build directly in Anaplan.",
+    "start": 46.479,
+    "end": 48.124,
+    "segment": "slide2"
+  },
+  {
+    "text": "And when the model is already built and",
+    "start": 48.124,
+    "end": 50.905,
+    "segment": "slide3"
+  },
+  {
+    "text": "you need to EXPLAIN or TEST it,",
+    "start": 50.905,
+    "end": 53.116,
+    "segment": "slide3"
+  },
+  {
+    "text": "the Anaplan Model Knowledge Agent explains and documents",
+    "start": 53.116,
+    "end": 57.11,
+    "segment": "slide3"
+  },
+  {
+    "text": "that build \u2014",
+    "start": 57.11,
+    "end": 57.966,
+    "segment": "slide3"
+  },
+  {
+    "text": "explaining the UX and its functionality,",
+    "start": 57.966,
+    "end": 60.818,
+    "segment": "slide3"
+  },
+  {
+    "text": "tracing the backend logic,",
+    "start": 60.818,
+    "end": 62.672,
+    "segment": "slide3"
+  },
+  {
+    "text": "generating test scripts and producing KT and client guides.",
+    "start": 62.672,
+    "end": 66.88,
+    "segment": "slide3"
+  },
+  {
+    "text": "That last one is the most complete of",
+    "start": 66.88,
+    "end": 69.519,
+    "segment": "slide3"
+  },
+  {
+    "text": "the three \u2014",
+    "start": 69.519,
+    "end": 70.303,
+    "segment": "slide3"
+  },
+  {
+    "text": "and it's the one we'll dive into now.",
+    "start": 70.303,
+    "end": 72.942,
+    "segment": "slide3"
+  },
+  {
+    "text": "So let's meet the Anaplan Model Knowledge Agent.",
+    "start": 72.942,
+    "end": 76.116,
+    "segment": "slide4"
+  },
+  {
+    "text": "This agent sits on top of an already-built",
+    "start": 76.116,
+    "end": 78.893,
+    "segment": "slide4"
+  },
+  {
+    "text": "Anaplan model and its interface.",
+    "start": 78.893,
+    "end": 81.009,
+    "segment": "slide4"
+  },
+  {
+    "text": "It ingests the backend and UX metadata just once,",
+    "start": 81.009,
+    "end": 84.248,
+    "segment": "slide4"
+  },
+  {
+    "text": "and from there it answers functional and technical",
+    "start": 84.248,
+    "end": 87.554,
+    "segment": "slide4"
+  },
+  {
+    "text": "questions and generates deliverables:",
+    "start": 87.554,
+    "end": 90.001,
+    "segment": "slide4"
+  },
+  {
+    "text": "test scripts, client-facing user guides,",
+    "start": 90.001,
+    "end": 92.646,
+    "segment": "slide4"
+  },
+  {
+    "text": "and knowledge transfer documents.",
+    "start": 92.646,
+    "end": 94.827,
+    "segment": "slide4"
+  },
+  {
+    "text": "Use it whenever you need to understand or",
+    "start": 94.827,
+    "end": 97.538,
+    "segment": "slide4"
+  },
+  {
+    "text": "document a model that's already built \u2014",
+    "start": 97.538,
+    "end": 100.117,
+    "segment": "slide4"
+  },
+  {
+    "text": "what a page does, what's behind a button,",
+    "start": 100.117,
+    "end": 102.828,
+    "segment": "slide4"
+  },
+  {
+    "text": "which modules it uses,",
+    "start": 102.828,
+    "end": 104.283,
+    "segment": "slide4"
+  },
+  {
+    "text": "or how data flows between modules and actions.",
+    "start": 104.283,
+    "end": 107.324,
+    "segment": "slide4"
+  },
+  {
+    "text": "Getting started is simple.",
+    "start": 107.324,
+    "end": 110.213,
+    "segment": "mk1"
+  },
+  {
+    "text": "You upload the six mandatory files together,",
+    "start": 110.213,
+    "end": 113.125,
+    "segment": "video1_test"
+  },
+  {
+    "text": "at the start of the conversation.",
+    "start": 113.125,
+    "end": 115.31,
+    "segment": "video1_test"
+  },
+  {
+    "text": "These files come from an extraction script inside",
+    "start": 115.31,
+    "end": 118.553,
+    "segment": "video1_test"
+  },
+  {
+    "text": "the QA app \u2014",
+    "start": 118.553,
+    "end": 119.347,
+    "segment": "video1_test"
+  },
+  {
+    "text": "which you'll find in the Tools section of the platform. Once uploaded,",
+    "start": 119.347,
+    "end": 123.981,
+    "segment": "video1_test"
+  },
+  {
+    "text": "you never need to upload them again \u2014",
+    "start": 123.981,
+    "end": 126.43,
+    "segment": "video1_test"
+  },
+  {
+    "text": "the agent reuses them throughout the whole conversation.",
+    "start": 126.43,
+    "end": 130.136,
+    "segment": "video1_test"
+  },
+  {
+    "text": "Once uploaded the files,",
+    "start": 130.136,
+    "end": 131.725,
+    "segment": "video1_test"
+  },
+  {
+    "text": "we ask it to generate the test scripts",
+    "start": 131.725,
+    "end": 134.24,
+    "segment": "video1_test"
+  },
+  {
+    "text": "for a UX or a whole Anaplan category.",
+    "start": 134.24,
+    "end": 136.689,
+    "segment": "video1_test"
+  },
+  {
+    "text": "We are asked once whether there's anything particular",
+    "start": 136.689,
+    "end": 140.197,
+    "segment": "video1_test"
+  },
+  {
+    "text": "to consider and whether to keep the default",
+    "start": 140.197,
+    "end": 143.043,
+    "segment": "video1_test"
+  },
+  {
+    "text": "test types or use others.",
+    "start": 143.043,
+    "end": 144.698,
+    "segment": "video1_test"
+  },
+  {
+    "text": "In seconds, it returns a downloadable Excel with the test cases \u2014",
+    "start": 144.698,
+    "end": 149.104,
+    "segment": "video2_test"
+  },
+  {
+    "text": "and it keeps adding to that same file,",
+    "start": 149.104,
+    "end": 151.679,
+    "segment": "video2_test"
+  },
+  {
+    "text": "one category at a time.",
+    "start": 151.679,
+    "end": 153.238,
+    "segment": "video2_test"
+  },
+  {
+    "text": "It also answers questions about the model's global backend structure.",
+    "start": 153.238,
+    "end": 157.82,
+    "segment": "video_query"
+  },
+  {
+    "text": "We can ask which module is referenced the",
+    "start": 157.82,
+    "end": 160.542,
+    "segment": "video_query"
+  },
+  {
+    "text": "most in the model,",
+    "start": 160.542,
+    "end": 161.737,
+    "segment": "video_query"
+  },
+  {
+    "text": "what a specific module references or is referenced by,",
+    "start": 161.737,
+    "end": 165.323,
+    "segment": "video_query"
+  },
+  {
+    "text": "which actions touch a module,",
+    "start": 165.323,
+    "end": 167.248,
+    "segment": "video_query"
+  },
+  {
+    "text": "or where a module's data ultimately comes from,",
+    "start": 167.248,
+    "end": 170.369,
+    "segment": "video_query"
+  },
+  {
+    "text": "tracing both formulas and actions. Also,",
+    "start": 170.369,
+    "end": 173.025,
+    "segment": "video_query"
+  },
+  {
+    "text": "it can generate a dependent tree for module",
+    "start": 173.025,
+    "end": 175.88,
+    "segment": "video_query"
+  },
+  {
+    "text": "references and build a schema showing references in and out.",
+    "start": 175.88,
+    "end": 179.864,
+    "segment": "video_query"
+  },
+  {
+    "text": "And when it's time to document,",
+    "start": 179.864,
+    "end": 182.286,
+    "segment": "video1_kt"
+  },
+  {
+    "text": "we can ask it to generate a user",
+    "start": 182.286,
+    "end": 184.787,
+    "segment": "video1_kt"
+  },
+  {
+    "text": "guide for a section,",
+    "start": 184.787,
+    "end": 186.349,
+    "segment": "video1_kt"
+  },
+  {
+    "text": "or a full training document for the whole model.",
+    "start": 186.349,
+    "end": 190.1,
+    "segment": "video1_kt"
+  },
+  {
+    "text": "The agent generates a knowledge transfer document in",
+    "start": 190.1,
+    "end": 193.259,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "Word format with a global architecture overview \u2014",
+    "start": 193.259,
+    "end": 196.236,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "purpose, overall architecture, data flows, terminology, rules \u2014",
+    "start": 196.236,
+    "end": 200.063,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "generated once per session,",
+    "start": 200.063,
+    "end": 201.703,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "plus per-category sections naming the real backend modules",
+    "start": 201.703,
+    "end": 205.226,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "and actions behind each page.",
+    "start": 205.226,
+    "end": 206.988,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "And that's just part of it.",
+    "start": 206.988,
+    "end": 208.628,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "The agent brings nine key capabilities:",
+    "start": 208.628,
+    "end": 210.886,
+    "segment": "slide5"
+  },
+  {
+    "text": "module and page discovery, functional and technical explanations,",
+    "start": 210.886,
+    "end": 214.649,
+    "segment": "slide5"
+  },
+  {
+    "text": "test script generation and deep-dives, user guides,",
+    "start": 214.649,
+    "end": 217.602,
+    "segment": "slide5"
+  },
+  {
+    "text": "knowledge transfer documents, backend structure queries,",
+    "start": 217.602,
+    "end": 220.844,
+    "segment": "slide5"
+  },
+  {
+    "text": "a fully interactive Q&A session,",
+    "start": 220.844,
+    "end": 222.697,
+    "segment": "slide5"
+  },
+  {
+    "text": "and optional visual context from PDFs or images.",
+    "start": 222.697,
+    "end": 225.476,
+    "segment": "slide5"
+  },
+  {
+    "text": "Inside the agent you'll also find related prompts \u2014",
+    "start": 225.476,
+    "end": 228.428,
+    "segment": "slide5"
+  },
+  {
+    "text": "suggestions designed for exactly what you're doing,",
+    "start": 228.428,
+    "end": 231.381,
+    "segment": "slide5"
+  },
+  {
+    "text": "for every use case.",
+    "start": 231.381,
+    "end": 232.481,
+    "segment": "slide5"
+  },
+  {
+    "text": "Explain, test and document a complete Anaplan model \u2014",
+    "start": 232.481,
+    "end": 236.099,
+    "segment": "closing"
+  },
+  {
+    "text": "all in one agent, with Anaplan Model Knowledge.",
+    "start": 236.099,
+    "end": 239.308,
+    "segment": "closing"
+  }
+]
