@@ -2,17 +2,17 @@
   {
     "id": "slide1",
     "visual": "SLIDE 1.jpg",
-    "text": "Welcome to Keyrus AI Agents, inside Keyrus AI Studio. Three agents, one delivery lifecycle. From the first meeting to go-live — powered by AI."
+    "text": "Welcome to Keyrus AI Agents, inside Keyrus AI Studio."
   },
   {
     "id": "slide2",
     "visual": "SLIDE 2.jpg",
-    "text": "Every agent supports a different phase of an Anaplan engagement, so the question is: what do you need to do right now? If you need to UNDERSTAND, you start with the Discovery Agent — it captures and structures client needs from meetings and source files: recapping meetings, capturing requirements, cross-checking client inputs and building user stories. Once the needs are clear and you need to DESIGN, the Anaplan SA Co-Builder Agent turns those requirements into an Anaplan design — creating the architecture, defining modules and formulas, working with an existing model and helping you build directly in Anaplan."
+    "text": "Three agents, one delivery lifecycle. From the first meeting to go-live — powered by AI. Every agent supports a different phase of an Anaplan engagement, so the question is: what do you need to do right now?"
   },
   {
     "id": "slide3",
     "visual": "SLIDE 3.jpg",
-    "text": "And when the model is already built and you need to EXPLAIN or TEST it, the Anaplan Model Knowledge Agent explains and documents that build — explaining the UX and its functionality, tracing the backend logic, generating test scripts and producing KT and client guides. That last one is the most complete of the three — and it's the one we'll dive into now."
+    "text": "If you need to UNDERSTAND, you start with the Discovery Agent — it captures and structures client needs from meetings and source files: recapping meetings, capturing requirements, cross-checking client inputs and building user stories. Once the needs are clear and you need to DESIGN, the Anaplan SA Co-Builder Agent turns those requirements into an Anaplan design — creating the architecture, defining modules and formulas, working with an existing model and helping you build directly in Anaplan. And when the model is already built and you need to EXPLAIN or TEST it, the Anaplan Model Knowledge Agent explains and documents that build — explaining the UX and its functionality, tracing the backend logic, generating test scripts and producing KT and client guides. That last one is the most complete of the three — and it's the one we'll dive into now."
   },
   {
     "id": "slide4",

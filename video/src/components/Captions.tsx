@@ -32,7 +32,7 @@ export const Captions: React.FC = () => {
         position: "absolute",
         left: 0,
         right: 0,
-        bottom: 150,
+        bottom: 95,
         display: "flex",
         justifyContent: "center",
         pointerEvents: "none",
