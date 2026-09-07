@@ -24,26 +24,26 @@
     "segment": "slide2"
   },
   {
-    "text": "powered by AI. Every agent supports a different phase",
+    "text": "powered by AI.",
     "start": 8.55,
-    "end": 10.382,
+    "end": 9.956,
     "segment": "slide2"
   },
   {
-    "text": "of an Anaplan engagement,",
-    "start": 10.382,
+    "text": "Every agent supports a different phase",
+    "start": 9.956,
     "end": 13.822,
     "segment": "slide2"
   },
   {
-    "text": "so the question is:",
+    "text": "of an Anaplan engagement, so the question is:",
     "start": 13.822,
-    "end": 15.237,
+    "end": 15.941,
     "segment": "slide2"
   },
   {
     "text": "what do you need to do right now?",
-    "start": 15.237,
+    "start": 15.941,
     "end": 17.067,
     "segment": "slide2"
   },
@@ -74,30 +74,30 @@
   {
     "text": "cross-checking client inputs and building user stories.",
     "start": 27.597,
-    "end": 32.664,
+    "end": 31.108,
     "segment": "slide3"
   },
   {
     "text": "Once the needs are clear and",
+    "start": 31.108,
+    "end": 32.664,
+    "segment": "slide3"
+  },
+  {
+    "text": "you need to DESIGN,",
     "start": 32.664,
     "end": 34.1,
     "segment": "slide3"
   },
   {
-    "text": "you need to DESIGN,",
+    "text": "the Anaplan SA Co-Builder Agent turns",
     "start": 34.1,
     "end": 36.669,
     "segment": "slide3"
   },
   {
-    "text": "the Anaplan SA Co-Builder Agent turns",
-    "start": 36.669,
-    "end": 39.696,
-    "segment": "slide3"
-  },
-  {
     "text": "those requirements into an Anaplan design \u2014",
-    "start": 39.696,
+    "start": 36.669,
     "end": 41.478,
     "segment": "slide3"
   },
@@ -132,20 +132,14 @@
     "segment": "slide3"
   },
   {
-    "text": "built and you need to EXPLAIN",
+    "text": "built and you need to EXPLAIN or TEST it,",
     "start": 52.358,
-    "end": 55.17,
-    "segment": "slide3"
-  },
-  {
-    "text": "or TEST it,",
-    "start": 55.17,
-    "end": 56.237,
+    "end": 56.736,
     "segment": "slide3"
   },
   {
     "text": "the Anaplan Model Knowledge Agent explains",
-    "start": 56.237,
+    "start": 56.736,
     "end": 58.733,
     "segment": "slide3"
   },
@@ -182,12 +176,12 @@
   {
     "text": "That last one is the most complete of the three \u2014",
     "start": 69.647,
-    "end": 71.487,
+    "end": 71.439,
     "segment": "slide3"
   },
   {
     "text": "and it's the one we'll dive into now.",
-    "start": 71.487,
+    "start": 71.439,
     "end": 72.905,
     "segment": "slide3"
   },
@@ -230,12 +224,12 @@
   {
     "text": "and technical questions and generates deliverables:",
     "start": 87.853,
-    "end": 89.891,
+    "end": 90.494,
     "segment": "slide4"
   },
   {
     "text": "test scripts, client-facing user guides,",
-    "start": 89.891,
+    "start": 90.494,
     "end": 92.419,
     "segment": "slide4"
   },
@@ -302,12 +296,12 @@
   {
     "text": "script inside the QA app \u2014",
     "start": 119.076,
-    "end": 120.552,
+    "end": 120.666,
     "segment": "video1_test"
   },
   {
     "text": "which you'll find in the Tools",
-    "start": 120.552,
+    "start": 120.666,
     "end": 122.255,
     "segment": "video1_test"
   },
@@ -320,17 +314,23 @@
   {
     "text": "you never need to upload them again \u2014",
     "start": 125.434,
-    "end": 127.557,
+    "end": 126.949,
     "segment": "video1_test"
   },
   {
     "text": "the agent reuses them throughout the whole conversation.",
-    "start": 127.557,
+    "start": 126.949,
+    "end": 129.221,
+    "segment": "video1_test"
+  },
+  {
+    "text": "Once uploaded the files,",
+    "start": 129.221,
     "end": 130.769,
     "segment": "video1_test"
   },
   {
-    "text": "Once uploaded the files, we ask it to generate the",
+    "text": "we ask it to generate the",
     "start": 130.769,
     "end": 132.569,
     "segment": "video1_test"
@@ -362,12 +362,12 @@
   {
     "text": "to keep the default test types",
     "start": 141.206,
-    "end": 143.587,
+    "end": 143.534,
     "segment": "video1_test"
   },
   {
     "text": "or use others.",
-    "start": 143.587,
+    "start": 143.534,
     "end": 144.698,
     "segment": "video1_test"
   },
@@ -386,12 +386,12 @@
   {
     "text": "and it keeps adding to that same file,",
     "start": 149.285,
-    "end": 151.747,
+    "end": 151.481,
     "segment": "video2_test"
   },
   {
     "text": "one category at a time.",
-    "start": 151.747,
+    "start": 151.481,
     "end": 153.237,
     "segment": "video2_test"
   },
@@ -414,32 +414,26 @@
     "segment": "video_query"
   },
   {
-    "text": "referenced the most in the model,",
+    "text": "referenced the most in the model, what a specific module references or",
     "start": 160.488,
-    "end": 162.473,
-    "segment": "video_query"
-  },
-  {
-    "text": "what a specific module references or",
-    "start": 162.473,
-    "end": 165.686,
+    "end": 162.779,
     "segment": "video_query"
   },
   {
     "text": "is referenced by,",
+    "start": 162.779,
+    "end": 165.686,
+    "segment": "video_query"
+  },
+  {
+    "text": "which actions touch a module,",
     "start": 165.686,
     "end": 167.889,
     "segment": "video_query"
   },
   {
-    "text": "which actions touch a module,",
-    "start": 167.889,
-    "end": 169.321,
-    "segment": "video_query"
-  },
-  {
     "text": "or where a module's data ultimately comes from,",
-    "start": 169.321,
+    "start": 167.889,
     "end": 171.642,
     "segment": "video_query"
   },
