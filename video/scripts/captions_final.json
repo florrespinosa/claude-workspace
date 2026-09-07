@@ -24,26 +24,26 @@
     "segment": "slide2"
   },
   {
-    "text": "powered by AI.",
+    "text": "powered by AI. Every agent supports a different phase",
     "start": 8.55,
-    "end": 9.956,
+    "end": 10.382,
     "segment": "slide2"
   },
   {
-    "text": "Every agent supports a different phase",
-    "start": 9.956,
+    "text": "of an Anaplan engagement,",
+    "start": 10.382,
     "end": 13.822,
     "segment": "slide2"
   },
   {
-    "text": "of an Anaplan engagement, so the question is:",
+    "text": "so the question is:",
     "start": 13.822,
-    "end": 15.941,
+    "end": 15.237,
     "segment": "slide2"
   },
   {
     "text": "what do you need to do right now?",
-    "start": 15.941,
+    "start": 15.237,
     "end": 17.067,
     "segment": "slide2"
   },
@@ -98,18 +98,18 @@
   {
     "text": "those requirements into an Anaplan design \u2014",
     "start": 36.669,
-    "end": 41.478,
+    "end": 39.696,
     "segment": "slide3"
   },
   {
     "text": "creating the architecture,",
-    "start": 41.478,
-    "end": 43.701,
+    "start": 39.696,
+    "end": 41.478,
     "segment": "slide3"
   },
   {
     "text": "defining modules and formulas,",
-    "start": 43.701,
+    "start": 41.478,
     "end": 45.589,
     "segment": "slide3"
   },
@@ -132,14 +132,20 @@
     "segment": "slide3"
   },
   {
-    "text": "built and you need to EXPLAIN or TEST it,",
+    "text": "built and you need to EXPLAIN",
     "start": 52.358,
-    "end": 56.736,
+    "end": 55.073,
+    "segment": "slide3"
+  },
+  {
+    "text": "or TEST it,",
+    "start": 55.073,
+    "end": 56.237,
     "segment": "slide3"
   },
   {
     "text": "the Anaplan Model Knowledge Agent explains",
-    "start": 56.736,
+    "start": 56.237,
     "end": 58.733,
     "segment": "slide3"
   },
@@ -170,18 +176,24 @@
   {
     "text": "and client guides.",
     "start": 67.339,
+    "end": 68.263,
+    "segment": "slide3"
+  },
+  {
+    "text": "That last one is the most",
+    "start": 68.263,
     "end": 69.647,
     "segment": "slide3"
   },
   {
-    "text": "That last one is the most complete of the three \u2014",
+    "text": "complete of the three \u2014",
     "start": 69.647,
-    "end": 71.439,
+    "end": 70.811,
     "segment": "slide3"
   },
   {
     "text": "and it's the one we'll dive into now.",
-    "start": 71.439,
+    "start": 70.811,
     "end": 72.905,
     "segment": "slide3"
   },
@@ -212,18 +224,18 @@
   {
     "text": "metadata just once,",
     "start": 82.658,
-    "end": 86.576,
+    "end": 84.226,
     "segment": "slide4"
   },
   {
     "text": "and from there it answers functional",
-    "start": 86.576,
-    "end": 87.853,
+    "start": 84.226,
+    "end": 86.576,
     "segment": "slide4"
   },
   {
     "text": "and technical questions and generates deliverables:",
-    "start": 87.853,
+    "start": 86.576,
     "end": 90.494,
     "segment": "slide4"
   },
@@ -236,36 +248,42 @@
   {
     "text": "and knowledge transfer documents.",
     "start": 92.419,
-    "end": 96.995,
+    "end": 94.707,
     "segment": "slide4"
   },
   {
     "text": "Use it whenever you need to",
+    "start": 94.707,
+    "end": 96.995,
+    "segment": "slide4"
+  },
+  {
+    "text": "understand or document a model that's",
     "start": 96.995,
     "end": 98.499,
     "segment": "slide4"
   },
   {
-    "text": "understand or document a model that's",
+    "text": "already built \u2014",
     "start": 98.499,
     "end": 99.981,
     "segment": "slide4"
   },
   {
-    "text": "already built \u2014 what a page does,",
+    "text": "what a page does, what's behind a button,",
     "start": 99.981,
     "end": 102.538,
     "segment": "slide4"
   },
   {
-    "text": "what's behind a button, which modules it uses,",
+    "text": "which modules it uses,",
     "start": 102.538,
-    "end": 105.486,
+    "end": 104.972,
     "segment": "slide4"
   },
   {
     "text": "or how data flows between modules and actions.",
-    "start": 105.486,
+    "start": 104.972,
     "end": 107.326,
     "segment": "slide4"
   },
@@ -290,36 +308,36 @@
   {
     "text": "These files come from an extraction",
     "start": 116.258,
-    "end": 119.076,
+    "end": 117.949,
     "segment": "video1_test"
   },
   {
     "text": "script inside the QA app \u2014",
-    "start": 119.076,
-    "end": 120.666,
+    "start": 117.949,
+    "end": 119.076,
     "segment": "video1_test"
   },
   {
     "text": "which you'll find in the Tools",
-    "start": 120.666,
-    "end": 122.255,
+    "start": 119.076,
+    "end": 120.268,
     "segment": "video1_test"
   },
   {
     "text": "section of the platform. Once uploaded,",
+    "start": 120.268,
+    "end": 122.255,
+    "segment": "video1_test"
+  },
+  {
+    "text": "you never need to upload them again \u2014",
     "start": 122.255,
     "end": 125.434,
     "segment": "video1_test"
   },
   {
-    "text": "you never need to upload them again \u2014",
-    "start": 125.434,
-    "end": 126.949,
-    "segment": "video1_test"
-  },
-  {
     "text": "the agent reuses them throughout the whole conversation.",
-    "start": 126.949,
+    "start": 125.434,
     "end": 129.221,
     "segment": "video1_test"
   },
@@ -330,32 +348,26 @@
     "segment": "video1_test"
   },
   {
-    "text": "we ask it to generate the",
+    "text": "we ask it to generate the test scripts for a UX or",
     "start": 130.769,
     "end": 132.569,
     "segment": "video1_test"
   },
   {
-    "text": "test scripts for a UX or",
+    "text": "a whole Anaplan category.",
     "start": 132.569,
     "end": 135.963,
     "segment": "video1_test"
   },
   {
-    "text": "a whole Anaplan category.",
+    "text": "We are asked once whether there's",
     "start": 135.963,
     "end": 138.562,
     "segment": "video1_test"
   },
   {
-    "text": "We are asked once whether there's",
-    "start": 138.562,
-    "end": 140.104,
-    "segment": "video1_test"
-  },
-  {
     "text": "anything particular to consider and whether",
-    "start": 140.104,
+    "start": 138.562,
     "end": 141.206,
     "segment": "video1_test"
   },
@@ -398,23 +410,29 @@
   {
     "text": "It also answers questions about the",
     "start": 153.237,
-    "end": 156.657,
+    "end": 155.137,
     "segment": "video_query"
   },
   {
     "text": "model's global backend structure.",
+    "start": 155.137,
+    "end": 156.657,
+    "segment": "video_query"
+  },
+  {
+    "text": "We can ask which module is",
     "start": 156.657,
     "end": 159.024,
     "segment": "video_query"
   },
   {
-    "text": "We can ask which module is",
+    "text": "referenced the most in the model,",
     "start": 159.024,
     "end": 160.488,
     "segment": "video_query"
   },
   {
-    "text": "referenced the most in the model, what a specific module references or",
+    "text": "what a specific module references or",
     "start": 160.488,
     "end": 162.779,
     "segment": "video_query"
@@ -500,23 +518,29 @@
   {
     "text": "purpose, overall architecture, data flows, terminology, rules \u2014",
     "start": 196.963,
-    "end": 202.322,
+    "end": 200.734,
     "segment": "video2_kt"
   },
   {
     "text": "generated once per session,",
+    "start": 200.734,
+    "end": 202.322,
+    "segment": "video2_kt"
+  },
+  {
+    "text": "plus per-category sections naming the real",
     "start": 202.322,
     "end": 203.696,
     "segment": "video2_kt"
   },
   {
-    "text": "plus per-category sections naming the real",
+    "text": "backend modules and actions behind each page.",
     "start": 203.696,
     "end": 206.379,
     "segment": "video2_kt"
   },
   {
-    "text": "backend modules and actions behind each page. And that's just part of it.",
+    "text": "And that's just part of it.",
     "start": 206.379,
     "end": 208.625,
     "segment": "video2_kt"

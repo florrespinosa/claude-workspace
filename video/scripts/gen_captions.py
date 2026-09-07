@@ -61,6 +61,51 @@ def split_clauses(text):
     return result
 
 
+def optimal_monotonic_match(boundaries, gaps, max_dist):
+    """Match each interior boundary to at most one real pause, preserving
+    order, minimizing total |boundary - pause| distance -- via DP, not
+    greedy nearest-neighbor.
+
+    A greedy "first boundary claims the nearest gap" approach lets an
+    earlier boundary steal a pause that actually belongs to a later,
+    closer-matching boundary (verified bug: at ~54s a comma-boundary with a
+    2.11s-away pause grabbed the gap that a 1.36s-away sentence-boundary at
+    ~55s needed, forcing that one to fall back to flat interpolation and
+    land audibly late). This DP considers all valid order-preserving
+    matchings and picks the globally cheapest one.
+    """
+    n, m = len(boundaries), len(gaps)
+    # dp[i][j] = min cost using boundaries[:i], gaps[:j]
+    dp = [[0.0] * (m + 1) for _ in range(n + 1)]
+    for i in range(1, n + 1):
+        dp[i][0] = dp[i - 1][0] + max_dist  # every boundary left unmatched
+    for j in range(1, m + 1):
+        dp[0][j] = dp[0][j - 1]  # unused gaps are free to skip
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            skip_gap = dp[i][j - 1]
+            leave_unmatched = dp[i - 1][j] + max_dist
+            dist = abs(boundaries[i - 1] - gaps[j - 1])
+            match = dp[i - 1][j - 1] + dist if dist <= max_dist else float("inf")
+            dp[i][j] = min(skip_gap, leave_unmatched, match)
+
+    # backtrack to recover which boundary matched which gap
+    matches = {}
+    i, j = n, m
+    while i > 0 and j > 0:
+        dist = abs(boundaries[i - 1] - gaps[j - 1])
+        match_cost = dp[i - 1][j - 1] + dist if dist <= max_dist else float("inf")
+        if abs(dp[i][j] - match_cost) < 1e-9:
+            matches[i - 1] = gaps[j - 1]
+            i -= 1
+            j -= 1
+        elif abs(dp[i][j] - (dp[i][j - 1])) < 1e-9:
+            j -= 1
+        else:
+            i -= 1
+    return matches
+
+
 def snap_boundaries_to_pauses(flat_boundaries, scene_start, scene_end, mids):
     """Piecewise-linear-warp syllable-timed boundary estimates onto real
     detected silences wherever one is close by, so timing error can't
@@ -68,21 +113,17 @@ def snap_boundaries_to_pauses(flat_boundaries, scene_start, scene_end, mids):
     internal_gaps = sorted(
         m for m in mids if scene_start + 0.05 < m < scene_end - 0.05
     )
+    interior = flat_boundaries[1:-1]
+    matches = optimal_monotonic_match(interior, internal_gaps, SNAP_MAX_DIST)
 
-    snapped = []  # (boundary_index, real_time)
-    last_gap_idx = -1
-    for bi in range(1, len(flat_boundaries) - 1):
-        target = flat_boundaries[bi]
-        candidates = [(gi, g) for gi, g in enumerate(internal_gaps) if gi > last_gap_idx]
-        if not candidates:
-            break
-        gi, g = min(candidates, key=lambda x: abs(x[1] - target))
-        if abs(g - target) <= SNAP_MAX_DIST:
-            snapped.append((bi, g))
-            last_gap_idx = gi
+    anchors_x = [flat_boundaries[0]]
+    anchors_y = [scene_start]
+    for local_i in sorted(matches):
+        anchors_x.append(interior[local_i])
+        anchors_y.append(matches[local_i])
+    anchors_x.append(flat_boundaries[-1])
+    anchors_y.append(scene_end)
 
-    anchors_x = [flat_boundaries[0]] + [flat_boundaries[bi] for bi, _ in snapped] + [flat_boundaries[-1]]
-    anchors_y = [scene_start] + [t for _, t in snapped] + [scene_end]
     corrected = np.interp(flat_boundaries, anchors_x, anchors_y)
     return corrected.tolist()
 
