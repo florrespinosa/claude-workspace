@@ -103,7 +103,7 @@ export const MainComposition: React.FC = () => {
       {/* key-moment callouts, timed to the exact caption windows they reinforce */}
       <Callout start={110.21} end={113.5} text="6 mandatory files" icon="6" />
       <Callout start={144.7} end={147.4} text="Downloadable Excel" icon="⇩" />
-      <Callout start={190.1} end={193.3} text="Word document" icon="W" />
+      <Callout start={191.71} end={194.9} text="Word document" icon="W" />
 
       {/* global intro / outro */}
       <IntroOutroFade durationInFrames={durationInFrames} />

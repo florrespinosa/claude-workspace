@@ -5,8 +5,8 @@ segments = json.load(open("scripts/segments_timed.json"))
 gap_data = json.load(open("scripts/silence_gaps.json"))
 all_mids = gap_data["mids"]
 
-MAX_WORDS = 8
-SNAP_MAX_DIST = 3.0  # seconds; only trust a real pause as a calibration anchor if it's this close to where char-count math predicted a boundary
+MAX_WORDS = 6
+SNAP_MAX_DIST = 2.5  # seconds; only trust a real pause as a calibration anchor if it's this close to where char-count math predicted a boundary
 
 def split_clauses(text):
     parts = re.split(r'(?<=[.!?])\s+|(?<=—)\s+|(?<=:)\s+', text)
@@ -149,3 +149,20 @@ json.dump(all_captions, open("scripts/captions_final.json", "w"), indent=2)
 print(f"wrote {len(all_captions)} caption chunks to scripts/captions_final.json")
 for c in all_captions:
     print(f'{c["start"]:7.2f} - {c["end"]:7.2f}  [{c["segment"]}]  {c["text"]}')
+
+# diagnostic: how far is every caption boundary from the nearest real pause?
+# large residuals are exactly where the video would visibly drift from audio
+boundary_times = sorted(set([c["start"] for c in all_captions] + [c["end"] for c in all_captions]))
+residuals = []
+for t in boundary_times:
+    nearest = min(all_mids, key=lambda m: abs(m - t))
+    residuals.append(abs(nearest - t))
+residuals.sort()
+print(f"\nboundary/pause residuals: max={residuals[-1]:.2f}s  p90={residuals[int(0.9*len(residuals))]:.2f}s  median={residuals[len(residuals)//2]:.2f}s")
+worst = sorted(
+    zip(boundary_times, [min(all_mids, key=lambda m: abs(m - t)) for t in boundary_times]),
+    key=lambda p: -abs(p[0] - p[1]),
+)[:10]
+print("worst 10 boundaries (time, nearest_real_pause, residual):")
+for t, m in worst:
+    print(f"  {t:7.2f}  nearest_pause={m:7.2f}  residual={abs(t-m):5.2f}s")
