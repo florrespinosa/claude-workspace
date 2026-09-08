@@ -3,6 +3,40 @@ import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { captions } from "../data/captions";
 import { colors } from "../theme";
 
+const Word: React.FC<{ text: string; start: number; end: number; t: number }> = ({
+  text,
+  start,
+  end,
+  t,
+}) => {
+  // 0 before the word starts, ramps to 1 right as it's spoken, stays 1 after
+  const progress = interpolate(t, [start - 0.06, start + 0.05], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const isActive = t >= start && t < end;
+  const scale = isActive ? interpolate(t, [start, start + 0.08], [1.08, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  }) : 1;
+
+  return (
+    <span
+      style={{
+        display: "inline-block",
+        color: `color-mix(in srgb, ${colors.orange} ${progress * 100}%, rgba(255,255,255,0.5))`,
+        transform: `scale(${scale})`,
+        textShadow:
+          progress > 0.5
+            ? `0 2px 10px rgba(245,166,35,0.45), 0 2px 8px rgba(0,0,0,0.35)`
+            : "0 2px 8px rgba(0,0,0,0.35)",
+      }}
+    >
+      {text}
+    </span>
+  );
+};
+
 export const Captions: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -52,19 +86,23 @@ export const Captions: React.FC = () => {
           backdropFilter: "blur(4px)",
         }}
       >
-        <span
+        <div
           style={{
-            color: colors.white,
             fontWeight: 600,
             fontSize: 34,
             lineHeight: 1.28,
             textAlign: "center",
-            display: "block",
-            textShadow: "0 2px 8px rgba(0,0,0,0.35)",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            columnGap: "0.34em",
+            rowGap: 2,
           }}
         >
-          {active.text}
-        </span>
+          {active.words.map((w, i) => (
+            <Word key={i} text={w.text} start={w.start} end={w.end} t={t} />
+          ))}
+        </div>
       </div>
     </div>
   );

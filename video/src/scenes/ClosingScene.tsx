@@ -35,7 +35,7 @@ const Chip: React.FC<{ label: string; delay: number; localFrame: number }> = ({
 export const ClosingScene: React.FC<{ localFrame: number }> = ({
   localFrame,
 }) => {
-  const titleStart = 108; // ~3.6s in, matched to "...Anaplan Model Knowledge" line
+  const titleStart = 146; // ~4.87s in, matched to "...Anaplan Model Knowledge" line (real ASR timing)
   const titleP = interpolate(localFrame, [titleStart, titleStart + 20], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -76,8 +76,8 @@ export const ClosingScene: React.FC<{ localFrame: number }> = ({
         >
           <div style={{ display: "flex", gap: 16 }}>
             <Chip label="EXPLAIN" delay={0} localFrame={localFrame} />
-            <Chip label="TEST" delay={10} localFrame={localFrame} />
-            <Chip label="DOCUMENT" delay={20} localFrame={localFrame} />
+            <Chip label="TEST" delay={24} localFrame={localFrame} />
+            <Chip label="DOCUMENT" delay={40} localFrame={localFrame} />
           </div>
           <div
             style={{
