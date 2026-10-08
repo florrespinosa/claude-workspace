@@ -9,6 +9,9 @@ export type Segment = {
   duration: number;
   origDuration?: number;
   playbackRate?: number;
+  width?: number;
+  height?: number;
+  trimmed?: boolean;
 };
 
 export const segments: Segment[] = raw as Segment[];

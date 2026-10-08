@@ -17,15 +17,6 @@ import { Callout } from "./components/Callout";
 import { crossfadeOpacity, OVERLAP } from "./components/crossfade";
 import { bodyFont } from "./components/loadFonts";
 
-const videoDims: Record<string, { w: number; h: number }> = {
-  "MK - 1.mp4": { w: 1346, h: 574 },
-  "VIDEO 1 KT.mp4": { w: 1350, h: 634 },
-  "VIDEO 1 TEST SCRIPTS.mp4": { w: 1346, h: 634 },
-  "VIDEO 2 KT.mp4": { w: 1906, h: 856 },
-  "VIDEO 2 TEST SCRIPTS.mp4": { w: 1360, h: 616 },
-  "VIDEO QUERY.mp4": { w: 1352, h: 634 },
-};
-
 const videoLabels: Record<string, string> = {
   mk1: "GETTING STARTED",
   video1_test: "DEMO · TEST SCRIPT GENERATION",
@@ -33,6 +24,21 @@ const videoLabels: Record<string, string> = {
   video_query: "DEMO · BACKEND STRUCTURE QUERY",
   video1_kt: "DEMO · KNOWLEDGE TRANSFER DOC",
   video2_kt: "DEMO · KNOWLEDGE TRANSFER DOC",
+};
+
+// callouts are anchored to a scene's real (ASR-measured) start, never to
+// hand-typed timestamps, so they can't drift from the narration
+const SegmentCallout: React.FC<{
+  id: string;
+  length: number;
+  text: string;
+  icon: string;
+}> = ({ id, length, text, icon }) => {
+  const seg = segments.find((s) => s.id === id);
+  if (!seg) return null;
+  return (
+    <Callout start={seg.start + 0.15} end={seg.start + 0.15 + length} text={text} icon={icon} />
+  );
 };
 
 const MusicBed: React.FC = () => {
@@ -101,9 +107,9 @@ export const MainComposition: React.FC = () => {
       <Captions />
 
       {/* key-moment callouts, timed to the exact caption windows they reinforce */}
-      <Callout start={107.56} end={110.86} text="6 mandatory files" icon="6" />
-      <Callout start={140.46} end={143.16} text="Downloadable Excel" icon="⇩" />
-      <Callout start={183.6} end={186.79} text="Word document" icon="W" />
+      <SegmentCallout id="video1_test" length={7} text="Select your model" icon="✓" />
+      <SegmentCallout id="video2_test" length={3.2} text="Downloadable Excel" icon="⇩" />
+      <SegmentCallout id="video2_kt" length={3.4} text="Word document" icon="W" />
 
       {/* global intro / outro */}
       <IntroOutroFade durationInFrames={durationInFrames} />
@@ -127,15 +133,15 @@ const SceneLayer: React.FC<{
   return (
     <AbsoluteFill style={{ opacity }}>
       {isClosing ? (
-        <ClosingScene localFrame={frame} />
+        <ClosingScene frame={frame - leftOverlap} />
       ) : isVideo ? (
         <VideoScene
           src={seg.visual}
           localFrame={frame}
           mountDur={mountDur}
           playbackRate={seg.playbackRate ?? 1}
-          widthPx={videoDims[seg.visual]?.w ?? 1600}
-          heightPx={videoDims[seg.visual]?.h ?? 900}
+          widthPx={seg.width ?? 1600}
+          heightPx={seg.height ?? 900}
           label={videoLabels[seg.id]}
         />
       ) : (

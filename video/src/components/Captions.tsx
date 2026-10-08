@@ -1,7 +1,9 @@
 import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { captions } from "../data/captions";
-import { colors } from "../theme";
+
+// brand-adjacent celeste used for the word-by-word karaoke fill
+const CELESTE = "#62D3FF";
 
 const Word: React.FC<{ text: string; start: number; end: number; t: number }> = ({
   text,
@@ -24,11 +26,11 @@ const Word: React.FC<{ text: string; start: number; end: number; t: number }> = 
     <span
       style={{
         display: "inline-block",
-        color: `color-mix(in srgb, ${colors.orange} ${progress * 100}%, rgba(255,255,255,0.5))`,
+        color: `color-mix(in srgb, ${CELESTE} ${progress * 100}%, rgba(255,255,255,0.55))`,
         transform: `scale(${scale})`,
         textShadow:
           progress > 0.5
-            ? `0 2px 10px rgba(245,166,35,0.45), 0 2px 8px rgba(0,0,0,0.35)`
+            ? `0 2px 12px rgba(98,211,255,0.5), 0 2px 8px rgba(0,0,0,0.35)`
             : "0 2px 8px rgba(0,0,0,0.35)",
       }}
     >
@@ -79,7 +81,7 @@ export const Captions: React.FC = () => {
           maxWidth: "78%",
           background: "rgba(8,26,51,0.82)",
           border: "1px solid rgba(255,255,255,0.08)",
-          borderLeft: `5px solid ${colors.orange}`,
+          borderLeft: `5px solid ${CELESTE}`,
           borderRadius: 14,
           padding: "16px 34px",
           boxShadow: "0 12px 34px rgba(0,0,0,0.4)",

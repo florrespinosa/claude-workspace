@@ -2,29 +2,39 @@ import React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile } from "remotion";
 import { colors } from "../theme";
 import { headlineFont } from "../components/loadFonts";
+import cuesRaw from "../data/closing_cues.json";
 
-const Chip: React.FC<{ label: string; delay: number; localFrame: number }> = ({
-  label,
-  delay,
-  localFrame,
-}) => {
-  const p = interpolate(localFrame, [delay, delay + 12], [0, 1], {
+type Cue = { text: string; start: number };
+const cues = cuesRaw as Cue[];
+
+const FPS = 30;
+const CELESTE = "#62D3FF";
+
+const pop = (frame: number, startSec: number) =>
+  interpolate(frame, [startSec * FPS, startSec * FPS + 12], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
+
+const Chip: React.FC<{ label: string; frame: number; startSec: number }> = ({
+  label,
+  frame,
+  startSec,
+}) => {
+  const p = pop(frame, startSec);
   return (
     <div
       style={{
         opacity: p,
         transform: `translateY(${interpolate(p, [0, 1], [16, 0])}px)`,
         background: "rgba(255,255,255,0.08)",
-        border: `1px solid ${colors.blue}66`,
+        border: `1px solid ${CELESTE}88`,
         borderRadius: 999,
         padding: "10px 28px",
         color: colors.white,
         fontWeight: 700,
-        fontSize: 24,
-        letterSpacing: 1.5,
+        fontSize: 26,
+        letterSpacing: 0.5,
       }}
     >
       {label}
@@ -32,16 +42,15 @@ const Chip: React.FC<{ label: string; delay: number; localFrame: number }> = ({
   );
 };
 
-export const ClosingScene: React.FC<{ localFrame: number }> = ({
-  localFrame,
-}) => {
-  const titleStart = 146; // ~4.87s in, matched to "...Anaplan Model Knowledge" line (real ASR timing)
-  const titleP = interpolate(localFrame, [titleStart, titleStart + 20], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+// `frame` is relative to the scene's real start (the narration's first
+// closing word), so the reveals follow the measured speech timing
+export const ClosingScene: React.FC<{ frame: number }> = ({ frame }) => {
+  const chipCues = cues.filter((c) => !c.text.startsWith("This"));
+  const finalCue = cues.find((c) => c.text.startsWith("This"));
+  const finalStart = finalCue ? finalCue.start : 999;
+  const finalP = pop(frame, finalStart);
 
-  const outro = interpolate(localFrame, [0, 20], [0, 1], {
+  const bgIn = interpolate(frame, [-9, 8], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -55,19 +64,19 @@ export const ClosingScene: React.FC<{ localFrame: number }> = ({
       <AbsoluteFill
         style={{
           background:
-            "linear-gradient(180deg, rgba(2,8,23,0.15) 0%, rgba(2,8,23,0.55) 78%, rgba(2,8,23,0.85) 100%)",
+            "linear-gradient(180deg, rgba(2,8,23,0.12) 0%, rgba(2,8,23,0.5) 72%, rgba(2,8,23,0.85) 100%)",
         }}
       />
       <AbsoluteFill
         style={{
           alignItems: "center",
           justifyContent: "flex-end",
-          paddingBottom: 260,
+          paddingBottom: 235,
         }}
       >
         <div
           style={{
-            opacity: outro,
+            opacity: bgIn,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -75,24 +84,24 @@ export const ClosingScene: React.FC<{ localFrame: number }> = ({
           }}
         >
           <div style={{ display: "flex", gap: 16 }}>
-            <Chip label="EXPLAIN" delay={0} localFrame={localFrame} />
-            <Chip label="TEST" delay={24} localFrame={localFrame} />
-            <Chip label="DOCUMENT" delay={40} localFrame={localFrame} />
+            {chipCues.map((c) => (
+              <Chip key={c.text} label={c.text} frame={frame} startSec={c.start} />
+            ))}
           </div>
           <div
             style={{
-              opacity: titleP,
-              transform: `scale(${interpolate(titleP, [0, 1], [0.94, 1])})`,
+              opacity: finalP,
+              transform: `scale(${interpolate(finalP, [0, 1], [0.94, 1])})`,
               fontFamily: headlineFont,
               fontWeight: 800,
-              fontSize: 56,
+              fontSize: 58,
               color: colors.white,
               textAlign: "center",
               textShadow: "0 10px 40px rgba(0,0,0,0.5)",
             }}
           >
-            One agent.{" "}
-            <span style={{ color: colors.orange }}>Anaplan Model Knowledge.</span>
+            This is only the{" "}
+            <span style={{ color: CELESTE }}>beginning.</span>
           </div>
         </div>
       </AbsoluteFill>

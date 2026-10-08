@@ -34,7 +34,7 @@ export const VideoScene: React.FC<{
   let fitWidth: number;
   let fitHeight: number;
   const maxW = 1920 * 0.86;
-  const maxH = 1080 * 0.72;
+  const maxH = 740; // leaves room for the top label and the captions below
   if (maxW / aspect <= maxH) {
     fitWidth = maxW;
     fitHeight = maxW / aspect;
@@ -78,6 +78,7 @@ export const VideoScene: React.FC<{
         style={{
           alignItems: "center",
           justifyContent: "center",
+          paddingBottom: 120,
         }}
       >
         <div

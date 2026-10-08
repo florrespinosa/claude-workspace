@@ -1,3911 +1,3784 @@
 [
   {
-    "text": "Welcome to Keyrus AI Agents,",
-    "start": 0.07,
-    "end": 1.89,
+    "text": "These are Keyrus AI Agents,",
+    "start": 0.097,
+    "end": 2.208,
     "segment": "slide1",
     "words": [
       {
-        "text": "Welcome",
-        "start": 0.07,
-        "end": 0.6
+        "text": "These",
+        "start": 0.097,
+        "end": 0.493
       },
       {
-        "text": "to",
-        "start": 0.6,
-        "end": 0.73
+        "text": "are",
+        "start": 0.493,
+        "end": 0.714
       },
       {
         "text": "Keyrus",
-        "start": 0.73,
-        "end": 1.13
+        "start": 0.714,
+        "end": 1.182
       },
       {
         "text": "AI",
-        "start": 1.13,
-        "end": 1.29
+        "start": 1.182,
+        "end": 1.357
       },
       {
         "text": "Agents,",
-        "start": 1.29,
-        "end": 1.89
+        "start": 1.357,
+        "end": 2.037
       }
     ]
   },
   {
     "text": "inside Keyrus AI Studio.",
-    "start": 1.89,
-    "end": 3.96,
+    "start": 2.208,
+    "end": 4.408,
     "segment": "slide1",
     "words": [
       {
         "text": "inside",
-        "start": 1.89,
-        "end": 2.35
+        "start": 2.208,
+        "end": 2.655
       },
       {
         "text": "Keyrus",
-        "start": 2.35,
-        "end": 2.65
+        "start": 2.655,
+        "end": 3.069
       },
       {
         "text": "AI",
-        "start": 2.65,
-        "end": 2.95
+        "start": 3.069,
+        "end": 3.226
       },
       {
         "text": "Studio.",
-        "start": 2.95,
-        "end": 3.96
+        "start": 3.226,
+        "end": 4.038
       }
     ]
   },
   {
     "text": "Three agents, one delivery lifecycle.",
-    "start": 3.96,
-    "end": 6.66,
-    "segment": "slide2",
+    "start": 4.408,
+    "end": 7.518,
+    "segment": "slide1",
     "words": [
       {
         "text": "Three",
-        "start": 3.96,
-        "end": 4.36
+        "start": 4.408,
+        "end": 4.747
       },
       {
         "text": "agents,",
-        "start": 4.36,
-        "end": 5.01
+        "start": 4.747,
+        "end": 5.418
       },
       {
         "text": "one",
-        "start": 5.01,
-        "end": 5.25
+        "start": 5.708,
+        "end": 5.814
       },
       {
         "text": "delivery",
-        "start": 5.25,
-        "end": 5.85
+        "start": 5.814,
+        "end": 6.464
       },
       {
         "text": "lifecycle.",
-        "start": 5.85,
-        "end": 6.66
+        "start": 6.464,
+        "end": 7.168
       }
     ]
   },
   {
     "text": "From the first meeting to go-live \u2014",
-    "start": 6.66,
-    "end": 8.74,
-    "segment": "slide2",
+    "start": 7.518,
+    "end": 9.288,
+    "segment": "slide1",
     "words": [
       {
         "text": "From",
-        "start": 6.66,
-        "end": 7.06
+        "start": 7.518,
+        "end": 7.741
       },
       {
         "text": "the",
-        "start": 7.06,
-        "end": 7.17
+        "start": 7.741,
+        "end": 7.903
       },
       {
         "text": "first",
-        "start": 7.17,
-        "end": 7.54
+        "start": 7.903,
+        "end": 8.181
       },
       {
         "text": "meeting",
-        "start": 7.54,
-        "end": 8.06
+        "start": 8.181,
+        "end": 8.567
       },
       {
         "text": "to",
-        "start": 8.06,
-        "end": 8.2
+        "start": 8.567,
+        "end": 8.675
       },
       {
-        "text": "go-live",
-        "start": 8.2,
-        "end": 8.47
-      },
-      {
-        "text": "\u2014",
-        "start": 8.47,
-        "end": 8.74
+        "text": "go-live \u2014",
+        "start": 8.675,
+        "end": 9.138
       }
     ]
   },
   {
     "text": "powered by AI.",
-    "start": 8.74,
-    "end": 10.48,
-    "segment": "slide2",
+    "start": 9.288,
+    "end": 11.308,
+    "segment": "slide1",
     "words": [
       {
         "text": "powered",
-        "start": 8.74,
-        "end": 10.14
+        "start": 9.288,
+        "end": 10.029
       },
       {
         "text": "by",
-        "start": 10.14,
-        "end": 10.18
+        "start": 10.029,
+        "end": 10.278
       },
       {
         "text": "AI.",
-        "start": 10.18,
-        "end": 10.48
+        "start": 10.278,
+        "end": 10.528
       }
     ]
   },
   {
     "text": "Every agent supports a different phase of",
-    "start": 10.48,
-    "end": 12.44,
-    "segment": "slide2",
+    "start": 11.308,
+    "end": 13.247,
+    "segment": "slide1",
     "words": [
       {
         "text": "Every",
-        "start": 10.48,
-        "end": 10.78
+        "start": 11.308,
+        "end": 11.568
       },
       {
         "text": "agent",
-        "start": 10.78,
-        "end": 11.07
+        "start": 11.568,
+        "end": 11.829
       },
       {
         "text": "supports",
-        "start": 11.07,
-        "end": 11.56
+        "start": 11.829,
+        "end": 12.256
       },
       {
         "text": "a",
-        "start": 11.56,
-        "end": 11.6
+        "start": 12.256,
+        "end": 12.343
       },
       {
         "text": "different",
-        "start": 11.6,
-        "end": 12.06
+        "start": 12.343,
+        "end": 12.821
       },
       {
         "text": "phase",
-        "start": 12.06,
-        "end": 12.3
+        "start": 12.821,
+        "end": 13.117
       },
       {
         "text": "of",
-        "start": 12.3,
-        "end": 12.44
+        "start": 13.117,
+        "end": 13.247
       }
     ]
   },
   {
     "text": "an Anaplan engagement, so the question is:",
-    "start": 12.44,
-    "end": 15.35,
-    "segment": "slide2",
+    "start": 13.247,
+    "end": 16.28,
+    "segment": "slide1",
     "words": [
       {
         "text": "an",
-        "start": 12.44,
-        "end": 12.58
+        "start": 13.247,
+        "end": 13.378
       },
       {
         "text": "Anaplan",
-        "start": 12.58,
-        "end": 13.07
+        "start": 13.378,
+        "end": 13.839
       },
       {
         "text": "engagement,",
-        "start": 13.07,
-        "end": 14.02
+        "start": 13.839,
+        "end": 14.718
       },
       {
         "text": "so",
-        "start": 14.02,
-        "end": 14.17
+        "start": 15.188,
+        "end": 15.317
       },
       {
         "text": "the",
-        "start": 14.17,
-        "end": 14.42
+        "start": 15.317,
+        "end": 15.514
       },
       {
         "text": "question",
-        "start": 14.42,
-        "end": 14.99
+        "start": 15.514,
+        "end": 15.91
       },
       {
         "text": "is:",
-        "start": 14.99,
-        "end": 15.35
+        "start": 15.91,
+        "end": 16.28
       }
     ]
   },
   {
     "text": "what do you need to do right now?",
-    "start": 15.35,
-    "end": 17.16,
-    "segment": "slide2",
+    "start": 16.28,
+    "end": 17.838,
+    "segment": "slide1",
     "words": [
       {
         "text": "what",
-        "start": 15.35,
-        "end": 15.63
+        "start": 16.28,
+        "end": 16.383
       },
       {
         "text": "do",
-        "start": 15.63,
-        "end": 15.73
+        "start": 16.383,
+        "end": 16.504
       },
       {
         "text": "you",
-        "start": 15.73,
-        "end": 15.95
+        "start": 16.504,
+        "end": 16.676
       },
       {
         "text": "need",
-        "start": 15.95,
-        "end": 16.24
+        "start": 16.676,
+        "end": 16.917
       },
       {
         "text": "to",
-        "start": 16.24,
-        "end": 16.38
+        "start": 16.917,
+        "end": 17.037
       },
       {
         "text": "do",
-        "start": 16.38,
-        "end": 16.52
+        "start": 17.037,
+        "end": 17.158
       },
       {
         "text": "right",
-        "start": 16.52,
-        "end": 17.16
+        "start": 17.158,
+        "end": 17.45
       },
       {
         "text": "now?",
-        "start": 17.16,
-        "end": 17.16
+        "start": 17.45,
+        "end": 17.838
       }
     ]
   },
   {
     "text": "If you need to UNDERSTAND,",
-    "start": 17.16,
-    "end": 18.54,
-    "segment": "slide3",
+    "start": 18.248,
+    "end": 19.538,
+    "segment": "slide2",
     "words": [
       {
         "text": "If",
-        "start": 17.16,
-        "end": 17.29
+        "start": 18.248,
+        "end": 18.365
       },
       {
         "text": "you",
-        "start": 17.29,
-        "end": 17.48
+        "start": 18.365,
+        "end": 18.549
       },
       {
         "text": "need",
-        "start": 17.48,
-        "end": 17.74
+        "start": 18.549,
+        "end": 18.792
       },
       {
         "text": "to",
-        "start": 17.74,
-        "end": 17.87
+        "start": 18.792,
+        "end": 18.909
       },
       {
         "text": "UNDERSTAND,",
-        "start": 17.87,
-        "end": 18.54
+        "start": 18.909,
+        "end": 19.538
       }
     ]
   },
   {
     "text": "you start with the Discovery Agent \u2014",
-    "start": 18.54,
-    "end": 20.7,
-    "segment": "slide3",
+    "start": 19.538,
+    "end": 21.628,
+    "segment": "slide2",
     "words": [
       {
         "text": "you",
-        "start": 18.54,
-        "end": 18.82
+        "start": 19.538,
+        "end": 19.713
       },
       {
         "text": "start",
-        "start": 18.82,
-        "end": 19.13
+        "start": 19.713,
+        "end": 20.007
       },
       {
         "text": "with",
-        "start": 19.13,
-        "end": 19.45
+        "start": 20.007,
+        "end": 20.241
       },
       {
         "text": "the",
-        "start": 19.45,
-        "end": 19.64
+        "start": 20.241,
+        "end": 20.325
       },
       {
         "text": "Discovery",
-        "start": 19.64,
-        "end": 20.49
+        "start": 20.325,
+        "end": 20.836
       },
       {
-        "text": "Agent",
-        "start": 20.49,
-        "end": 20.7
-      },
-      {
-        "text": "\u2014",
-        "start": 20.7,
-        "end": 20.85
+        "text": "Agent \u2014",
+        "start": 20.836,
+        "end": 21.448
       }
     ]
   },
   {
     "text": "it captures and structures client needs from",
-    "start": 20.7,
-    "end": 23.12,
-    "segment": "slide3",
+    "start": 21.628,
+    "end": 23.851,
+    "segment": "slide2",
     "words": [
       {
         "text": "it",
-        "start": 20.7,
-        "end": 20.81
+        "start": 21.628,
+        "end": 21.74
       },
       {
         "text": "captures",
-        "start": 20.81,
-        "end": 21.28
+        "start": 21.74,
+        "end": 22.218
       },
       {
         "text": "and",
-        "start": 21.28,
-        "end": 21.46
+        "start": 22.218,
+        "end": 22.331
       },
       {
         "text": "structures",
-        "start": 21.46,
-        "end": 22.11
+        "start": 22.331,
+        "end": 22.903
       },
       {
         "text": "client",
-        "start": 22.11,
-        "end": 22.47
+        "start": 22.903,
+        "end": 23.25
       },
       {
         "text": "needs",
-        "start": 22.47,
-        "end": 22.82
+        "start": 23.25,
+        "end": 23.541
       },
       {
         "text": "from",
-        "start": 22.82,
-        "end": 23.12
+        "start": 23.541,
+        "end": 23.851
       }
     ]
   },
   {
     "text": "meetings and source files:",
-    "start": 23.12,
-    "end": 24.8,
-    "segment": "slide3",
+    "start": 23.851,
+    "end": 26.138,
+    "segment": "slide2",
     "words": [
       {
         "text": "meetings",
-        "start": 23.12,
-        "end": 23.72
+        "start": 23.851,
+        "end": 24.47
       },
       {
         "text": "and",
-        "start": 23.72,
-        "end": 23.94
+        "start": 24.47,
+        "end": 24.695
       },
       {
         "text": "source",
-        "start": 23.94,
-        "end": 24.8
+        "start": 24.695,
+        "end": 25.155
       },
       {
         "text": "files:",
-        "start": 24.8,
-        "end": 24.8
+        "start": 25.155,
+        "end": 25.568
       }
     ]
   },
   {
     "text": "recapping meetings, capturing requirements,",
-    "start": 24.8,
-    "end": 27.88,
-    "segment": "slide3",
+    "start": 26.138,
+    "end": 29.068,
+    "segment": "slide2",
     "words": [
       {
         "text": "recapping",
-        "start": 24.8,
-        "end": 25.46
+        "start": 26.138,
+        "end": 26.641
       },
       {
         "text": "meetings,",
-        "start": 25.46,
-        "end": 26.21
+        "start": 26.641,
+        "end": 27.308
       },
       {
         "text": "capturing",
-        "start": 26.21,
-        "end": 26.88
+        "start": 27.498,
+        "end": 27.948
       },
       {
         "text": "requirements,",
-        "start": 26.88,
-        "end": 27.8
+        "start": 27.948,
+        "end": 28.868
       }
     ]
   },
   {
     "text": "cross-checking client inputs and building user stories.",
-    "start": 27.88,
-    "end": 31.4,
-    "segment": "slide3",
+    "start": 29.068,
+    "end": 33.297,
+    "segment": "slide2",
     "words": [
       {
         "text": "cross-checking",
-        "start": 27.88,
-        "end": 28.73
+        "start": 29.068,
+        "end": 29.721
       },
       {
         "text": "client",
-        "start": 28.73,
-        "end": 29.16
+        "start": 29.721,
+        "end": 30.008
       },
       {
         "text": "inputs",
-        "start": 29.16,
-        "end": 29.63
+        "start": 30.008,
+        "end": 30.453
       },
       {
         "text": "and",
-        "start": 29.63,
-        "end": 29.8
+        "start": 30.453,
+        "end": 30.671
       },
       {
         "text": "building",
-        "start": 29.8,
-        "end": 30.37
+        "start": 30.671,
+        "end": 31.394
       },
       {
         "text": "user",
-        "start": 30.37,
-        "end": 30.64
+        "start": 31.394,
+        "end": 31.69
       },
       {
         "text": "stories.",
-        "start": 30.64,
-        "end": 31.4
+        "start": 31.69,
+        "end": 32.588
       }
     ]
   },
   {
     "text": "Once the needs are clear and you",
-    "start": 31.4,
-    "end": 33.2,
-    "segment": "slide3",
+    "start": 33.297,
+    "end": 35.11,
+    "segment": "slide2",
     "words": [
       {
         "text": "Once",
-        "start": 31.4,
-        "end": 31.67
+        "start": 33.297,
+        "end": 33.548
       },
       {
         "text": "the",
-        "start": 31.67,
-        "end": 31.84
+        "start": 33.548,
+        "end": 33.731
       },
       {
         "text": "needs",
-        "start": 31.84,
-        "end": 32.24
+        "start": 33.731,
+        "end": 34.04
       },
       {
         "text": "are",
-        "start": 32.24,
-        "end": 32.34
+        "start": 34.04,
+        "end": 34.242
       },
       {
         "text": "clear",
-        "start": 32.34,
-        "end": 32.74
+        "start": 34.242,
+        "end": 34.57
       },
       {
         "text": "and",
-        "start": 32.74,
-        "end": 32.94
+        "start": 34.57,
+        "end": 34.84
       },
       {
         "text": "you",
-        "start": 32.94,
-        "end": 33.2
+        "start": 34.84,
+        "end": 35.11
       }
     ]
   },
   {
     "text": "need to DESIGN, the Anaplan SA Co-Builder",
-    "start": 33.2,
-    "end": 36.24,
-    "segment": "slide3",
+    "start": 35.11,
+    "end": 38.272,
+    "segment": "slide2",
     "words": [
       {
         "text": "need",
-        "start": 33.2,
-        "end": 33.55
+        "start": 35.11,
+        "end": 35.476
       },
       {
         "text": "to",
-        "start": 33.55,
-        "end": 33.72
+        "start": 35.476,
+        "end": 35.659
       },
       {
         "text": "DESIGN,",
-        "start": 33.72,
-        "end": 34.28
+        "start": 35.659,
+        "end": 36.267
       },
       {
         "text": "the",
-        "start": 34.28,
-        "end": 34.54
+        "start": 36.267,
+        "end": 36.556
       },
       {
         "text": "Anaplan",
-        "start": 34.54,
-        "end": 35.107
+        "start": 36.556,
+        "end": 37.173
       },
       {
         "text": "SA",
-        "start": 35.107,
-        "end": 35.673
+        "start": 37.173,
+        "end": 37.356
       },
       {
         "text": "Co-Builder",
-        "start": 35.673,
-        "end": 36.24
+        "start": 37.356,
+        "end": 38.272
       }
     ]
   },
   {
     "text": "Agent turns those requirements into an Anaplan",
-    "start": 36.24,
-    "end": 39.4,
-    "segment": "slide3",
+    "start": 38.272,
+    "end": 41.266,
+    "segment": "slide2",
     "words": [
       {
         "text": "Agent",
-        "start": 36.24,
-        "end": 36.76
+        "start": 38.272,
+        "end": 38.918
       },
       {
         "text": "turns",
-        "start": 36.76,
-        "end": 37.14
+        "start": 39.207,
+        "end": 39.374
       },
       {
         "text": "those",
-        "start": 37.14,
-        "end": 37.54
+        "start": 39.374,
+        "end": 39.5
       },
       {
         "text": "requirements",
-        "start": 37.54,
-        "end": 38.45
+        "start": 39.5,
+        "end": 40.134
       },
       {
         "text": "into",
-        "start": 38.45,
-        "end": 38.8
+        "start": 40.134,
+        "end": 40.482
       },
       {
         "text": "an",
-        "start": 38.8,
-        "end": 38.88
+        "start": 40.482,
+        "end": 40.657
       },
       {
         "text": "Anaplan",
-        "start": 38.88,
-        "end": 39.4
+        "start": 40.657,
+        "end": 41.266
       }
     ]
   },
   {
     "text": "design \u2014 creating the architecture,",
-    "start": 39.4,
-    "end": 41.73,
-    "segment": "slide3",
+    "start": 41.266,
+    "end": 43.691,
+    "segment": "slide2",
     "words": [
       {
-        "text": "design",
-        "start": 39.4,
-        "end": 39.9
-      },
-      {
-        "text": "\u2014",
-        "start": 39.9,
-        "end": 40.05
+        "text": "design \u2014",
+        "start": 41.266,
+        "end": 42.138
       },
       {
         "text": "creating",
-        "start": 39.9,
-        "end": 40.45
+        "start": 42.387,
+        "end": 42.738
       },
       {
         "text": "the",
-        "start": 40.45,
-        "end": 40.68
+        "start": 42.738,
+        "end": 42.919
       },
       {
         "text": "architecture,",
-        "start": 40.68,
-        "end": 41.73
+        "start": 42.919,
+        "end": 43.691
       }
     ]
   },
   {
     "text": "defining modules and formulas,",
-    "start": 41.73,
-    "end": 43.88,
-    "segment": "slide3",
+    "start": 43.691,
+    "end": 46.677,
+    "segment": "slide2",
     "words": [
       {
         "text": "defining",
-        "start": 41.73,
-        "end": 42.19
+        "start": 43.691,
+        "end": 44.383
       },
       {
         "text": "modules",
-        "start": 42.19,
-        "end": 42.68
+        "start": 44.383,
+        "end": 45.105
       },
       {
         "text": "and",
-        "start": 42.68,
-        "end": 43.0
+        "start": 45.105,
+        "end": 45.255
       },
       {
         "text": "formulas,",
-        "start": 43.0,
-        "end": 43.88
+        "start": 45.255,
+        "end": 46.138
       }
     ]
   },
   {
     "text": "working with an existing model and helping",
-    "start": 43.88,
-    "end": 46.54,
-    "segment": "slide3",
+    "start": 46.677,
+    "end": 48.879,
+    "segment": "slide2",
     "words": [
       {
         "text": "working",
-        "start": 43.88,
-        "end": 44.39
+        "start": 46.677,
+        "end": 47.078
       },
       {
         "text": "with",
-        "start": 44.39,
-        "end": 44.7
+        "start": 47.078,
+        "end": 47.303
       },
       {
         "text": "an",
-        "start": 44.7,
-        "end": 44.89
+        "start": 47.303,
+        "end": 47.411
       },
       {
         "text": "existing",
-        "start": 44.89,
-        "end": 45.4
+        "start": 47.411,
+        "end": 47.87
       },
       {
         "text": "model",
-        "start": 45.4,
-        "end": 45.8
+        "start": 47.87,
+        "end": 48.179
       },
       {
         "text": "and",
-        "start": 45.8,
-        "end": 46.02
+        "start": 48.179,
+        "end": 48.379
       },
       {
         "text": "helping",
-        "start": 46.02,
-        "end": 46.54
+        "start": 48.379,
+        "end": 48.879
       }
     ]
   },
   {
     "text": "you build directly in Anaplan.",
-    "start": 46.54,
-    "end": 48.44,
-    "segment": "slide3",
+    "start": 48.879,
+    "end": 51.297,
+    "segment": "slide2",
     "words": [
       {
         "text": "you",
-        "start": 46.54,
-        "end": 46.76
+        "start": 48.879,
+        "end": 49.063
       },
       {
         "text": "build",
-        "start": 46.76,
-        "end": 47.13
+        "start": 49.063,
+        "end": 49.38
       },
       {
         "text": "directly",
-        "start": 47.13,
-        "end": 47.72
+        "start": 49.38,
+        "end": 49.905
       },
       {
         "text": "in",
-        "start": 47.72,
-        "end": 47.87
+        "start": 49.905,
+        "end": 50.226
       },
       {
         "text": "Anaplan.",
-        "start": 47.87,
-        "end": 48.44
+        "start": 50.226,
+        "end": 50.548
       }
     ]
   },
   {
     "text": "And when the model is already built",
-    "start": 48.44,
-    "end": 50.42,
-    "segment": "slide3",
+    "start": 51.297,
+    "end": 52.781,
+    "segment": "slide2",
     "words": [
       {
         "text": "And",
-        "start": 48.44,
-        "end": 48.64
+        "start": 51.297,
+        "end": 51.444
       },
       {
         "text": "when",
-        "start": 48.64,
-        "end": 48.91
+        "start": 51.444,
+        "end": 51.643
       },
       {
         "text": "the",
-        "start": 48.91,
-        "end": 49.11
+        "start": 51.643,
+        "end": 51.789
       },
       {
         "text": "model",
-        "start": 49.11,
-        "end": 49.48
+        "start": 51.789,
+        "end": 52.039
       },
       {
         "text": "is",
-        "start": 49.48,
-        "end": 49.58
+        "start": 52.039,
+        "end": 52.134
       },
       {
         "text": "already",
-        "start": 49.58,
-        "end": 50.05
+        "start": 52.134,
+        "end": 52.505
       },
       {
         "text": "built",
-        "start": 50.05,
-        "end": 50.42
+        "start": 52.505,
+        "end": 52.781
       }
     ]
   },
   {
     "text": "and you need to EXPLAIN or TEST",
-    "start": 50.42,
-    "end": 52.58,
-    "segment": "slide3",
+    "start": 52.781,
+    "end": 54.49,
+    "segment": "slide2",
     "words": [
       {
         "text": "and",
-        "start": 50.42,
-        "end": 50.66
+        "start": 52.781,
+        "end": 52.988
       },
       {
         "text": "you",
-        "start": 50.66,
-        "end": 50.91
+        "start": 52.988,
+        "end": 53.196
       },
       {
         "text": "need",
-        "start": 50.91,
-        "end": 51.28
+        "start": 53.196,
+        "end": 53.506
       },
       {
         "text": "to",
-        "start": 51.28,
-        "end": 51.37
+        "start": 53.506,
+        "end": 53.61
       },
       {
         "text": "EXPLAIN",
-        "start": 51.37,
-        "end": 51.95
+        "start": 53.61,
+        "end": 54.093
       },
       {
         "text": "or",
-        "start": 51.95,
-        "end": 52.39
+        "start": 54.093,
+        "end": 54.231
       },
       {
         "text": "TEST",
-        "start": 52.39,
-        "end": 52.58
+        "start": 54.231,
+        "end": 54.49
       }
     ]
   },
   {
     "text": "it, the Anaplan Model Knowledge Agent explains",
-    "start": 52.58,
-    "end": 54.78,
-    "segment": "slide3",
+    "start": 54.49,
+    "end": 57.273,
+    "segment": "slide2",
     "words": [
       {
         "text": "it,",
-        "start": 52.58,
-        "end": 52.58
+        "start": 54.49,
+        "end": 54.818
       },
       {
         "text": "the",
-        "start": 52.58,
-        "end": 52.74
+        "start": 55.378,
+        "end": 55.514
       },
       {
         "text": "Anaplan",
-        "start": 52.74,
-        "end": 53.1
+        "start": 55.514,
+        "end": 55.891
       },
       {
         "text": "Model",
-        "start": 53.1,
-        "end": 53.37
+        "start": 55.891,
+        "end": 56.068
       },
       {
         "text": "Knowledge",
-        "start": 53.37,
-        "end": 53.85
+        "start": 56.068,
+        "end": 56.494
       },
       {
         "text": "Agent",
-        "start": 53.85,
-        "end": 54.16
+        "start": 56.494,
+        "end": 56.759
       },
       {
         "text": "explains",
-        "start": 54.16,
-        "end": 54.78
+        "start": 56.759,
+        "end": 57.273
       }
     ]
   },
   {
     "text": "and documents that build \u2014",
-    "start": 54.78,
-    "end": 56.51,
-    "segment": "slide3",
+    "start": 57.273,
+    "end": 59.527,
+    "segment": "slide2",
     "words": [
       {
         "text": "and",
-        "start": 54.78,
-        "end": 55.01
+        "start": 57.273,
+        "end": 57.481
       },
       {
         "text": "documents",
-        "start": 55.01,
-        "end": 55.71
+        "start": 57.481,
+        "end": 58.164
       },
       {
         "text": "that",
-        "start": 55.71,
-        "end": 56.44
+        "start": 58.164,
+        "end": 58.389
       },
       {
-        "text": "build",
-        "start": 56.44,
-        "end": 56.44
-      },
-      {
-        "text": "\u2014",
-        "start": 56.44,
-        "end": 56.59
+        "text": "build \u2014",
+        "start": 58.389,
+        "end": 59.068
       }
     ]
   },
   {
     "text": "explaining the UX and its functionality,",
-    "start": 56.51,
-    "end": 58.92,
-    "segment": "slide3",
+    "start": 59.527,
+    "end": 62.247,
+    "segment": "slide2",
     "words": [
       {
         "text": "explaining",
-        "start": 56.51,
-        "end": 57.16
+        "start": 59.527,
+        "end": 59.901
       },
       {
         "text": "the",
-        "start": 57.16,
-        "end": 57.43
+        "start": 59.901,
+        "end": 60.128
       },
       {
         "text": "UX",
-        "start": 57.43,
-        "end": 57.52
+        "start": 60.128,
+        "end": 60.289
       },
       {
         "text": "and",
-        "start": 57.52,
-        "end": 57.79
+        "start": 60.289,
+        "end": 60.583
       },
       {
         "text": "its",
-        "start": 57.79,
-        "end": 57.92
+        "start": 60.583,
+        "end": 60.734
       },
       {
         "text": "functionality,",
-        "start": 57.92,
-        "end": 58.92
+        "start": 60.734,
+        "end": 61.728
       }
     ]
   },
   {
     "text": "tracing the backend logic,",
-    "start": 58.92,
-    "end": 60.95,
-    "segment": "slide3",
+    "start": 62.247,
+    "end": 64.218,
+    "segment": "slide2",
     "words": [
       {
         "text": "tracing",
-        "start": 58.92,
-        "end": 59.49
+        "start": 62.247,
+        "end": 62.624
       },
       {
         "text": "the",
-        "start": 59.49,
-        "end": 59.71
+        "start": 62.624,
+        "end": 62.782
       },
       {
         "text": "backend",
-        "start": 59.71,
-        "end": 60.26
+        "start": 62.782,
+        "end": 63.159
       },
       {
         "text": "logic,",
-        "start": 60.26,
-        "end": 60.95
+        "start": 63.159,
+        "end": 63.648
       }
     ]
   },
   {
     "text": "generating test scripts and producing KT and",
-    "start": 60.95,
-    "end": 63.68,
-    "segment": "slide3",
+    "start": 64.218,
+    "end": 67.119,
+    "segment": "slide2",
     "words": [
       {
         "text": "generating",
-        "start": 60.95,
-        "end": 61.49
+        "start": 64.218,
+        "end": 64.709
       },
       {
         "text": "test",
-        "start": 61.49,
-        "end": 61.73
+        "start": 64.709,
+        "end": 64.902
       },
       {
         "text": "scripts",
-        "start": 61.73,
-        "end": 62.2
+        "start": 64.902,
+        "end": 65.336
       },
       {
         "text": "and",
-        "start": 62.2,
-        "end": 62.46
+        "start": 65.336,
+        "end": 65.625
       },
       {
         "text": "producing",
-        "start": 62.46,
-        "end": 63.28
+        "start": 65.625,
+        "end": 66.503
       },
       {
         "text": "KT",
-        "start": 63.28,
-        "end": 63.43
+        "start": 66.503,
+        "end": 66.908
       },
       {
         "text": "and",
-        "start": 63.43,
-        "end": 63.68
+        "start": 67.058,
+        "end": 67.119
       }
     ]
   },
   {
     "text": "client guides.",
-    "start": 63.68,
-    "end": 65.06,
-    "segment": "slide3",
+    "start": 67.119,
+    "end": 68.788,
+    "segment": "slide2",
     "words": [
       {
         "text": "client",
-        "start": 63.68,
-        "end": 64.21
+        "start": 67.119,
+        "end": 67.491
       },
       {
         "text": "guides.",
-        "start": 64.21,
-        "end": 65.06
+        "start": 67.491,
+        "end": 68.068
       }
     ]
   },
   {
-    "text": "That last one is the most complete of the three \u2014",
-    "start": 65.06,
-    "end": 67.52,
-    "segment": "slide3",
+    "text": "That last one is the most complete",
+    "start": 68.788,
+    "end": 70.512,
+    "segment": "slide2",
     "words": [
       {
         "text": "That",
-        "start": 65.06,
-        "end": 65.31
+        "start": 68.788,
+        "end": 69.033
       },
       {
         "text": "last",
-        "start": 65.31,
-        "end": 65.58
+        "start": 69.033,
+        "end": 69.278
       },
       {
         "text": "one",
-        "start": 65.58,
-        "end": 65.75
+        "start": 69.278,
+        "end": 69.46
       },
       {
         "text": "is",
-        "start": 65.75,
-        "end": 65.87
+        "start": 69.46,
+        "end": 69.578
       },
       {
         "text": "the",
-        "start": 65.87,
-        "end": 66.06
+        "start": 69.578,
+        "end": 69.76
       },
       {
         "text": "most",
-        "start": 66.06,
-        "end": 66.33
+        "start": 69.76,
+        "end": 70.037
       },
       {
         "text": "complete",
-        "start": 66.33,
-        "end": 66.89
-      },
-      {
-        "text": "of",
-        "start": 66.89,
-        "end": 66.94
-      },
-      {
-        "text": "the",
-        "start": 66.94,
-        "end": 67.52
-      },
-      {
-        "text": "three",
-        "start": 67.52,
-        "end": 67.52
-      },
-      {
-        "text": "\u2014",
-        "start": 67.52,
-        "end": 67.67
+        "start": 70.037,
+        "end": 70.512
       }
     ]
   },
   {
-    "text": "and it's the one we'll dive into now.",
-    "start": 67.52,
-    "end": 69.92,
-    "segment": "slide3",
+    "text": "of the three \u2014 and it's the one",
+    "start": 70.512,
+    "end": 72.409,
+    "segment": "slide2",
     "words": [
       {
+        "text": "of",
+        "start": 70.512,
+        "end": 70.615
+      },
+      {
+        "text": "the",
+        "start": 70.615,
+        "end": 70.749
+      },
+      {
+        "text": "three \u2014",
+        "start": 70.749,
+        "end": 71.248
+      },
+      {
         "text": "and",
-        "start": 67.52,
-        "end": 67.74
+        "start": 71.748,
+        "end": 71.894
       },
       {
         "text": "it's",
-        "start": 67.74,
-        "end": 68.03
+        "start": 71.894,
+        "end": 72.093
       },
       {
         "text": "the",
-        "start": 68.03,
-        "end": 68.25
+        "start": 72.093,
+        "end": 72.24
       },
       {
         "text": "one",
-        "start": 68.25,
-        "end": 68.47
-      },
-      {
-        "text": "we'll",
-        "start": 68.47,
-        "end": 68.86
-      },
-      {
-        "text": "dive",
-        "start": 68.86,
-        "end": 69.13
-      },
-      {
-        "text": "into",
-        "start": 69.13,
-        "end": 69.43
-      },
-      {
-        "text": "now.",
-        "start": 69.43,
-        "end": 69.92
+        "start": 72.24,
+        "end": 72.409
       }
     ]
   },
   {
-    "text": "So let's meet the Anaplan Model Knowledge Agent.",
-    "start": 69.92,
-    "end": 73.14,
-    "segment": "slide4",
+    "text": "we'll dive into now.",
+    "start": 72.409,
+    "end": 73.378,
+    "segment": "slide2",
+    "words": [
+      {
+        "text": "we'll",
+        "start": 72.409,
+        "end": 72.632
+      },
+      {
+        "text": "dive",
+        "start": 72.632,
+        "end": 72.832
+      },
+      {
+        "text": "into",
+        "start": 72.832,
+        "end": 73.016
+      },
+      {
+        "text": "now.",
+        "start": 73.016,
+        "end": 73.378
+      }
+    ]
+  },
+  {
+    "text": "So let's meet the Anaplan Model Knowledge",
+    "start": 73.868,
+    "end": 75.858,
+    "segment": "slide3",
     "words": [
       {
         "text": "So",
-        "start": 69.92,
-        "end": 70.09
+        "start": 73.868,
+        "end": 74.014
       },
       {
         "text": "let's",
-        "start": 70.09,
-        "end": 70.47
+        "start": 74.014,
+        "end": 74.3
       },
       {
         "text": "meet",
-        "start": 70.47,
-        "end": 70.72
+        "start": 74.3,
+        "end": 74.496
       },
       {
         "text": "the",
-        "start": 70.72,
-        "end": 70.94
+        "start": 74.496,
+        "end": 74.667
       },
       {
         "text": "Anaplan",
-        "start": 70.94,
-        "end": 71.45
+        "start": 74.667,
+        "end": 75.067
       },
       {
         "text": "Model",
-        "start": 71.45,
-        "end": 71.82
+        "start": 75.067,
+        "end": 75.352
       },
       {
         "text": "Knowledge",
-        "start": 71.82,
-        "end": 72.49
-      },
+        "start": 75.352,
+        "end": 75.858
+      }
+    ]
+  },
+  {
+    "text": "Agent.",
+    "start": 75.858,
+    "end": 76.878,
+    "segment": "slide3",
+    "words": [
       {
         "text": "Agent.",
-        "start": 72.49,
-        "end": 73.14
+        "start": 75.858,
+        "end": 76.348
       }
     ]
   },
   {
     "text": "This agent sits on top of an",
-    "start": 73.14,
-    "end": 74.56,
-    "segment": "slide4",
+    "start": 76.878,
+    "end": 78.358,
+    "segment": "slide3",
     "words": [
       {
         "text": "This",
-        "start": 73.14,
-        "end": 73.4
+        "start": 76.878,
+        "end": 77.153
       },
       {
         "text": "agent",
-        "start": 73.4,
-        "end": 73.72
+        "start": 77.153,
+        "end": 77.48
       },
       {
         "text": "sits",
-        "start": 73.72,
-        "end": 73.99
+        "start": 77.48,
+        "end": 77.747
       },
       {
         "text": "on",
-        "start": 73.99,
-        "end": 74.13
+        "start": 77.747,
+        "end": 77.954
       },
       {
         "text": "top",
-        "start": 74.13,
-        "end": 74.35
+        "start": 77.954,
+        "end": 78.16
       },
       {
         "text": "of",
-        "start": 74.35,
-        "end": 74.44
+        "start": 78.16,
+        "end": 78.246
       },
       {
         "text": "an",
-        "start": 74.44,
-        "end": 74.56
+        "start": 78.246,
+        "end": 78.358
       }
     ]
   },
   {
     "text": "already-built Anaplan model and its interface.",
-    "start": 74.56,
-    "end": 77.72,
-    "segment": "slide4",
+    "start": 78.358,
+    "end": 81.798,
+    "segment": "slide3",
     "words": [
       {
         "text": "already-built",
-        "start": 74.56,
-        "end": 75.18
+        "start": 78.358,
+        "end": 78.926
       },
       {
         "text": "Anaplan",
-        "start": 75.18,
-        "end": 75.8
+        "start": 78.926,
+        "end": 79.494
       },
       {
         "text": "model",
-        "start": 75.8,
-        "end": 76.2
+        "start": 79.494,
+        "end": 79.83
       },
       {
         "text": "and",
-        "start": 76.2,
-        "end": 76.45
+        "start": 79.83,
+        "end": 80.054
       },
       {
         "text": "its",
-        "start": 76.45,
-        "end": 76.7
+        "start": 80.054,
+        "end": 80.278
       },
       {
         "text": "interface.",
-        "start": 76.7,
-        "end": 77.72
+        "start": 80.278,
+        "end": 81.208
       }
     ]
   },
   {
     "text": "It ingests the backend and UX metadata",
-    "start": 77.72,
-    "end": 80.59,
-    "segment": "slide4",
+    "start": 81.798,
+    "end": 84.39,
+    "segment": "slide3",
     "words": [
       {
         "text": "It",
-        "start": 77.72,
-        "end": 77.87
+        "start": 81.798,
+        "end": 81.921
       },
       {
         "text": "ingests",
-        "start": 77.87,
-        "end": 78.39
+        "start": 81.921,
+        "end": 82.379
       },
       {
         "text": "the",
-        "start": 78.39,
-        "end": 78.61
+        "start": 82.379,
+        "end": 82.56
       },
       {
         "text": "backend",
-        "start": 78.61,
-        "end": 79.24
+        "start": 82.56,
+        "end": 83.055
       },
       {
         "text": "and",
-        "start": 79.24,
-        "end": 79.49
+        "start": 83.055,
+        "end": 83.36
       },
       {
         "text": "UX",
-        "start": 79.49,
-        "end": 79.71
+        "start": 83.36,
+        "end": 83.56
       },
       {
         "text": "metadata",
-        "start": 79.71,
-        "end": 80.59
+        "start": 83.56,
+        "end": 84.39
       }
     ]
   },
   {
     "text": "just once, and from there it answers",
-    "start": 80.59,
-    "end": 83.16,
-    "segment": "slide4",
+    "start": 84.39,
+    "end": 86.997,
+    "segment": "slide3",
     "words": [
       {
         "text": "just",
-        "start": 80.59,
-        "end": 81.05
+        "start": 84.39,
+        "end": 85.009
       },
       {
         "text": "once,",
-        "start": 81.05,
-        "end": 81.86
+        "start": 85.009,
+        "end": 85.648
       },
       {
         "text": "and",
-        "start": 81.86,
-        "end": 82.03
+        "start": 85.808,
+        "end": 85.898
       },
       {
         "text": "from",
-        "start": 82.03,
-        "end": 82.26
+        "start": 85.898,
+        "end": 86.116
       },
       {
         "text": "there",
-        "start": 82.26,
-        "end": 82.73
+        "start": 86.116,
+        "end": 86.498
       },
       {
         "text": "it",
-        "start": 82.73,
-        "end": 82.78
+        "start": 86.498,
+        "end": 86.707
       },
       {
         "text": "answers",
-        "start": 82.78,
-        "end": 83.16
+        "start": 86.707,
+        "end": 86.997
       }
     ]
   },
   {
     "text": "functional and technical questions and generates deliverables:",
-    "start": 83.16,
-    "end": 86.84,
-    "segment": "slide4",
+    "start": 86.997,
+    "end": 91.648,
+    "segment": "slide3",
     "words": [
       {
         "text": "functional",
-        "start": 83.16,
-        "end": 83.72
+        "start": 86.997,
+        "end": 87.551
       },
       {
         "text": "and",
-        "start": 83.72,
-        "end": 83.92
+        "start": 87.551,
+        "end": 87.76
       },
       {
         "text": "technical",
-        "start": 83.92,
-        "end": 84.54
+        "start": 87.76,
+        "end": 88.396
       },
       {
         "text": "questions",
-        "start": 84.54,
-        "end": 85.16
+        "start": 88.396,
+        "end": 89.167
       },
       {
         "text": "and",
-        "start": 85.16,
-        "end": 85.36
+        "start": 89.568,
+        "end": 89.646
       },
       {
         "text": "generates",
-        "start": 85.36,
-        "end": 85.97
+        "start": 89.646,
+        "end": 90.221
       },
       {
         "text": "deliverables:",
-        "start": 85.97,
-        "end": 86.84
+        "start": 90.221,
+        "end": 91.128
       }
     ]
   },
   {
     "text": "test scripts, client-facing user guides,",
-    "start": 86.84,
-    "end": 90.04,
-    "segment": "slide4",
+    "start": 91.648,
+    "end": 94.878,
+    "segment": "slide3",
     "words": [
       {
         "text": "test",
-        "start": 86.84,
-        "end": 87.2
+        "start": 91.648,
+        "end": 91.89
       },
       {
         "text": "scripts,",
-        "start": 87.2,
-        "end": 88.17
+        "start": 91.89,
+        "end": 92.518
       },
       {
         "text": "client-facing",
-        "start": 88.17,
-        "end": 89.09
+        "start": 92.838,
+        "end": 93.732
       },
       {
         "text": "user",
-        "start": 89.09,
-        "end": 89.45
+        "start": 93.732,
+        "end": 94.058
       },
       {
         "text": "guides,",
-        "start": 89.45,
-        "end": 90.04
+        "start": 94.058,
+        "end": 94.617
       }
     ]
   },
   {
     "text": "and knowledge transfer documents.",
-    "start": 90.04,
-    "end": 92.74,
-    "segment": "slide4",
+    "start": 94.878,
+    "end": 97.118,
+    "segment": "slide3",
     "words": [
       {
         "text": "and",
-        "start": 90.04,
-        "end": 90.29
+        "start": 94.878,
+        "end": 95.062
       },
       {
         "text": "knowledge",
-        "start": 90.29,
-        "end": 91.04
+        "start": 95.062,
+        "end": 95.609
       },
       {
         "text": "transfer",
-        "start": 91.04,
-        "end": 91.71
+        "start": 95.609,
+        "end": 96.093
       },
       {
         "text": "documents.",
-        "start": 91.71,
-        "end": 92.74
+        "start": 96.093,
+        "end": 96.848
       }
     ]
   },
   {
     "text": "Use it whenever you need to understand",
-    "start": 92.74,
-    "end": 94.58,
-    "segment": "slide4",
+    "start": 97.118,
+    "end": 98.965,
+    "segment": "slide3",
     "words": [
       {
         "text": "Use",
-        "start": 92.74,
-        "end": 92.91
+        "start": 97.118,
+        "end": 97.284
       },
       {
         "text": "it",
-        "start": 92.91,
-        "end": 93.02
+        "start": 97.284,
+        "end": 97.395
       },
       {
         "text": "whenever",
-        "start": 93.02,
-        "end": 93.49
+        "start": 97.395,
+        "end": 97.847
       },
       {
         "text": "you",
-        "start": 93.49,
-        "end": 93.64
+        "start": 97.847,
+        "end": 98.004
       },
       {
         "text": "need",
-        "start": 93.64,
-        "end": 93.87
+        "start": 98.004,
+        "end": 98.263
       },
       {
         "text": "to",
-        "start": 93.87,
-        "end": 93.98
+        "start": 98.263,
+        "end": 98.374
       },
       {
         "text": "understand",
-        "start": 93.98,
-        "end": 94.58
+        "start": 98.374,
+        "end": 98.965
       }
     ]
   },
   {
-    "text": "or document a model that's already built",
-    "start": 94.58,
-    "end": 97.28,
-    "segment": "slide4",
+    "text": "or document a model that's already built \u2014",
+    "start": 98.965,
+    "end": 102.038,
+    "segment": "slide3",
     "words": [
       {
         "text": "or",
-        "start": 94.58,
-        "end": 94.72
+        "start": 98.965,
+        "end": 99.094
       },
       {
         "text": "document",
-        "start": 94.72,
-        "end": 95.3
+        "start": 99.094,
+        "end": 99.639
       },
       {
         "text": "a",
-        "start": 95.3,
-        "end": 95.37
+        "start": 99.639,
+        "end": 99.731
       },
       {
         "text": "model",
-        "start": 95.37,
-        "end": 95.73
+        "start": 99.731,
+        "end": 100.054
       },
       {
         "text": "that's",
-        "start": 95.73,
-        "end": 96.16
+        "start": 100.054,
+        "end": 100.442
       },
       {
         "text": "already",
-        "start": 96.16,
-        "end": 96.58
+        "start": 100.442,
+        "end": 100.886
       },
       {
-        "text": "built",
-        "start": 96.58,
-        "end": 97.28
+        "text": "built \u2014",
+        "start": 100.886,
+        "end": 101.587
       }
     ]
   },
   {
-    "text": "\u2014 what a page does,",
-    "start": 97.28,
-    "end": 98.65,
-    "segment": "slide4",
+    "text": "what a page does,",
+    "start": 102.038,
+    "end": 103.478,
+    "segment": "slide3",
     "words": [
       {
-        "text": "\u2014",
-        "start": 97.28,
-        "end": 97.43
-      },
-      {
         "text": "what",
-        "start": 97.28,
-        "end": 97.62
+        "start": 102.038,
+        "end": 102.326
       },
       {
         "text": "a",
-        "start": 97.62,
-        "end": 97.7
+        "start": 102.326,
+        "end": 102.395
       },
       {
         "text": "page",
-        "start": 97.7,
-        "end": 98.04
+        "start": 102.395,
+        "end": 102.649
       },
       {
         "text": "does,",
-        "start": 98.04,
-        "end": 98.65
+        "start": 102.649,
+        "end": 103.138
       }
     ]
   },
   {
     "text": "what's behind a button,",
-    "start": 98.65,
-    "end": 100.16,
-    "segment": "slide4",
+    "start": 103.478,
+    "end": 104.868,
+    "segment": "slide3",
     "words": [
       {
         "text": "what's",
-        "start": 98.65,
-        "end": 99.03
+        "start": 103.478,
+        "end": 103.764
       },
       {
         "text": "behind",
-        "start": 99.03,
-        "end": 99.49
+        "start": 103.764,
+        "end": 104.169
       },
       {
         "text": "a",
-        "start": 99.49,
-        "end": 99.55
+        "start": 104.169,
+        "end": 104.248
       },
       {
         "text": "button,",
-        "start": 99.55,
-        "end": 100.16
+        "start": 104.248,
+        "end": 104.678
       }
     ]
   },
   {
     "text": "which modules it uses,",
-    "start": 100.16,
-    "end": 101.95,
-    "segment": "slide4",
+    "start": 104.868,
+    "end": 106.723,
+    "segment": "slide3",
     "words": [
       {
         "text": "which",
-        "start": 100.16,
-        "end": 100.63
+        "start": 104.868,
+        "end": 105.348
       },
       {
         "text": "modules",
-        "start": 100.63,
-        "end": 101.28
+        "start": 105.348,
+        "end": 106.022
       },
       {
         "text": "it",
-        "start": 101.28,
-        "end": 101.46
+        "start": 106.022,
+        "end": 106.197
       },
       {
         "text": "uses,",
-        "start": 101.46,
-        "end": 101.95
+        "start": 106.197,
+        "end": 106.723
       }
     ]
   },
   {
     "text": "or how data flows between modules and",
-    "start": 101.95,
-    "end": 104.93,
-    "segment": "slide4",
+    "start": 106.723,
+    "end": 109.16,
+    "segment": "slide3",
     "words": [
       {
         "text": "or",
-        "start": 101.95,
-        "end": 102.78
+        "start": 106.723,
+        "end": 106.815
       },
       {
         "text": "how",
-        "start": 102.78,
-        "end": 102.9
+        "start": 106.815,
+        "end": 107.203
       },
       {
         "text": "data",
-        "start": 102.9,
-        "end": 103.32
+        "start": 107.203,
+        "end": 107.471
       },
       {
         "text": "flows",
-        "start": 103.32,
-        "end": 103.56
+        "start": 107.471,
+        "end": 107.96
       },
       {
         "text": "between",
-        "start": 103.56,
-        "end": 104.14
+        "start": 107.96,
+        "end": 108.459
       },
       {
         "text": "modules",
-        "start": 104.14,
-        "end": 104.72
+        "start": 108.459,
+        "end": 108.957
       },
       {
         "text": "and",
-        "start": 104.72,
-        "end": 104.93
+        "start": 108.957,
+        "end": 109.16
       }
     ]
   },
   {
     "text": "actions.",
-    "start": 104.93,
-    "end": 105.8,
-    "segment": "slide4",
+    "start": 109.16,
+    "end": 109.917,
+    "segment": "slide3",
     "words": [
       {
         "text": "actions.",
-        "start": 104.93,
-        "end": 105.8
+        "start": 109.16,
+        "end": 109.917
       }
     ]
   },
   {
     "text": "Getting started is simple.",
-    "start": 105.8,
-    "end": 107.56,
+    "start": 110.528,
+    "end": 111.908,
     "segment": "mk1",
     "words": [
       {
         "text": "Getting",
-        "start": 105.8,
-        "end": 106.29
+        "start": 110.528,
+        "end": 110.937
       },
       {
         "text": "started",
-        "start": 106.29,
-        "end": 106.78
+        "start": 110.937,
+        "end": 111.29
       },
       {
         "text": "is",
-        "start": 106.78,
-        "end": 106.91
+        "start": 111.29,
+        "end": 111.402
       },
       {
         "text": "simple.",
-        "start": 106.91,
-        "end": 107.56
+        "start": 111.402,
+        "end": 111.908
       }
     ]
   },
   {
-    "text": "You upload the six mandatory files together,",
-    "start": 107.56,
-    "end": 110.4,
+    "text": "Before starting the conversation,",
+    "start": 112.248,
+    "end": 113.949,
     "segment": "video1_test",
     "words": [
       {
-        "text": "You",
-        "start": 107.56,
-        "end": 107.81
+        "text": "Before",
+        "start": 112.248,
+        "end": 112.593
       },
       {
-        "text": "upload",
-        "start": 107.81,
-        "end": 108.25
+        "text": "starting",
+        "start": 112.593,
+        "end": 113.145
       },
       {
         "text": "the",
-        "start": 108.25,
-        "end": 108.48
+        "start": 113.145,
+        "end": 113.239
       },
       {
-        "text": "six",
-        "start": 108.48,
-        "end": 108.71
-      },
-      {
-        "text": "mandatory",
-        "start": 108.71,
-        "end": 109.4
-      },
-      {
-        "text": "files",
-        "start": 109.4,
-        "end": 109.78
-      },
-      {
-        "text": "together,",
-        "start": 109.78,
-        "end": 110.4
+        "text": "conversation,",
+        "start": 113.239,
+        "end": 113.949
       }
     ]
   },
   {
-    "text": "at the start of the conversation.",
-    "start": 110.4,
-    "end": 112.78,
+    "text": "you only have to select a model",
+    "start": 113.949,
+    "end": 115.782,
+    "segment": "video1_test",
+    "words": [
+      {
+        "text": "you",
+        "start": 113.949,
+        "end": 114.071
+      },
+      {
+        "text": "only",
+        "start": 114.071,
+        "end": 114.37
+      },
+      {
+        "text": "have",
+        "start": 114.37,
+        "end": 114.753
+      },
+      {
+        "text": "to",
+        "start": 114.753,
+        "end": 114.847
+      },
+      {
+        "text": "select",
+        "start": 114.847,
+        "end": 115.305
+      },
+      {
+        "text": "a",
+        "start": 115.305,
+        "end": 115.398
+      },
+      {
+        "text": "model",
+        "start": 115.398,
+        "end": 115.782
+      }
+    ]
+  },
+  {
+    "text": "at the left, from the ones you",
+    "start": 115.782,
+    "end": 117.165,
     "segment": "video1_test",
     "words": [
       {
         "text": "at",
-        "start": 110.4,
-        "end": 110.6
+        "start": 115.782,
+        "end": 115.931
       },
       {
         "text": "the",
-        "start": 110.6,
-        "end": 110.83
+        "start": 115.931,
+        "end": 116.137
       },
       {
-        "text": "start",
-        "start": 110.83,
-        "end": 111.2
-      },
-      {
-        "text": "of",
-        "start": 111.2,
-        "end": 111.31
-      },
-      {
-        "text": "the",
-        "start": 111.31,
-        "end": 111.54
-      },
-      {
-        "text": "conversation.",
-        "start": 111.54,
-        "end": 112.7
-      }
-    ]
-  },
-  {
-    "text": "These files come from an extraction script",
-    "start": 112.78,
-    "end": 114.68,
-    "segment": "video1_test",
-    "words": [
-      {
-        "text": "These",
-        "start": 112.78,
-        "end": 113.0
-      },
-      {
-        "text": "files",
-        "start": 113.0,
-        "end": 113.24
-      },
-      {
-        "text": "come",
-        "start": 113.24,
-        "end": 113.46
+        "text": "left,",
+        "start": 116.137,
+        "end": 116.511
       },
       {
         "text": "from",
-        "start": 113.46,
-        "end": 113.68
-      },
-      {
-        "text": "an",
-        "start": 113.68,
-        "end": 113.81
-      },
-      {
-        "text": "extraction",
-        "start": 113.81,
-        "end": 114.33
-      },
-      {
-        "text": "script",
-        "start": 114.33,
-        "end": 114.68
-      }
-    ]
-  },
-  {
-    "text": "inside the QA app \u2014",
-    "start": 114.68,
-    "end": 116.55,
-    "segment": "video1_test",
-    "words": [
-      {
-        "text": "inside",
-        "start": 114.68,
-        "end": 115.45
+        "start": 116.511,
+        "end": 116.698
       },
       {
         "text": "the",
-        "start": 115.45,
-        "end": 115.82
+        "start": 116.698,
+        "end": 116.838
       },
       {
-        "text": "QA",
-        "start": 115.82,
-        "end": 116.48
+        "text": "ones",
+        "start": 116.838,
+        "end": 117.025
       },
       {
-        "text": "app",
-        "start": 116.48,
-        "end": 116.55
-      },
-      {
-        "text": "\u2014",
-        "start": 116.55,
-        "end": 116.7
+        "text": "you",
+        "start": 117.025,
+        "end": 117.165
       }
     ]
   },
   {
-    "text": "which you'll find in the Tools section",
-    "start": 116.55,
-    "end": 118.29,
+    "text": "have already connected in the connection section",
+    "start": 117.165,
+    "end": 119.475,
     "segment": "video1_test",
     "words": [
       {
-        "text": "which",
-        "start": 116.55,
-        "end": 116.74
+        "text": "have",
+        "start": 117.165,
+        "end": 117.362
       },
       {
-        "text": "you'll",
-        "start": 116.74,
-        "end": 116.96
+        "text": "already",
+        "start": 117.362,
+        "end": 117.67
       },
       {
-        "text": "find",
-        "start": 116.96,
-        "end": 117.14
+        "text": "connected",
+        "start": 117.67,
+        "end": 118.119
       },
       {
         "text": "in",
-        "start": 117.14,
-        "end": 117.27
+        "start": 118.119,
+        "end": 118.231
       },
       {
         "text": "the",
-        "start": 117.27,
-        "end": 117.47
+        "start": 118.231,
+        "end": 118.409
       },
       {
-        "text": "Tools",
-        "start": 117.47,
-        "end": 117.81
+        "text": "connection",
+        "start": 118.409,
+        "end": 119.007
       },
       {
         "text": "section",
-        "start": 117.81,
-        "end": 118.29
+        "start": 119.007,
+        "end": 119.475
       }
     ]
   },
   {
     "text": "of the platform.",
-    "start": 118.29,
-    "end": 119.4,
+    "start": 119.475,
+    "end": 120.968,
     "segment": "video1_test",
     "words": [
       {
         "text": "of",
-        "start": 118.29,
-        "end": 118.41
+        "start": 119.475,
+        "end": 119.568
       },
       {
         "text": "the",
-        "start": 118.41,
-        "end": 118.61
+        "start": 119.568,
+        "end": 119.746
       },
       {
         "text": "platform.",
-        "start": 118.61,
-        "end": 119.4
+        "start": 119.746,
+        "end": 120.438
       }
     ]
   },
   {
-    "text": "Once uploaded, you never need to upload",
-    "start": 119.4,
-    "end": 121.78,
+    "text": "Once selected, we ask it to generate",
+    "start": 120.968,
+    "end": 122.948,
     "segment": "video1_test",
     "words": [
       {
         "text": "Once",
-        "start": 119.4,
-        "end": 119.68
+        "start": 120.968,
+        "end": 121.195
       },
       {
-        "text": "uploaded,",
-        "start": 119.68,
-        "end": 120.39
+        "text": "selected,",
+        "start": 121.195,
+        "end": 121.878
       },
-      {
-        "text": "you",
-        "start": 120.39,
-        "end": 120.59
-      },
-      {
-        "text": "never",
-        "start": 120.59,
-        "end": 120.94
-      },
-      {
-        "text": "need",
-        "start": 120.94,
-        "end": 121.29
-      },
-      {
-        "text": "to",
-        "start": 121.29,
-        "end": 121.36
-      },
-      {
-        "text": "upload",
-        "start": 121.36,
-        "end": 121.78
-      }
-    ]
-  },
-  {
-    "text": "them again \u2014 the agent reuses them",
-    "start": 121.78,
-    "end": 123.59,
-    "segment": "video1_test",
-    "words": [
-      {
-        "text": "them",
-        "start": 121.78,
-        "end": 122.42
-      },
-      {
-        "text": "again",
-        "start": 122.42,
-        "end": 122.42
-      },
-      {
-        "text": "\u2014",
-        "start": 122.42,
-        "end": 122.57
-      },
-      {
-        "text": "the",
-        "start": 122.42,
-        "end": 122.61
-      },
-      {
-        "text": "agent",
-        "start": 122.61,
-        "end": 122.93
-      },
-      {
-        "text": "reuses",
-        "start": 122.93,
-        "end": 123.3
-      },
-      {
-        "text": "them",
-        "start": 123.3,
-        "end": 123.59
-      }
-    ]
-  },
-  {
-    "text": "throughout the whole conversation.",
-    "start": 123.59,
-    "end": 125.76,
-    "segment": "video1_test",
-    "words": [
-      {
-        "text": "throughout",
-        "start": 123.59,
-        "end": 124.23
-      },
-      {
-        "text": "the",
-        "start": 124.23,
-        "end": 124.42
-      },
-      {
-        "text": "whole",
-        "start": 124.42,
-        "end": 124.74
-      },
-      {
-        "text": "conversation.",
-        "start": 124.74,
-        "end": 125.76
-      }
-    ]
-  },
-  {
-    "text": "Once uploaded the files,",
-    "start": 125.76,
-    "end": 127.14,
-    "segment": "video1_test",
-    "words": [
-      {
-        "text": "Once",
-        "start": 125.76,
-        "end": 126.0
-      },
-      {
-        "text": "uploaded",
-        "start": 126.0,
-        "end": 126.58
-      },
-      {
-        "text": "the",
-        "start": 126.58,
-        "end": 126.65
-      },
-      {
-        "text": "files,",
-        "start": 126.65,
-        "end": 127.14
-      }
-    ]
-  },
-  {
-    "text": "we ask it to generate the test",
-    "start": 127.14,
-    "end": 128.86,
-    "segment": "video1_test",
-    "words": [
       {
         "text": "we",
-        "start": 127.14,
-        "end": 127.22
+        "start": 122.028,
+        "end": 122.12
       },
       {
         "text": "ask",
-        "start": 127.22,
-        "end": 127.44
+        "start": 122.12,
+        "end": 122.322
       },
       {
         "text": "it",
-        "start": 127.44,
-        "end": 127.63
+        "start": 122.322,
+        "end": 122.469
       },
       {
         "text": "to",
-        "start": 127.63,
-        "end": 127.71
+        "start": 122.469,
+        "end": 122.561
       },
       {
         "text": "generate",
-        "start": 127.71,
-        "end": 128.16
-      },
+        "start": 122.561,
+        "end": 122.948
+      }
+    ]
+  },
+  {
+    "text": "the test scripts for a UX or",
+    "start": 122.948,
+    "end": 124.567,
+    "segment": "video1_test",
+    "words": [
       {
         "text": "the",
-        "start": 128.16,
-        "end": 128.44
+        "start": 122.948,
+        "end": 123.132
       },
       {
         "text": "test",
-        "start": 128.44,
-        "end": 128.86
-      }
-    ]
-  },
-  {
-    "text": "scripts for a UX or a whole",
-    "start": 128.86,
-    "end": 130.85,
-    "segment": "video1_test",
-    "words": [
+        "start": 123.132,
+        "end": 123.343
+      },
       {
         "text": "scripts",
-        "start": 128.86,
-        "end": 129.49
+        "start": 123.343,
+        "end": 123.758
       },
       {
         "text": "for",
-        "start": 129.49,
-        "end": 129.77
+        "start": 123.758,
+        "end": 124.061
       },
       {
         "text": "a",
-        "start": 129.77,
-        "end": 129.86
+        "start": 124.061,
+        "end": 124.163
       },
       {
         "text": "UX",
-        "start": 129.86,
-        "end": 130.09
+        "start": 124.163,
+        "end": 124.365
       },
       {
         "text": "or",
-        "start": 130.09,
-        "end": 130.34
-      },
-      {
-        "text": "a",
-        "start": 130.34,
-        "end": 130.35
-      },
-      {
-        "text": "whole",
-        "start": 130.35,
-        "end": 130.85
+        "start": 124.365,
+        "end": 124.567
       }
     ]
   },
   {
-    "text": "Anaplan category.",
-    "start": 130.85,
-    "end": 132.66,
+    "text": "a whole Anaplan category.",
+    "start": 124.567,
+    "end": 127.438,
     "segment": "video1_test",
     "words": [
       {
+        "text": "a",
+        "start": 124.567,
+        "end": 124.798
+      },
+      {
+        "text": "whole",
+        "start": 124.948,
+        "end": 125.242
+      },
+      {
         "text": "Anaplan",
-        "start": 130.85,
-        "end": 131.51
+        "start": 125.242,
+        "end": 125.802
       },
       {
         "text": "category.",
-        "start": 131.51,
-        "end": 132.66
+        "start": 125.802,
+        "end": 126.708
       }
     ]
   },
   {
     "text": "We are asked once whether there's anything",
-    "start": 132.66,
-    "end": 134.72,
+    "start": 127.438,
+    "end": 129.386,
     "segment": "video1_test",
     "words": [
       {
         "text": "We",
-        "start": 132.66,
-        "end": 132.82
+        "start": 127.438,
+        "end": 127.582
       },
       {
         "text": "are",
-        "start": 132.82,
-        "end": 133.06
+        "start": 127.582,
+        "end": 127.798
       },
       {
         "text": "asked",
-        "start": 133.06,
-        "end": 133.46
+        "start": 127.798,
+        "end": 128.168
       },
       {
         "text": "once",
-        "start": 133.46,
-        "end": 133.86
+        "start": 128.168,
+        "end": 128.592
       },
       {
         "text": "whether",
-        "start": 133.86,
-        "end": 134.06
+        "start": 128.592,
+        "end": 128.736
       },
       {
         "text": "there's",
-        "start": 134.06,
-        "end": 134.38
+        "start": 128.736,
+        "end": 129.079
       },
       {
         "text": "anything",
-        "start": 134.38,
-        "end": 134.72
+        "start": 129.079,
+        "end": 129.386
       }
     ]
   },
   {
     "text": "particular to consider and whether to keep",
-    "start": 134.72,
-    "end": 137.29,
+    "start": 129.386,
+    "end": 131.859,
     "segment": "video1_test",
     "words": [
       {
         "text": "particular",
-        "start": 134.72,
-        "end": 135.4
+        "start": 129.386,
+        "end": 129.891
       },
       {
         "text": "to",
-        "start": 135.4,
-        "end": 135.49
+        "start": 129.891,
+        "end": 130.089
       },
       {
         "text": "consider",
-        "start": 135.49,
-        "end": 136.12
+        "start": 130.089,
+        "end": 130.838
       },
       {
         "text": "and",
-        "start": 136.12,
-        "end": 136.24
+        "start": 131.118,
+        "end": 131.205
       },
       {
         "text": "whether",
-        "start": 136.24,
-        "end": 136.74
+        "start": 131.205,
+        "end": 131.519
       },
       {
         "text": "to",
-        "start": 136.74,
-        "end": 136.97
+        "start": 131.519,
+        "end": 131.632
       },
       {
         "text": "keep",
-        "start": 136.97,
-        "end": 137.29
+        "start": 131.632,
+        "end": 131.859
       }
     ]
   },
   {
     "text": "the default test types or use others.",
-    "start": 137.29,
-    "end": 140.4,
+    "start": 131.859,
+    "end": 134.248,
     "segment": "video1_test",
     "words": [
       {
         "text": "the",
-        "start": 137.29,
-        "end": 137.57
+        "start": 131.859,
+        "end": 131.963
       },
       {
         "text": "default",
-        "start": 137.57,
-        "end": 138.22
+        "start": 131.963,
+        "end": 132.312
       },
       {
         "text": "test",
-        "start": 138.22,
-        "end": 138.8
+        "start": 132.312,
+        "end": 132.608
       },
       {
         "text": "types",
-        "start": 138.8,
-        "end": 139.05
+        "start": 132.608,
+        "end": 132.887
       },
       {
         "text": "or",
-        "start": 139.05,
-        "end": 139.29
+        "start": 132.887,
+        "end": 133.079
       },
       {
         "text": "use",
-        "start": 139.29,
-        "end": 139.5
+        "start": 133.079,
+        "end": 133.411
       },
       {
         "text": "others.",
-        "start": 139.5,
-        "end": 140.4
+        "start": 133.411,
+        "end": 134.248
       }
     ]
   },
   {
     "text": "In seconds, it returns a downloadable Excel",
-    "start": 140.46,
-    "end": 143.04,
+    "start": 134.718,
+    "end": 137.389,
     "segment": "video2_test",
     "words": [
       {
         "text": "In",
-        "start": 140.46,
-        "end": 140.53
+        "start": 134.718,
+        "end": 134.839
       },
       {
         "text": "seconds,",
-        "start": 140.53,
-        "end": 141.27
+        "start": 134.839,
+        "end": 135.487
       },
       {
         "text": "it",
-        "start": 141.27,
-        "end": 141.37
+        "start": 135.808,
+        "end": 135.892
       },
       {
         "text": "returns",
-        "start": 141.37,
-        "end": 141.75
+        "start": 135.892,
+        "end": 136.304
       },
       {
         "text": "a",
-        "start": 141.75,
-        "end": 141.82
+        "start": 136.304,
+        "end": 136.413
       },
       {
         "text": "downloadable",
-        "start": 141.82,
-        "end": 142.65
+        "start": 136.413,
+        "end": 137.069
       },
       {
         "text": "Excel",
-        "start": 142.65,
-        "end": 143.04
+        "start": 137.069,
+        "end": 137.389
       }
     ]
   },
   {
     "text": "with the test cases \u2014",
-    "start": 143.04,
-    "end": 144.3,
+    "start": 137.389,
+    "end": 139.038,
     "segment": "video2_test",
     "words": [
       {
         "text": "with",
-        "start": 143.04,
-        "end": 143.39
+        "start": 137.389,
+        "end": 137.717
       },
       {
         "text": "the",
-        "start": 143.39,
-        "end": 143.6
+        "start": 137.717,
+        "end": 137.961
       },
       {
         "text": "test",
-        "start": 143.6,
-        "end": 143.92
+        "start": 137.961,
+        "end": 138.289
       },
       {
-        "text": "cases",
-        "start": 143.92,
-        "end": 144.3
-      },
-      {
-        "text": "\u2014",
-        "start": 144.3,
-        "end": 144.45
+        "text": "cases \u2014",
+        "start": 138.289,
+        "end": 138.878
       }
     ]
   },
   {
     "text": "and it keeps adding to that same",
-    "start": 144.3,
-    "end": 147.03,
+    "start": 139.038,
+    "end": 140.691,
     "segment": "video2_test",
     "words": [
       {
         "text": "and",
-        "start": 144.3,
-        "end": 144.77
+        "start": 139.038,
+        "end": 139.129
       },
       {
         "text": "it",
-        "start": 144.77,
-        "end": 145.33
+        "start": 139.129,
+        "end": 139.312
       },
       {
         "text": "keeps",
-        "start": 145.33,
-        "end": 145.82
+        "start": 139.312,
+        "end": 139.44
       },
       {
         "text": "adding",
-        "start": 145.82,
-        "end": 146.08
+        "start": 139.44,
+        "end": 139.695
       },
       {
         "text": "to",
-        "start": 146.08,
-        "end": 146.27
+        "start": 139.695,
+        "end": 139.896
       },
       {
         "text": "that",
-        "start": 146.27,
-        "end": 146.75
+        "start": 139.896,
+        "end": 140.39
       },
       {
         "text": "same",
-        "start": 146.75,
-        "end": 147.03
+        "start": 140.39,
+        "end": 140.691
       }
     ]
   },
   {
     "text": "file, one category at a time.",
-    "start": 147.03,
-    "end": 149.64,
+    "start": 140.691,
+    "end": 143.258,
     "segment": "video2_test",
     "words": [
       {
         "text": "file,",
-        "start": 147.03,
-        "end": 147.6
+        "start": 140.691,
+        "end": 141.158
       },
       {
         "text": "one",
-        "start": 147.6,
-        "end": 147.88
+        "start": 141.608,
+        "end": 141.984
       },
       {
         "text": "category",
-        "start": 147.88,
-        "end": 148.65
+        "start": 141.984,
+        "end": 142.606
       },
       {
         "text": "at",
-        "start": 148.65,
-        "end": 148.83
+        "start": 142.606,
+        "end": 142.787
       },
       {
         "text": "a",
-        "start": 148.83,
-        "end": 148.92
+        "start": 142.787,
+        "end": 143.098
       },
       {
         "text": "time.",
-        "start": 148.92,
-        "end": 149.64
+        "start": 143.098,
+        "end": 143.258
       }
     ]
   },
   {
     "text": "It also answers questions about the model's",
-    "start": 149.64,
-    "end": 151.6,
+    "start": 143.628,
+    "end": 145.584,
     "segment": "video_query",
     "words": [
       {
         "text": "It",
-        "start": 149.64,
-        "end": 149.75
+        "start": 143.628,
+        "end": 143.722
       },
       {
         "text": "also",
-        "start": 149.75,
-        "end": 149.97
+        "start": 143.722,
+        "end": 143.95
       },
       {
         "text": "answers",
-        "start": 149.97,
-        "end": 150.49
+        "start": 143.95,
+        "end": 144.359
       },
       {
         "text": "questions",
-        "start": 150.49,
-        "end": 150.9
+        "start": 144.359,
+        "end": 144.9
       },
       {
         "text": "about",
-        "start": 150.9,
-        "end": 151.13
+        "start": 144.9,
+        "end": 145.166
       },
       {
         "text": "the",
-        "start": 151.13,
-        "end": 151.2
+        "start": 145.166,
+        "end": 145.261
       },
       {
         "text": "model's",
-        "start": 151.2,
-        "end": 151.6
+        "start": 145.261,
+        "end": 145.584
       }
     ]
   },
   {
     "text": "global backend structure.",
-    "start": 151.6,
-    "end": 153.56,
+    "start": 145.584,
+    "end": 147.718,
     "segment": "video_query",
     "words": [
       {
         "text": "global",
-        "start": 151.6,
-        "end": 152.07
+        "start": 145.584,
+        "end": 146.04
       },
       {
         "text": "backend",
-        "start": 152.07,
-        "end": 152.6
+        "start": 146.04,
+        "end": 146.524
       },
       {
         "text": "structure.",
-        "start": 152.6,
-        "end": 153.56
+        "start": 146.524,
+        "end": 147.408
       }
     ]
   },
   {
     "text": "We can ask which module is referenced",
-    "start": 153.56,
-    "end": 155.48,
+    "start": 147.718,
+    "end": 149.94,
     "segment": "video_query",
     "words": [
       {
         "text": "We",
-        "start": 153.56,
-        "end": 153.75
+        "start": 147.718,
+        "end": 147.862
       },
       {
         "text": "can",
-        "start": 153.75,
-        "end": 153.89
+        "start": 147.862,
+        "end": 148.061
       },
       {
         "text": "ask",
-        "start": 153.89,
-        "end": 154.1
+        "start": 148.061,
+        "end": 148.278
       },
       {
         "text": "which",
-        "start": 154.1,
-        "end": 154.43
+        "start": 148.278,
+        "end": 148.612
       },
       {
         "text": "module",
-        "start": 154.43,
-        "end": 154.9
+        "start": 148.612,
+        "end": 149.028
       },
       {
         "text": "is",
-        "start": 154.9,
-        "end": 154.98
+        "start": 149.028,
+        "end": 149.163
       },
       {
         "text": "referenced",
-        "start": 154.98,
-        "end": 155.48
+        "start": 149.163,
+        "end": 149.94
       }
     ]
   },
   {
     "text": "the most in the model,",
-    "start": 155.48,
-    "end": 156.98,
+    "start": 149.94,
+    "end": 151.628,
     "segment": "video_query",
     "words": [
       {
         "text": "the",
-        "start": 155.48,
-        "end": 155.65
+        "start": 149.94,
+        "end": 150.039
       },
       {
         "text": "most",
-        "start": 155.65,
-        "end": 155.88
+        "start": 150.039,
+        "end": 150.247
       },
       {
         "text": "in",
-        "start": 155.88,
-        "end": 156.02
+        "start": 150.247,
+        "end": 150.419
       },
       {
         "text": "the",
-        "start": 156.02,
-        "end": 156.23
+        "start": 150.419,
+        "end": 150.681
       },
       {
         "text": "model,",
-        "start": 156.23,
-        "end": 156.98
+        "start": 150.681,
+        "end": 151.368
       }
     ]
   },
   {
     "text": "what a specific module references or is",
-    "start": 156.98,
-    "end": 159.44,
+    "start": 151.628,
+    "end": 153.771,
     "segment": "video_query",
     "words": [
       {
         "text": "what",
-        "start": 156.98,
-        "end": 157.02
+        "start": 151.628,
+        "end": 151.805
       },
       {
         "text": "a",
-        "start": 157.02,
-        "end": 157.09
+        "start": 151.805,
+        "end": 151.927
       },
       {
         "text": "specific",
-        "start": 157.09,
-        "end": 157.67
+        "start": 151.927,
+        "end": 152.376
       },
       {
         "text": "module",
-        "start": 157.67,
-        "end": 158.14
+        "start": 152.376,
+        "end": 152.75
       },
       {
         "text": "references",
-        "start": 158.14,
-        "end": 159.16
+        "start": 152.75,
+        "end": 153.424
       },
       {
         "text": "or",
-        "start": 159.16,
-        "end": 159.3
+        "start": 153.424,
+        "end": 153.602
       },
       {
         "text": "is",
-        "start": 159.3,
-        "end": 159.44
+        "start": 153.602,
+        "end": 153.771
       }
     ]
   },
   {
     "text": "referenced by, which actions touch a module,",
-    "start": 159.44,
-    "end": 162.88,
+    "start": 153.771,
+    "end": 157.778,
     "segment": "video_query",
     "words": [
       {
         "text": "referenced",
-        "start": 159.44,
-        "end": 160.17
+        "start": 153.771,
+        "end": 154.847
       },
       {
         "text": "by,",
-        "start": 160.17,
-        "end": 160.73
+        "start": 154.847,
+        "end": 155.128
       },
       {
         "text": "which",
-        "start": 160.73,
-        "end": 160.83
+        "start": 155.608,
+        "end": 155.891
       },
       {
         "text": "actions",
-        "start": 160.83,
-        "end": 161.48
+        "start": 155.891,
+        "end": 156.409
       },
       {
         "text": "touch",
-        "start": 161.48,
-        "end": 161.68
+        "start": 156.409,
+        "end": 156.765
       },
       {
         "text": "a",
-        "start": 161.68,
-        "end": 161.85
+        "start": 156.765,
+        "end": 156.846
       },
       {
         "text": "module,",
-        "start": 161.85,
-        "end": 162.88
+        "start": 156.846,
+        "end": 157.308
       }
     ]
   },
   {
     "text": "or where a module's data ultimately comes",
-    "start": 162.88,
-    "end": 165.4,
+    "start": 157.778,
+    "end": 160.082,
     "segment": "video_query",
     "words": [
       {
         "text": "or",
-        "start": 162.88,
-        "end": 163.02
+        "start": 157.778,
+        "end": 157.898
       },
       {
         "text": "where",
-        "start": 163.02,
-        "end": 163.39
+        "start": 157.898,
+        "end": 158.279
       },
       {
         "text": "a",
-        "start": 163.39,
-        "end": 163.51
+        "start": 158.279,
+        "end": 158.372
       },
       {
         "text": "module's",
-        "start": 163.51,
-        "end": 164.0
+        "start": 158.372,
+        "end": 158.818
       },
       {
         "text": "data",
-        "start": 164.0,
-        "end": 164.28
+        "start": 158.818,
+        "end": 159.115
       },
       {
         "text": "ultimately",
-        "start": 164.28,
-        "end": 164.98
+        "start": 159.115,
+        "end": 159.701
       },
       {
         "text": "comes",
-        "start": 164.98,
-        "end": 165.4
+        "start": 159.701,
+        "end": 160.082
       }
     ]
   },
   {
     "text": "from, tracing both formulas and actions.",
-    "start": 165.4,
-    "end": 168.25,
+    "start": 160.082,
+    "end": 163.338,
     "segment": "video_query",
     "words": [
       {
         "text": "from,",
-        "start": 165.4,
-        "end": 165.76
+        "start": 160.082,
+        "end": 160.528
       },
       {
         "text": "tracing",
-        "start": 165.76,
-        "end": 166.29
+        "start": 160.728,
+        "end": 161.163
       },
       {
         "text": "both",
-        "start": 166.29,
-        "end": 166.59
+        "start": 161.163,
+        "end": 161.411
       },
       {
         "text": "formulas",
-        "start": 166.59,
-        "end": 167.2
+        "start": 161.411,
+        "end": 161.908
       },
       {
         "text": "and",
-        "start": 167.2,
-        "end": 167.42
+        "start": 161.908,
+        "end": 162.087
       },
       {
         "text": "actions.",
-        "start": 167.42,
-        "end": 168.22
+        "start": 162.087,
+        "end": 162.748
       }
     ]
   },
   {
     "text": "Also, it can generate a dependent tree",
-    "start": 168.25,
-    "end": 170.25,
+    "start": 163.338,
+    "end": 165.701,
     "segment": "video_query",
     "words": [
       {
         "text": "Also,",
-        "start": 168.25,
-        "end": 168.57
+        "start": 163.338,
+        "end": 163.758
       },
       {
         "text": "it",
-        "start": 168.57,
-        "end": 168.74
+        "start": 163.758,
+        "end": 164.064
       },
       {
         "text": "can",
-        "start": 168.74,
-        "end": 168.89
+        "start": 164.064,
+        "end": 164.16
       },
       {
         "text": "generate",
-        "start": 168.89,
-        "end": 169.33
+        "start": 164.16,
+        "end": 164.668
       },
       {
         "text": "a",
-        "start": 169.33,
-        "end": 169.4
+        "start": 164.668,
+        "end": 164.755
       },
       {
         "text": "dependent",
-        "start": 169.4,
-        "end": 169.95
+        "start": 164.755,
+        "end": 165.394
       },
       {
         "text": "tree",
-        "start": 169.95,
-        "end": 170.25
+        "start": 165.394,
+        "end": 165.701
       }
     ]
   },
   {
     "text": "for module references and build a schema",
-    "start": 170.25,
-    "end": 172.59,
+    "start": 165.701,
+    "end": 168.367,
     "segment": "video_query",
     "words": [
       {
         "text": "for",
-        "start": 170.25,
-        "end": 170.45
+        "start": 165.701,
+        "end": 165.937
       },
       {
         "text": "module",
-        "start": 170.45,
-        "end": 170.98
+        "start": 165.937,
+        "end": 166.41
       },
       {
         "text": "references",
-        "start": 170.98,
-        "end": 171.84
+        "start": 166.41,
+        "end": 167.267
       },
       {
         "text": "and",
-        "start": 171.84,
-        "end": 171.99
+        "start": 167.707,
+        "end": 167.785
       },
       {
         "text": "build",
-        "start": 171.99,
-        "end": 172.24
+        "start": 167.785,
+        "end": 168.003
       },
       {
         "text": "a",
-        "start": 172.24,
-        "end": 172.29
+        "start": 168.003,
+        "end": 168.08
       },
       {
         "text": "schema",
-        "start": 172.29,
-        "end": 172.59
+        "start": 168.08,
+        "end": 168.367
       }
     ]
   },
   {
     "text": "showing references in and out.",
-    "start": 172.59,
-    "end": 175.0,
+    "start": 168.367,
+    "end": 170.138,
     "segment": "video_query",
     "words": [
       {
         "text": "showing",
-        "start": 172.59,
-        "end": 172.94
+        "start": 168.367,
+        "end": 168.857
       },
       {
         "text": "references",
-        "start": 172.94,
-        "end": 173.53
+        "start": 168.857,
+        "end": 169.555
       },
       {
         "text": "in",
-        "start": 173.53,
-        "end": 173.86
+        "start": 169.555,
+        "end": 169.711
       },
       {
         "text": "and",
-        "start": 173.86,
-        "end": 174.42
+        "start": 169.711,
+        "end": 169.912
       },
       {
         "text": "out.",
-        "start": 174.42,
-        "end": 175.0
+        "start": 169.912,
+        "end": 170.138
       }
     ]
   },
   {
     "text": "And when it's time to document,",
-    "start": 175.0,
-    "end": 176.88,
+    "start": 170.878,
+    "end": 172.547,
     "segment": "video1_kt",
     "words": [
       {
         "text": "And",
-        "start": 175.0,
-        "end": 175.2
+        "start": 170.878,
+        "end": 171.033
       },
       {
         "text": "when",
-        "start": 175.2,
-        "end": 175.48
+        "start": 171.033,
+        "end": 171.24
       },
       {
         "text": "it's",
-        "start": 175.48,
-        "end": 175.72
+        "start": 171.24,
+        "end": 171.447
       },
       {
         "text": "time",
-        "start": 175.72,
-        "end": 176.06
+        "start": 171.447,
+        "end": 171.672
       },
       {
         "text": "to",
-        "start": 176.06,
-        "end": 176.11
+        "start": 171.672,
+        "end": 171.758
       },
       {
         "text": "document,",
-        "start": 176.11,
-        "end": 176.88
+        "start": 171.758,
+        "end": 172.328
       }
     ]
   },
   {
     "text": "we can ask it to generate a",
-    "start": 176.88,
-    "end": 178.41,
+    "start": 172.547,
+    "end": 173.75,
     "segment": "video1_kt",
     "words": [
       {
         "text": "we",
-        "start": 176.88,
-        "end": 177.02
+        "start": 172.547,
+        "end": 172.633
       },
       {
         "text": "can",
-        "start": 177.02,
-        "end": 177.2
+        "start": 172.633,
+        "end": 172.803
       },
       {
         "text": "ask",
-        "start": 177.2,
-        "end": 177.44
+        "start": 172.803,
+        "end": 172.974
       },
       {
         "text": "it",
-        "start": 177.44,
-        "end": 177.5
+        "start": 172.974,
+        "end": 173.102
       },
       {
         "text": "to",
-        "start": 177.5,
-        "end": 177.66
+        "start": 173.102,
+        "end": 173.196
       },
       {
         "text": "generate",
-        "start": 177.66,
-        "end": 178.33
+        "start": 173.196,
+        "end": 173.665
       },
       {
         "text": "a",
-        "start": 178.33,
-        "end": 178.41
+        "start": 173.665,
+        "end": 173.75
       }
     ]
   },
   {
     "text": "user guide for a section,",
-    "start": 178.41,
-    "end": 180.1,
+    "start": 173.75,
+    "end": 175.868,
     "segment": "video1_kt",
     "words": [
       {
         "text": "user",
-        "start": 178.41,
-        "end": 178.74
+        "start": 173.75,
+        "end": 173.98
       },
       {
         "text": "guide",
-        "start": 178.74,
-        "end": 179.15
+        "start": 173.98,
+        "end": 174.415
       },
       {
         "text": "for",
-        "start": 179.15,
-        "end": 179.39
+        "start": 174.415,
+        "end": 174.62
       },
       {
         "text": "a",
-        "start": 179.39,
-        "end": 179.48
+        "start": 174.62,
+        "end": 174.705
       },
       {
         "text": "section,",
-        "start": 179.48,
-        "end": 180.1
+        "start": 174.705,
+        "end": 175.388
       }
     ]
   },
   {
     "text": "or a full training document for the",
-    "start": 180.1,
-    "end": 182.49,
+    "start": 175.868,
+    "end": 177.801,
     "segment": "video1_kt",
     "words": [
       {
         "text": "or",
-        "start": 180.1,
-        "end": 180.26
+        "start": 175.868,
+        "end": 175.996
       },
       {
         "text": "a",
-        "start": 180.26,
-        "end": 180.34
+        "start": 175.996,
+        "end": 176.076
       },
       {
         "text": "full",
-        "start": 180.34,
-        "end": 180.67
+        "start": 176.076,
+        "end": 176.373
       },
       {
         "text": "training",
-        "start": 180.67,
-        "end": 181.33
+        "start": 176.373,
+        "end": 176.87
       },
       {
         "text": "document",
-        "start": 181.33,
-        "end": 181.99
+        "start": 176.87,
+        "end": 177.408
       },
       {
         "text": "for",
-        "start": 181.99,
-        "end": 182.24
+        "start": 177.408,
+        "end": 177.705
       },
       {
         "text": "the",
-        "start": 182.24,
-        "end": 182.49
+        "start": 177.705,
+        "end": 177.801
       }
     ]
   },
   {
     "text": "whole model.",
-    "start": 182.49,
-    "end": 183.6,
+    "start": 177.801,
+    "end": 178.708,
     "segment": "video1_kt",
     "words": [
       {
         "text": "whole",
-        "start": 182.49,
-        "end": 182.91
+        "start": 177.801,
+        "end": 178.138
       },
       {
         "text": "model.",
-        "start": 182.91,
-        "end": 183.6
+        "start": 178.138,
+        "end": 178.708
       }
     ]
   },
   {
     "text": "The agent generates a knowledge transfer document",
-    "start": 183.6,
-    "end": 186.1,
+    "start": 179.118,
+    "end": 181.508,
     "segment": "video2_kt",
     "words": [
       {
         "text": "The",
-        "start": 183.6,
-        "end": 183.77
+        "start": 179.118,
+        "end": 179.278
       },
       {
         "text": "agent",
-        "start": 183.77,
-        "end": 184.06
+        "start": 179.278,
+        "end": 179.543
       },
       {
         "text": "generates",
-        "start": 184.06,
-        "end": 184.58
+        "start": 179.543,
+        "end": 180.024
       },
       {
         "text": "a",
-        "start": 184.58,
-        "end": 184.63
+        "start": 180.024,
+        "end": 180.119
       },
       {
         "text": "knowledge",
-        "start": 184.63,
-        "end": 185.15
+        "start": 180.119,
+        "end": 180.667
       },
       {
         "text": "transfer",
-        "start": 185.15,
-        "end": 185.61
+        "start": 180.667,
+        "end": 181.035
       },
       {
         "text": "document",
-        "start": 185.61,
-        "end": 186.1
+        "start": 181.035,
+        "end": 181.508
       }
     ]
   },
   {
     "text": "in Word format with a global architecture",
-    "start": 186.1,
-    "end": 188.32,
+    "start": 181.508,
+    "end": 184.531,
     "segment": "video2_kt",
     "words": [
       {
         "text": "in",
-        "start": 186.1,
-        "end": 186.22
+        "start": 181.508,
+        "end": 181.715
       },
       {
         "text": "Word",
-        "start": 186.22,
-        "end": 186.58
+        "start": 181.715,
+        "end": 182.141
       },
       {
         "text": "format",
-        "start": 186.58,
-        "end": 186.85
+        "start": 182.141,
+        "end": 182.878
       },
       {
         "text": "with",
-        "start": 186.85,
-        "end": 187.1
+        "start": 183.237,
+        "end": 183.394
       },
       {
         "text": "a",
-        "start": 187.1,
-        "end": 187.16
+        "start": 183.394,
+        "end": 183.481
       },
       {
         "text": "global",
-        "start": 187.16,
-        "end": 187.54
+        "start": 183.481,
+        "end": 183.819
       },
       {
         "text": "architecture",
-        "start": 187.54,
-        "end": 188.32
+        "start": 183.819,
+        "end": 184.531
       }
     ]
   },
   {
     "text": "overview \u2014 purpose, overall architecture,",
-    "start": 188.32,
-    "end": 191.86,
+    "start": 184.531,
+    "end": 187.758,
     "segment": "video2_kt",
     "words": [
       {
-        "text": "overview",
-        "start": 188.32,
-        "end": 189.36
-      },
-      {
-        "text": "\u2014",
-        "start": 189.36,
-        "end": 189.51
+        "text": "overview \u2014",
+        "start": 184.531,
+        "end": 185.148
       },
       {
         "text": "purpose,",
-        "start": 189.36,
-        "end": 190.34
+        "start": 185.358,
+        "end": 185.938
       },
       {
         "text": "overall",
-        "start": 190.34,
-        "end": 190.64
+        "start": 186.278,
+        "end": 186.504
       },
       {
         "text": "architecture,",
-        "start": 190.64,
-        "end": 191.86
+        "start": 186.504,
+        "end": 187.608
       }
     ]
   },
   {
     "text": "data flows, terminology, rules \u2014",
-    "start": 191.86,
-    "end": 194.36,
+    "start": 187.758,
+    "end": 190.328,
     "segment": "video2_kt",
     "words": [
       {
         "text": "data",
-        "start": 191.86,
-        "end": 192.16
+        "start": 187.758,
+        "end": 188.008
       },
       {
         "text": "flows,",
-        "start": 192.16,
-        "end": 192.6
+        "start": 188.008,
+        "end": 188.327
       },
       {
         "text": "terminology,",
-        "start": 192.6,
-        "end": 193.74
+        "start": 188.327,
+        "end": 189.118
       },
       {
-        "text": "rules",
-        "start": 193.74,
-        "end": 194.36
-      },
-      {
-        "text": "\u2014",
-        "start": 194.36,
-        "end": 194.51
+        "text": "rules \u2014",
+        "start": 189.118,
+        "end": 189.878
       }
     ]
   },
   {
     "text": "generated once per session,",
-    "start": 194.36,
-    "end": 196.42,
+    "start": 190.328,
+    "end": 192.297,
     "segment": "video2_kt",
     "words": [
       {
         "text": "generated",
-        "start": 194.36,
-        "end": 195.25
+        "start": 190.328,
+        "end": 190.844
       },
       {
         "text": "once",
-        "start": 195.25,
-        "end": 195.49
+        "start": 190.844,
+        "end": 191.137
       },
       {
         "text": "per",
-        "start": 195.49,
-        "end": 195.74
+        "start": 191.137,
+        "end": 191.36
       },
       {
         "text": "session,",
-        "start": 195.74,
-        "end": 196.4
+        "start": 191.36,
+        "end": 191.908
       }
     ]
   },
   {
     "text": "plus per-category sections naming the real backend",
-    "start": 196.42,
-    "end": 199.98,
+    "start": 192.297,
+    "end": 195.017,
     "segment": "video2_kt",
     "words": [
       {
         "text": "plus",
-        "start": 196.42,
-        "end": 196.77
+        "start": 192.297,
+        "end": 192.696
       },
       {
         "text": "per-category",
-        "start": 196.77,
-        "end": 197.78
+        "start": 192.696,
+        "end": 193.327
       },
       {
         "text": "sections",
-        "start": 197.78,
-        "end": 198.75
+        "start": 193.327,
+        "end": 193.891
       },
       {
         "text": "naming",
-        "start": 198.75,
-        "end": 199.2
+        "start": 193.891,
+        "end": 194.162
       },
       {
         "text": "the",
-        "start": 199.2,
-        "end": 199.37
+        "start": 194.162,
+        "end": 194.396
       },
       {
         "text": "real",
-        "start": 199.37,
-        "end": 199.61
+        "start": 194.396,
+        "end": 194.629
       },
       {
         "text": "backend",
-        "start": 199.61,
-        "end": 199.98
+        "start": 194.629,
+        "end": 195.017
       }
     ]
   },
   {
     "text": "modules and actions behind each page.",
-    "start": 199.98,
-    "end": 202.48,
+    "start": 195.017,
+    "end": 198.558,
     "segment": "video2_kt",
     "words": [
       {
         "text": "modules",
-        "start": 199.98,
-        "end": 200.54
+        "start": 195.017,
+        "end": 196.028
       },
       {
         "text": "and",
-        "start": 200.54,
-        "end": 200.75
+        "start": 196.228,
+        "end": 196.425
       },
       {
         "text": "actions",
-        "start": 200.75,
-        "end": 201.25
+        "start": 196.425,
+        "end": 196.891
       },
       {
         "text": "behind",
-        "start": 201.25,
-        "end": 201.68
+        "start": 196.891,
+        "end": 197.272
       },
       {
         "text": "each",
-        "start": 201.68,
-        "end": 201.96
+        "start": 197.272,
+        "end": 197.837
       },
       {
         "text": "page.",
-        "start": 201.96,
-        "end": 202.48
+        "start": 197.837,
+        "end": 197.908
       }
     ]
   },
   {
     "text": "And that's just part of it.",
-    "start": 202.48,
-    "end": 204.0,
+    "start": 198.558,
+    "end": 199.828,
     "segment": "video2_kt",
     "words": [
       {
         "text": "And",
-        "start": 202.48,
-        "end": 202.67
+        "start": 198.558,
+        "end": 198.716
       },
       {
         "text": "that's",
-        "start": 202.67,
-        "end": 203.04
+        "start": 198.716,
+        "end": 199.034
       },
       {
         "text": "just",
-        "start": 203.04,
-        "end": 203.29
+        "start": 199.034,
+        "end": 199.236
       },
       {
         "text": "part",
-        "start": 203.29,
-        "end": 203.55
+        "start": 199.236,
+        "end": 199.438
       },
       {
         "text": "of",
-        "start": 203.55,
-        "end": 203.66
+        "start": 199.438,
+        "end": 199.539
       },
       {
         "text": "it.",
-        "start": 203.66,
-        "end": 204.0
+        "start": 199.539,
+        "end": 199.828
       }
     ]
   },
   {
     "text": "The agent brings nine key capabilities:",
-    "start": 204.0,
-    "end": 206.6,
-    "segment": "slide5",
+    "start": 200.328,
+    "end": 203.118,
+    "segment": "slide4",
     "words": [
       {
         "text": "The",
-        "start": 204.0,
-        "end": 204.23
+        "start": 200.328,
+        "end": 200.48
       },
       {
         "text": "agent",
-        "start": 204.23,
-        "end": 204.62
+        "start": 200.48,
+        "end": 200.837
       },
       {
         "text": "brings",
-        "start": 204.62,
-        "end": 205.14
+        "start": 200.837,
+        "end": 201.381
       },
       {
         "text": "nine",
-        "start": 205.14,
-        "end": 205.4
+        "start": 201.381,
+        "end": 201.577
       },
       {
         "text": "key",
-        "start": 205.4,
-        "end": 205.63
+        "start": 201.577,
+        "end": 201.747
       },
       {
         "text": "capabilities:",
-        "start": 205.63,
-        "end": 206.6
+        "start": 201.747,
+        "end": 202.648
       }
     ]
   },
   {
     "text": "module and page discovery,",
-    "start": 206.6,
-    "end": 208.92,
-    "segment": "slide5",
+    "start": 203.118,
+    "end": 205.628,
+    "segment": "slide4",
     "words": [
       {
         "text": "module",
-        "start": 206.6,
-        "end": 207.25
+        "start": 203.118,
+        "end": 203.598
       },
       {
         "text": "and",
-        "start": 207.25,
-        "end": 207.48
+        "start": 203.598,
+        "end": 203.876
       },
       {
         "text": "page",
-        "start": 207.48,
-        "end": 207.87
+        "start": 203.876,
+        "end": 204.155
       },
       {
         "text": "discovery,",
-        "start": 207.87,
-        "end": 208.92
+        "start": 204.155,
+        "end": 205.038
       }
     ]
   },
   {
     "text": "functional and technical explanations,",
-    "start": 208.92,
-    "end": 211.42,
-    "segment": "slide5",
+    "start": 205.628,
+    "end": 208.288,
+    "segment": "slide4",
     "words": [
       {
         "text": "functional",
-        "start": 208.92,
-        "end": 209.62
+        "start": 205.628,
+        "end": 206.218
       },
       {
         "text": "and",
-        "start": 209.62,
-        "end": 209.84
+        "start": 206.218,
+        "end": 206.394
       },
       {
         "text": "technical",
-        "start": 209.84,
-        "end": 210.43
+        "start": 206.394,
+        "end": 206.929
       },
       {
         "text": "explanations,",
-        "start": 210.43,
-        "end": 211.42
+        "start": 206.929,
+        "end": 207.767
       }
     ]
   },
   {
     "text": "test script generation and deep-dives,",
-    "start": 211.42,
-    "end": 213.96,
-    "segment": "slide5",
+    "start": 208.288,
+    "end": 210.707,
+    "segment": "slide4",
     "words": [
       {
         "text": "test",
-        "start": 211.42,
-        "end": 211.71
+        "start": 208.288,
+        "end": 208.533
       },
       {
         "text": "script",
-        "start": 211.71,
-        "end": 212.15
+        "start": 208.533,
+        "end": 208.91
       },
       {
         "text": "generation",
-        "start": 212.15,
-        "end": 212.89
+        "start": 208.91,
+        "end": 209.542
       },
       {
         "text": "and",
-        "start": 212.89,
-        "end": 213.11
+        "start": 209.542,
+        "end": 209.735
       },
       {
         "text": "deep-dives,",
-        "start": 213.11,
-        "end": 213.96
+        "start": 209.735,
+        "end": 210.428
       }
     ]
   },
   {
     "text": "user guides, knowledge transfer documents,",
-    "start": 213.96,
-    "end": 217.16,
-    "segment": "slide5",
+    "start": 210.707,
+    "end": 213.857,
+    "segment": "slide4",
     "words": [
       {
         "text": "user",
-        "start": 213.96,
-        "end": 214.28
+        "start": 210.707,
+        "end": 210.962
       },
       {
         "text": "guides,",
-        "start": 214.28,
-        "end": 215.13
+        "start": 210.962,
+        "end": 211.648
       },
       {
         "text": "knowledge",
-        "start": 215.13,
-        "end": 215.62
+        "start": 211.858,
+        "end": 212.353
       },
       {
         "text": "transfer",
-        "start": 215.62,
-        "end": 216.26
+        "start": 212.353,
+        "end": 212.972
       },
       {
         "text": "documents,",
-        "start": 216.26,
-        "end": 217.16
+        "start": 212.972,
+        "end": 213.857
       }
     ]
   },
   {
     "text": "backend structure queries, a fully interactive Q&A",
-    "start": 217.16,
-    "end": 220.81,
-    "segment": "slide5",
+    "start": 213.857,
+    "end": 217.552,
+    "segment": "slide4",
     "words": [
       {
         "text": "backend",
-        "start": 217.16,
-        "end": 217.72
+        "start": 213.857,
+        "end": 214.352
       },
       {
         "text": "structure",
-        "start": 217.72,
-        "end": 218.33
+        "start": 214.352,
+        "end": 214.99
       },
       {
         "text": "queries,",
-        "start": 218.33,
-        "end": 219.0
+        "start": 214.99,
+        "end": 215.647
       },
       {
         "text": "a",
-        "start": 219.0,
-        "end": 219.19
+        "start": 215.647,
+        "end": 215.743
       },
       {
         "text": "fully",
-        "start": 219.19,
-        "end": 219.54
+        "start": 215.743,
+        "end": 216.219
       },
       {
         "text": "interactive",
-        "start": 219.54,
-        "end": 220.54
+        "start": 216.219,
+        "end": 217.266
       },
       {
         "text": "Q&A",
-        "start": 220.54,
-        "end": 220.81
+        "start": 217.266,
+        "end": 217.552
       }
     ]
   },
   {
     "text": "session, and optional visual context from PDFs",
-    "start": 220.81,
-    "end": 224.47,
-    "segment": "slide5",
+    "start": 217.552,
+    "end": 221.215,
+    "segment": "slide4",
     "words": [
       {
         "text": "session,",
-        "start": 220.81,
-        "end": 221.48
+        "start": 217.552,
+        "end": 218.237
       },
       {
         "text": "and",
-        "start": 221.48,
-        "end": 221.76
+        "start": 218.638,
+        "end": 218.88
       },
       {
         "text": "optional",
-        "start": 221.76,
-        "end": 222.51
+        "start": 218.88,
+        "end": 219.526
       },
       {
         "text": "visual",
-        "start": 222.51,
-        "end": 223.07
+        "start": 219.526,
+        "end": 220.019
       },
       {
         "text": "context",
-        "start": 223.07,
-        "end": 223.73
+        "start": 220.019,
+        "end": 220.576
       },
       {
         "text": "from",
-        "start": 223.73,
-        "end": 224.27
+        "start": 220.576,
+        "end": 220.908
       },
       {
         "text": "PDFs",
-        "start": 224.27,
-        "end": 224.47
+        "start": 220.908,
+        "end": 221.215
       }
     ]
   },
   {
     "text": "or images.",
-    "start": 224.47,
-    "end": 225.59,
-    "segment": "slide5",
+    "start": 221.215,
+    "end": 222.808,
+    "segment": "slide4",
     "words": [
       {
         "text": "or",
-        "start": 224.47,
-        "end": 224.65
+        "start": 221.215,
+        "end": 221.36
       },
       {
         "text": "images.",
-        "start": 224.65,
-        "end": 225.54
+        "start": 221.36,
+        "end": 222.128
       }
     ]
   },
   {
     "text": "Inside the agent you'll also find related",
-    "start": 225.59,
-    "end": 228.64,
-    "segment": "slide5",
+    "start": 222.808,
+    "end": 225.253,
+    "segment": "slide4",
     "words": [
       {
         "text": "Inside",
-        "start": 225.59,
-        "end": 225.96
+        "start": 222.808,
+        "end": 223.041
       },
       {
         "text": "the",
-        "start": 225.96,
-        "end": 226.17
+        "start": 223.041,
+        "end": 223.147
       },
       {
         "text": "agent",
-        "start": 226.17,
-        "end": 226.66
+        "start": 223.147,
+        "end": 223.442
       },
       {
         "text": "you'll",
-        "start": 226.66,
-        "end": 227.08
+        "start": 223.442,
+        "end": 223.917
       },
       {
         "text": "also",
-        "start": 227.08,
-        "end": 227.36
+        "start": 223.917,
+        "end": 224.144
       },
       {
         "text": "find",
-        "start": 227.36,
-        "end": 227.65
+        "start": 224.144,
+        "end": 224.415
       },
       {
         "text": "related",
-        "start": 227.65,
-        "end": 228.64
+        "start": 224.415,
+        "end": 225.253
       }
     ]
   },
   {
-    "text": "prompts \u2014 suggestions designed for exactly what",
-    "start": 228.64,
-    "end": 230.63,
-    "segment": "slide5",
+    "text": "prompts \u2014 suggestions designed for exactly what you're",
+    "start": 225.253,
+    "end": 228.683,
+    "segment": "slide4",
     "words": [
       {
-        "text": "prompts",
-        "start": 228.64,
-        "end": 228.64
-      },
-      {
-        "text": "\u2014",
-        "start": 228.64,
-        "end": 228.79
+        "text": "prompts \u2014",
+        "start": 225.253,
+        "end": 225.547
       },
       {
         "text": "suggestions",
-        "start": 228.64,
-        "end": 229.35
+        "start": 226.118,
+        "end": 226.845
       },
       {
         "text": "designed",
-        "start": 229.35,
-        "end": 229.8
+        "start": 226.845,
+        "end": 227.444
       },
       {
         "text": "for",
-        "start": 229.8,
-        "end": 229.99
+        "start": 227.444,
+        "end": 227.572
       },
       {
         "text": "exactly",
-        "start": 229.99,
-        "end": 230.42
+        "start": 227.572,
+        "end": 228.044
       },
       {
         "text": "what",
-        "start": 230.42,
-        "end": 230.63
+        "start": 228.044,
+        "end": 228.29
+      },
+      {
+        "text": "you're",
+        "start": 228.29,
+        "end": 228.683
       }
     ]
   },
   {
-    "text": "you're doing, for every use case.",
-    "start": 230.63,
-    "end": 232.68,
-    "segment": "slide5",
+    "text": "doing, for every use case.",
+    "start": 228.683,
+    "end": 231.237,
+    "segment": "slide4",
     "words": [
       {
-        "text": "you're",
-        "start": 230.63,
-        "end": 230.91
-      },
-      {
         "text": "doing,",
-        "start": 230.91,
-        "end": 231.2
+        "start": 228.683,
+        "end": 228.987
       },
       {
         "text": "for",
-        "start": 231.2,
-        "end": 231.44
+        "start": 229.358,
+        "end": 229.482
       },
       {
         "text": "every",
-        "start": 231.44,
-        "end": 231.89
+        "start": 229.482,
+        "end": 229.789
       },
       {
         "text": "use",
-        "start": 231.89,
-        "end": 232.08
+        "start": 229.789,
+        "end": 229.984
       },
       {
         "text": "case.",
-        "start": 232.08,
-        "end": 232.68
+        "start": 229.984,
+        "end": 230.428
       }
     ]
   },
   {
     "text": "Explain, test and document a complete Anaplan",
-    "start": 232.68,
-    "end": 236.44,
-    "segment": "closing",
+    "start": 231.237,
+    "end": 234.214,
+    "segment": "slide4",
     "words": [
       {
         "text": "Explain,",
-        "start": 232.68,
-        "end": 233.49
+        "start": 231.237,
+        "end": 231.928
       },
       {
         "text": "test",
-        "start": 233.49,
-        "end": 233.82
+        "start": 232.078,
+        "end": 232.456
       },
       {
         "text": "and",
-        "start": 233.82,
-        "end": 234.0
+        "start": 232.456,
+        "end": 232.605
       },
       {
         "text": "document",
-        "start": 234.0,
-        "end": 234.66
+        "start": 232.605,
+        "end": 233.01
       },
       {
         "text": "a",
-        "start": 234.66,
-        "end": 234.78
+        "start": 233.01,
+        "end": 233.115
       },
       {
         "text": "complete",
-        "start": 234.78,
-        "end": 235.4
+        "start": 233.115,
+        "end": 233.775
       },
       {
         "text": "Anaplan",
-        "start": 235.4,
-        "end": 236.44
+        "start": 233.775,
+        "end": 234.214
       }
     ]
   },
   {
-    "text": "model \u2014 all in one agent,",
-    "start": 236.44,
-    "end": 237.27,
-    "segment": "closing",
+    "text": "model with Anaplan Model Knowledge.",
+    "start": 234.214,
+    "end": 236.628,
+    "segment": "slide4",
     "words": [
       {
         "text": "model",
-        "start": 236.44,
-        "end": 236.44
+        "start": 234.214,
+        "end": 234.628
       },
       {
-        "text": "\u2014",
-        "start": 236.44,
-        "end": 236.59
+        "text": "with",
+        "start": 235.058,
+        "end": 235.276
       },
       {
-        "text": "all",
-        "start": 236.44,
-        "end": 236.63
+        "text": "Anaplan",
+        "start": 235.276,
+        "end": 235.661
       },
       {
-        "text": "in",
-        "start": 236.63,
-        "end": 236.76
+        "text": "Model",
+        "start": 235.661,
+        "end": 235.937
       },
       {
-        "text": "one",
-        "start": 236.76,
-        "end": 236.95
-      },
-      {
-        "text": "agent,",
-        "start": 236.95,
-        "end": 237.27
+        "text": "Knowledge.",
+        "start": 235.937,
+        "end": 236.628
       }
     ]
   },
   {
-    "text": "with Anaplan Model Knowledge.",
-    "start": 237.27,
-    "end": 239.16,
+    "text": "Keyrus AI.",
+    "start": 237.058,
+    "end": 238.778,
     "segment": "closing",
     "words": [
       {
-        "text": "with",
-        "start": 237.27,
-        "end": 237.55
+        "text": "Keyrus",
+        "start": 237.058,
+        "end": 237.755
       },
       {
-        "text": "Anaplan",
-        "start": 237.55,
-        "end": 237.99
+        "text": "AI.",
+        "start": 237.755,
+        "end": 238.297
+      }
+    ]
+  },
+  {
+    "text": "All your agents.",
+    "start": 238.778,
+    "end": 239.801,
+    "segment": "closing",
+    "words": [
+      {
+        "text": "All",
+        "start": 238.778,
+        "end": 238.931
       },
       {
-        "text": "Model",
-        "start": 237.99,
-        "end": 238.32
+        "text": "your",
+        "start": 238.931,
+        "end": 239.194
       },
       {
-        "text": "Knowledge.",
-        "start": 238.32,
-        "end": 239.16
+        "text": "agents.",
+        "start": 239.194,
+        "end": 239.801
+      }
+    ]
+  },
+  {
+    "text": "All your knowledge.",
+    "start": 239.801,
+    "end": 241.108,
+    "segment": "closing",
+    "words": [
+      {
+        "text": "All",
+        "start": 239.801,
+        "end": 239.937
+      },
+      {
+        "text": "your",
+        "start": 239.937,
+        "end": 240.191
+      },
+      {
+        "text": "knowledge.",
+        "start": 240.191,
+        "end": 240.797
+      }
+    ]
+  },
+  {
+    "text": "One platform.",
+    "start": 241.108,
+    "end": 242.128,
+    "segment": "closing",
+    "words": [
+      {
+        "text": "One",
+        "start": 241.108,
+        "end": 241.258
+      },
+      {
+        "text": "platform.",
+        "start": 241.258,
+        "end": 241.948
+      }
+    ]
+  },
+  {
+    "text": "This is only the Beginning.",
+    "start": 242.128,
+    "end": 243.418,
+    "segment": "closing",
+    "words": [
+      {
+        "text": "This",
+        "start": 242.128,
+        "end": 242.215
+      },
+      {
+        "text": "is",
+        "start": 242.215,
+        "end": 242.328
+      },
+      {
+        "text": "only",
+        "start": 242.328,
+        "end": 242.555
+      },
+      {
+        "text": "the",
+        "start": 242.555,
+        "end": 242.72
+      },
+      {
+        "text": "Beginning.",
+        "start": 242.72,
+        "end": 243.418
       }
     ]
   }
