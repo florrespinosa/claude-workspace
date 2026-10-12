@@ -46,9 +46,6 @@ const Chip: React.FC<{ label: string; frame: number; startSec: number }> = ({
 // closing word), so the reveals follow the measured speech timing
 export const ClosingScene: React.FC<{ frame: number }> = ({ frame }) => {
   const chipCues = cues.filter((c) => !c.text.startsWith("This"));
-  const finalCue = cues.find((c) => c.text.startsWith("This"));
-  const finalStart = finalCue ? finalCue.start : 999;
-  const finalP = pop(frame, finalStart);
 
   const bgIn = interpolate(frame, [-9, 8], [0, 1], {
     extrapolateLeft: "clamp",
@@ -88,20 +85,18 @@ export const ClosingScene: React.FC<{ frame: number }> = ({ frame }) => {
               <Chip key={c.text} label={c.text} frame={frame} startSec={c.start} />
             ))}
           </div>
+          {/* the big closing line was removed on request (the caption already
+              shows it); keep its footprint so the chips stay where they were */}
           <div
             style={{
-              opacity: finalP,
-              transform: `scale(${interpolate(finalP, [0, 1], [0.94, 1])})`,
+              visibility: "hidden",
               fontFamily: headlineFont,
               fontWeight: 800,
               fontSize: 58,
-              color: colors.white,
               textAlign: "center",
-              textShadow: "0 10px 40px rgba(0,0,0,0.5)",
             }}
           >
-            This is only the{" "}
-            <span style={{ color: CELESTE }}>beginning.</span>
+            This is only the beginning.
           </div>
         </div>
       </AbsoluteFill>
