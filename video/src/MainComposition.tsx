@@ -42,37 +42,12 @@ const SegmentCallout: React.FC<{
   );
 };
 
-const MusicBed: React.FC = () => {
-  const frame = useCurrentFrame();
-  const { fps, durationInFrames } = useVideoConfig();
-  const fadeIn = interpolate(frame, [0, fps * 2], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-  const fadeOut = interpolate(
-    frame,
-    [durationInFrames - fps * 2.5, durationInFrames],
-    [1, 0],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
-  );
-  // narration is present through virtually the whole runtime, so the bed
-  // stays low and constant underneath it (voice always louder than music)
-  const baseVolume = 0.22;
-  return (
-    <Audio
-      src={staticFile("music.wav")}
-      volume={Math.min(fadeIn, fadeOut) * baseVolume}
-    />
-  );
-};
-
 export const MainComposition: React.FC = () => {
   const { durationInFrames } = useVideoConfig();
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000000", fontFamily: bodyFont }}>
       <Audio src={staticFile("audio.wav")} volume={1} />
-      <MusicBed />
 
       {segments.map((seg, i) => {
         const from = toFrame(seg.start);

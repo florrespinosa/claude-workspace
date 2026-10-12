@@ -1586,7 +1586,7 @@
     ]
   },
   {
-    "text": "Keyrus AI.",
+    "text": "Keyrus AI Studio.",
     "start": 94.008,
     "end": 95.528,
     "segment": "closing",
@@ -1594,11 +1594,16 @@
       {
         "text": "Keyrus",
         "start": 94.008,
-        "end": 95.061
+        "end": 94.521
       },
       {
-        "text": "AI.",
-        "start": 95.061,
+        "text": "AI",
+        "start": 94.521,
+        "end": 94.656
+      },
+      {
+        "text": "Studio.",
+        "start": 94.656,
         "end": 95.337
       }
     ]
