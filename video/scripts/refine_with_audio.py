@@ -18,7 +18,7 @@ import json
 import wave
 import numpy as np
 
-WAV = "/home/user/v2_raw/audio16k.wav"
+WAV = "/home/user/v3_raw/audio16k.wav"
 IN = "scripts/aligned_words_raw.json"
 OUT = "scripts/aligned_words.json"
 

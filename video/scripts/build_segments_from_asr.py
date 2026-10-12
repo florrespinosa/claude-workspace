@@ -18,6 +18,15 @@ def probe(path):
     return int(s["width"]), int(s["height"]), float(s["duration"])
 
 
+def probe_image(path):
+    out = subprocess.check_output([
+        "ffprobe", "-v", "error", "-select_streams", "v:0",
+        "-show_entries", "stream=width,height", "-of", "json", path,
+    ])
+    s = json.loads(out)["streams"][0]
+    return int(s["width"]), int(s["height"])
+
+
 order = []
 first_start = {}
 last_end = {}
@@ -45,6 +54,8 @@ for i, seg_id in enumerate(order):
         "end": round(end, 3),
         "duration": round(end - start, 3),
     }
+    if visual.endswith(".png"):
+        entry.update(zip(("width", "height"), probe_image(f"public/assets/{visual}")))
     if visual.endswith(".mp4"):
         w, h, orig = probe(f"public/assets/{visual}")
         rate = orig / (end - start)

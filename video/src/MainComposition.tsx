@@ -12,6 +12,7 @@ import { segments, toFrame, TOTAL_FRAMES } from "./data/segments";
 import { SlideScene } from "./scenes/SlideScene";
 import { VideoScene } from "./scenes/VideoScene";
 import { ClosingScene } from "./scenes/ClosingScene";
+import { ImageCardScene } from "./scenes/ImageCardScene";
 import { Captions } from "./components/Captions";
 import { Callout } from "./components/Callout";
 import { crossfadeOpacity, OVERLAP } from "./components/crossfade";
@@ -129,11 +130,21 @@ const SceneLayer: React.FC<{
 
   const isVideo = seg.visual.endsWith(".mp4");
   const isClosing = seg.id === "closing";
+  const isImageCard = seg.id === "agent_card";
 
   return (
     <AbsoluteFill style={{ opacity }}>
       {isClosing ? (
         <ClosingScene frame={frame - leftOverlap} />
+      ) : isImageCard ? (
+        <ImageCardScene
+          src={seg.visual}
+          localFrame={frame}
+          mountDur={mountDur}
+          widthPx={seg.width ?? 1347}
+          heightPx={seg.height ?? 635}
+          focus={{ x: 0.19, y: 0.45 }}
+        />
       ) : isVideo ? (
         <VideoScene
           src={seg.visual}
