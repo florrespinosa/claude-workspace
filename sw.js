@@ -1,5 +1,5 @@
 // Guarda todos los archivos de la app en el iPhone para que funcione sin internet.
-const CACHE = 'mis-finanzas-v4';
+const CACHE = 'mis-finanzas-v5';
 const FILES = [
   './',
   'index.html',

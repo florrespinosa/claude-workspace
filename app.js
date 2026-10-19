@@ -15,7 +15,6 @@ const ALTERNATIVAS = {
   'Transporte': 'Combinar más transporte público y revisar los descuentos de SUBE.',
   'Servicios': 'Revisar tu plan de celular e internet: suele haber planes más baratos para lo mismo.',
   'Ropa': 'Esperar a Hot Sale o Cyber Monday, o comprar en cuotas sin interés.',
-  'Suscripciones': 'Revisar cuáles no usaste el último mes y pausarlas o rotarlas.',
   'Salud': 'Comparar precios de farmacia y pedir genéricos cuando se pueda.'
 };
 
@@ -34,7 +33,7 @@ function defaultData() {
       { id: 'efectivo', name: 'Efectivo', color: '#5B6068', curs: ['ARS', 'USD'], start: { ARS: 0, USD: 0 } }
     ],
     cats: {
-      gasto: ['Supermercado', 'Delivery', 'Transporte', 'Servicios', 'Salidas', 'Ropa', 'Salud', 'Suscripciones', 'Casa', 'Otros'],
+      gasto: ['Supermercado', 'Delivery', 'Transporte', 'Servicios', 'Salidas', 'Ropa', 'Salud', 'Pinky', 'Casa', 'Otros'],
       ingreso: ['Sueldo', 'Freelance', 'Rendimientos', 'Regalo', 'Otros']
     },
     movs: []
@@ -42,6 +41,14 @@ function defaultData() {
 }
 
 let data = load();
+// Cambio pedido: la categoría "Suscripciones" pasa a llamarse "Pinky" (también en lo ya cargado).
+if (!data.renamedPinky) {
+  const g = data.cats.gasto, i = g.indexOf('Suscripciones');
+  if (i >= 0) { if (g.includes('Pinky')) g.splice(i, 1); else g[i] = 'Pinky'; }
+  for (const m of data.movs) if (m.cat === 'Suscripciones') m.cat = 'Pinky';
+  data.renamedPinky = true;
+  try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { /* sin espacio */ }
+}
 function load() {
   try {
     const raw = localStorage.getItem(KEY);
@@ -435,7 +442,7 @@ function suggestions() {
       out.push({ title: cat, save: '~ ' + fmt(val - avg, 'ARS') + '/mes', text: 'Este mes llevás ' + fmt(val, 'ARS') + ' en ' + cat + ', ' + Math.round((val / avg - 1) * 100) + '% más que tu promedio. ' + alt });
     } else if (now.gas > 0 && val / now.gas > 0.3 && ALTERNATIVAS[cat]) {
       out.push({ title: cat, save: '~ ' + fmt(val * 0.15, 'ARS') + '/mes', text: cat + ' es el ' + Math.round(val / now.gas * 100) + '% de tus gastos. Bajándolo un 15% ahorrarías unos ' + fmt(val * 0.15, 'ARS') + '. ' + alt });
-    } else if (['Delivery', 'Suscripciones', 'Salidas'].includes(cat) && val > 20000) {
+    } else if (['Delivery', 'Pinky', 'Salidas'].includes(cat) && val > 20000) {
       out.push({ title: cat, save: '~ ' + fmt(val * 0.3, 'ARS') + '/mes', text: 'Llevás ' + fmt(val, 'ARS') + ' en ' + cat + ' este mes. ' + alt });
     }
   }
