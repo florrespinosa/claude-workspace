@@ -303,7 +303,7 @@ function viewCargar() {
           ${(d.people || []).map((n, i) => `<input class="input" placeholder="Persona ${i + 1}" value="${esc(n)}" data-person="${i}" aria-label="Nombre de la persona ${i + 1}">`).join('')}
           <span>En tus estadísticas cuenta solo tu parte. Cuando te paguen, tocá "Me pagó" en Inicio.</span></div>` : ''}</div>`;
     }
-    body += `<div class="field"><span class="lbl">${d.type === 'gasto' ? (d.method === 'Crédito' ? '¿Qué tarjeta? (cuenta desde la que se paga)' : '¿De qué cuenta?') : '¿A qué cuenta entró?'}</span>${accChips(d.account, 'account', d.cur)}</div>`;
+    body += `<div class="field"><span class="lbl">${d.type === 'gasto' ? (d.method === 'Crédito' ? '¿Qué tarjeta? (cuenta desde la que se paga)' : '¿De qué cuenta?') : '¿A qué cuenta entró?'}</span>${accChips(d.account, 'account')}</div>`;
   } else if (d.type === 'dolar') {
     const usd = parseAmount(d.usd), price = parseAmount(d.price);
     const compra = d.op === 'compra';
@@ -327,8 +327,8 @@ function viewCargar() {
       <div class="field"><div class="between"><label class="lbl" for="f-amount">Monto</label>
         <div class="seg"><button class="${d.cur === 'ARS' ? 'on' : ''}" data-act="cur" data-v="ARS">Pesos</button><button class="${d.cur === 'USD' ? 'on' : ''}" data-act="cur" data-v="USD">Dólares</button></div></div>
         <input id="f-amount" class="amount" inputmode="decimal" placeholder="${d.cur === 'USD' ? 'US$ 0' : '$ 0'}" value="${esc(d.amount)}" data-bind="amount"></div>
-      <div class="field"><span class="lbl">Desde</span>${accChips(d.from, 'from', d.cur)}</div>
-      <div class="field"><span class="lbl">Hacia</span>${accChips(d.to, 'to', d.cur)}</div>
+      <div class="field"><span class="lbl">Desde</span>${accChips(d.from, 'from')}</div>
+      <div class="field"><span class="lbl">Hacia</span>${accChips(d.to, 'to')}</div>
       <div class="muted small">Mover plata entre tus cuentas no cuenta como gasto.</div>`;
   }
   return `
@@ -624,13 +624,11 @@ document.addEventListener('click', (e) => {
   render();
 });
 
-function fixAccounts() {
-  const d = ui.draft;
-  const ok = (id) => acc(id).curs.includes(d.cur);
-  const first = data.accounts.find((a) => a.curs.includes(d.cur));
-  if (!ok(d.account) && first) d.account = first.id;
-  if (!ok(d.from) && first) d.from = first.id;
-  if (!ok(d.to) && first) d.to = (data.accounts.find((a) => a.curs.includes(d.cur) && a.id !== d.from) || first).id;
+// Todas las cuentas se pueden elegir en cualquier moneda; si una cuenta todavía no tenía esa moneda, se le agrega al guardar.
+function fixAccounts() {}
+function ensureCur(id, cur) {
+  const a = data.accounts.find((x) => x.id === id);
+  if (a && cur && !a.curs.includes(cur)) { a.curs.push(cur); a.start = a.start || {}; }
 }
 
 document.addEventListener('input', (e) => {
@@ -700,6 +698,8 @@ function saveDraft() {
     m = { type: 'mover', date: d.date, amount, cur: d.cur, from: d.from, to: d.to, desc: d.desc.trim() };
   }
   if (!d.date) return toast('Poné la fecha');
+  if (m.account) ensureCur(m.account, m.cur);
+  if (m.type === 'mover') { ensureCur(m.from, m.cur); ensureCur(m.to, m.cur); }
   if (d.id) { m.id = d.id; data.movs = data.movs.map((x) => (x.id === d.id ? m : x)); }
   else { m.id = uid(); data.movs.push(m); }
   save();
