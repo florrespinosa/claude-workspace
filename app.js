@@ -194,6 +194,7 @@ function render() {
   const app = $('#app');
   if (ui.settings) app.innerHTML = viewSettings();
   else app.innerHTML = ({ inicio: viewInicio, cargar: viewCargar, movimientos: viewMovs, estadisticas: viewStats })[ui.tab]();
+  if (!ui.settings && ui.tab !== 'cargar') app.insertAdjacentHTML('beforeend', '<button class="fab" data-tab="cargar" aria-label="Cargar gasto o ingreso">+</button>');
 }
 
 function monthNav() {
@@ -511,6 +512,11 @@ function viewSettings() {
   return `
     <div class="between"><h1>Ajustes</h1><button class="iconbtn" data-act="closesettings">Listo</button></div>
     <div class="card">
+      <h2>Al abrir la app, ir a</h2>
+      <div class="seg"><button class="${data.openOnCargar !== false ? 'on' : ''}" data-act="openon" data-v="cargar">Cargar</button><button class="${data.openOnCargar === false ? 'on' : ''}" data-act="openon" data-v="inicio">Inicio</button></div>
+      <span class="muted small">Con "Cargar", tocás el icono y ya podés anotar el gasto o ingreso.</span>
+    </div>
+    <div class="card">
       <h2>Cotización del dólar</h2>
       <div class="seg">${['Oficial', 'MEP', 'Blue'].map((n) => `<button class="${data.rateName === n ? 'on' : ''}" data-act="ratename" data-v="${n}">${n}</button>`).join('')}</div>
       <label class="field"><span class="lbl">Precio del dólar (lo usa la app para pasar de una moneda a otra)</span><input class="input" inputmode="decimal" value="${data.rate}" data-rate="1"></label>
@@ -608,6 +614,7 @@ document.addEventListener('click', (e) => {
       break;
     }
     case 'ratename': data.rateName = v; save(); break;
+    case 'openon': data.openOnCargar = v === 'cargar'; save(); break;
     case 'fetchrate': fetchRate(); return;
     case 'addacc': {
       const inp = $('#newacc'); const name = (inp.value || '').trim();
@@ -839,6 +846,18 @@ function applyReceipt(r) {
 }
 
 // ---------- Inicio ----------
+// El icono funciona como un "+": al abrir (o volver después de un rato) va directo a Cargar.
+function goQuickAdd() {
+  if (data.openOnCargar === false || ui.draft.id) return;
+  ui.tab = 'cargar'; ui.settings = false;
+  if (!ui.draft.amount && !ui.draft.usd) ui.draft = newDraft();
+}
+goQuickAdd();
+let hiddenAt = 0;
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) { hiddenAt = Date.now(); return; }
+  if (hiddenAt && Date.now() - hiddenAt > 3 * 60 * 1000) { goQuickAdd(); render(); window.scrollTo(0, 0); }
+});
 render();
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
