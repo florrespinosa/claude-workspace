@@ -2,6 +2,7 @@
 
 // ---------- Datos ----------
 const KEY = 'misfinanzas-v1';
+const APP_VERSION = 7;
 const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 const MESES_CORTOS = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
 const METODOS = ['Débito', 'Crédito', 'Transferencia', 'Efectivo'];
@@ -536,6 +537,7 @@ function viewSettings() {
       <label class="btn light" style="display:flex;align-items:center;justify-content:center">Restaurar una copia<input type="file" accept=".json,application/json" id="import-file" style="display:none"></label>
       <button class="btn danger" data-act="wipe">Borrar todos los datos</button>
     </div>
+    <div class="muted small" style="text-align:center">Versión ${APP_VERSION}</div>
   `;
 }
 
@@ -860,5 +862,8 @@ document.addEventListener('visibilitychange', () => {
 });
 render();
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
+  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((r) => r.update()).catch(() => {}); });
+  // Cuando llega una versión nueva de la app, se recarga sola una vez.
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if (!reloaded && !ui.draft.amount) { reloaded = true; location.reload(); } });
 }
