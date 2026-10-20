@@ -2,7 +2,7 @@
 
 // ---------- Datos ----------
 const KEY = 'misfinanzas-v1';
-const APP_VERSION = 7;
+const APP_VERSION = 8;
 const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 const MESES_CORTOS = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
 const METODOS = ['Débito', 'Crédito', 'Transferencia', 'Efectivo'];
@@ -42,6 +42,12 @@ function defaultData() {
 }
 
 let data = load();
+// Utopia es la cuenta de ahorro (se puede cambiar en Ajustes).
+if (!data.savingsInit) {
+  for (const a of data.accounts) if (a.id === 'utopia') a.savings = true;
+  data.savingsInit = true;
+  try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { /* sin espacio */ }
+}
 // Cambio pedido: la categoría "Suscripciones" pasa a llamarse "Pinky" (también en lo ya cargado).
 if (!data.renamedPinky) {
   const g = data.cats.gasto, i = g.indexOf('Suscripciones');
@@ -133,14 +139,16 @@ function monthTotals(key) {
   }
   return { ing, gas, byCat };
 }
-function balances() {
+// Saldos de hoy; con onlyMonth, solo cuánto cambió cada cuenta en ese mes.
+function balances(onlyMonth) {
   const b = {};
-  for (const a of data.accounts) { b[a.id] = {}; for (const c of a.curs) b[a.id][c] = Number((a.start || {})[c] || 0); }
+  for (const a of data.accounts) { b[a.id] = {}; for (const c of a.curs) b[a.id][c] = onlyMonth ? 0 : Number((a.start || {})[c] || 0); }
   const add = (id, cur, n) => { if (!b[id]) b[id] = {}; b[id][cur] = (b[id][cur] || 0) + n; };
   const cur = mk(today());
   for (const m of data.movs) {
+    if (onlyMonth && m.type !== 'gasto' && mk(m.date) !== onlyMonth) continue;
     if (m.type === 'ingreso' || m.type === 'reintegro') add(m.account, m.cur, m.amount);
-    else if (m.type === 'gasto') { for (const p of gastoParts(m)) if (p.month <= cur) add(m.account, m.cur, -p.amount); }
+    else if (m.type === 'gasto') { for (const p of gastoParts(m)) if (onlyMonth ? p.month === onlyMonth : p.month <= cur) add(m.account, m.cur, -p.amount); }
     else if (m.type === 'dolar') {
       if (m.op === 'compra') { add(m.arsAccount, 'ARS', -m.usd * m.price); add(m.usdAccount, 'USD', m.usd); }
       else { add(m.usdAccount, 'USD', -m.usd); add(m.arsAccount, 'ARS', m.usd * m.price); }
@@ -148,6 +156,14 @@ function balances() {
   }
   return b;
 }
+// Ahorro = la plata en cuentas marcadas como ahorro (por ejemplo Utopia).
+function isSavings(id) { return !!(data.accounts.find((a) => a.id === id) || {}).savings; }
+function savingsTotal(b) {
+  let t = 0;
+  for (const a of data.accounts) if (a.savings) for (const [c, v] of Object.entries(b[a.id] || {})) t += toARS(v, c);
+  return t;
+}
+function savedInMonth(key) { return savingsTotal(balances(key)); }
 function creditDue(key) {
   let t = 0;
   for (const m of data.movs) if (m.type === 'gasto' && m.method === 'Crédito') for (const p of gastoParts(m)) if (p.month === key) t += toARS(p.amount, p.cur);
@@ -209,16 +225,19 @@ function viewInicio() {
   const left = t.ing - t.gas;
   const usd = ui.totalCur === 'USD';
   const show = (n) => usd ? fmt(n / data.rate, 'USD') : fmt(n, 'ARS');
-  const pct = t.ing > 0 ? Math.round(left / t.ing * 100) + '%' : '-';
+  const saved = savedInMonth(ui.month);
   const b = balances();
   let total = 0;
-  const rows = data.accounts.map((a) => {
+  const accRow = (a) => {
     const lines = Object.entries(b[a.id] || {}).filter(([c, v]) => a.curs.includes(c) || Math.abs(v) > 0.001);
     lines.forEach(([c, v]) => { total += toARS(v, c); });
     return `<div class="item"><div class="avatar" style="background:${esc(a.color)}">${esc(initials(a.name))}</div>
       <div class="grow"><div class="t">${esc(a.name)}</div></div>
       <div class="r">${lines.map(([c, v]) => `<span class="${c === 'USD' ? 'pos' : ''}">${fmt(v, c)}</span>`).join('')}</div></div>`;
-  }).join('');
+  };
+  const savAccs = data.accounts.filter((a) => a.savings), dayAccs = data.accounts.filter((a) => !a.savings);
+  const savRows = savAccs.map(accRow).join(''), dayRows = dayAccs.map(accRow).join('');
+  const savTotal = savingsTotal(b), dayTotal = total - savTotal;
   const nextKey = addM(mk(today()), 1);
   const due = creditDue(nextKey);
   const tip = suggestions()[0];
@@ -237,7 +256,7 @@ function viewInicio() {
       <div class="grid3">
         <div><div class="label">Ingresos</div><div class="val pos">${show(t.ing)}</div></div>
         <div><div class="label">Gastos</div><div class="val neg">${show(t.gas)}</div></div>
-        <div><div class="label">Ahorro</div><div class="val">${pct}</div></div>
+        <div><div class="label">Ahorraste</div><div class="val ${saved >= 0 ? 'pos' : 'neg'}">${show(saved)}</div></div>
       </div>
       <div class="label" style="border-top:1px solid #2E3238;padding-top:10px">Dólar ${esc(data.rateName)}: ${fmt(data.rate, 'ARS')}. Lo cambiás en Ajustes.</div>
     </div>
@@ -245,8 +264,11 @@ function viewInicio() {
       <div class="grow" style="display:flex;flex-direction:column;gap:2px"><b>Tarjeta de crédito: ${fmt(due, 'ARS')}</b>
       <span class="muted small">Se paga en ${mName(nextKey)}. Ya está contado en los gastos de ese mes.</span></div></div></div>` : ''}
     ${owedCard()}
-    <div class="between"><h2>¿Dónde está mi plata?</h2><span class="muted small">Total ${usd ? fmt(total / data.rate, 'USD') : fmt(total, 'ARS')}</span></div>
-    <div class="card list">${rows}</div>
+    <div class="between"><h2>¿Dónde está mi plata?</h2><span class="muted small">Total ${show(total)}</span></div>
+    ${savAccs.length ? `<div class="between"><b>Ahorro</b><span class="small"><b>${show(savTotal)}</b> <span class="${saved >= 0 ? 'pos' : 'neg'}">(${saved >= 0 ? '+' : ''}${show(saved)} este mes)</span></span></div>
+    <div class="card list">${savRows}</div>` : ''}
+    <div class="between"><b>Día a día</b><span class="small"><b>${show(dayTotal)}</b></span></div>
+    <div class="card list">${dayRows}</div>
     ${tip ? `<div class="card green" style="gap:4px"><div class="small" style="font-weight:700;color:var(--green)">SUGERENCIA</div>
       <div style="font-size:14px">${esc(tip.text)}</div>
       <button data-tab="estadisticas" style="background:none;border:none;padding:6px 0 0;text-align:left;font-weight:700;color:var(--green);font-size:13px">Ver todas las sugerencias</button></div>` : ''}
@@ -453,7 +475,7 @@ function suggestions() {
   const b = balances();
   for (const a of data.accounts) {
     const ars = (b[a.id] || {}).ARS || 0;
-    if (a.id !== 'cocos' && a.id !== 'efectivo' && ars > 300000) out.push({ title: 'Plata quieta en ' + a.name, save: 'Rinde más', text: 'Tenés ' + fmt(ars, 'ARS') + ' en ' + a.name + '. Podrías poner una parte a rendir en un FCI o plazo fijo, por ejemplo en Cocos.' });
+    if (!a.savings && a.id !== 'cocos' && a.id !== 'efectivo' && ars > 300000) out.push({ title: 'Plata quieta en ' + a.name, save: 'Rinde más', text: 'Tenés ' + fmt(ars, 'ARS') + ' en ' + a.name + '. Podrías poner una parte a rendir en un FCI o plazo fijo, por ejemplo en Cocos.' });
   }
   return out;
 }
@@ -461,10 +483,10 @@ function suggestions() {
 function viewStats() {
   const cur = ui.month;
   const months = [-5, -4, -3, -2, -1, 0].map((i) => addM(cur, i));
-  const sav = months.map((k) => { const t = monthTotals(k); return { k, pct: t.ing > 0 ? Math.round((t.ing - t.gas) / t.ing * 100) : 0, has: t.ing > 0 }; });
-  const withData = sav.filter((s) => s.has);
-  const avgPct = withData.length ? Math.round(withData.reduce((s, x) => s + x.pct, 0) / withData.length) : null;
-  const maxPct = Math.max(10, ...sav.map((s) => Math.abs(s.pct)));
+  const sav = months.map((k) => ({ k, v: savedInMonth(k) }));
+  const sav6 = sav.reduce((s, x) => s + x.v, 0);
+  const maxSav = Math.max(1, ...sav.map((s) => Math.abs(s.v)));
+  const savNames = data.accounts.filter((a) => a.savings).map((a) => a.name).join(', ') || 'ninguna';
   const t = monthTotals(cur);
   const cats = Object.entries(t.byCat).sort((a, b) => b[1] - a[1]);
   const maxCat = cats.length ? cats[0][1] : 1;
@@ -481,8 +503,9 @@ function viewStats() {
   return `
     <div class="between"><h1>Estadísticas</h1>${monthNav()}</div>
     <div class="card">
-      <div class="between"><h2>Ahorro por mes</h2><span class="muted small">${avgPct === null ? 'Sin datos todavía' : 'Promedio ' + avgPct + '%'}</span></div>
-      <div class="bars" style="grid-template-columns:repeat(6,minmax(0,1fr))">${sav.map((s) => `<div class="bar ${s.k === cur ? 'cur' : ''}"><b>${s.has ? s.pct + '%' : ''}</b><i style="height:${s.has ? Math.max(2, Math.round(Math.max(0, s.pct) / maxPct * 80)) : 2}px"></i><span>${mShort(s.k)}</span></div>`).join('')}</div>
+      <div class="between"><h2>Ahorro por mes</h2><span class="muted small">6 meses: ${fmt(sav6, 'ARS')}</span></div>
+      <div class="bars" style="grid-template-columns:repeat(6,minmax(0,1fr))">${sav.map((s) => `<div class="bar ${s.k === cur ? 'cur' : ''}"><b class="${s.v < 0 ? 'neg' : ''}">${s.v ? (s.v < 0 ? '-' : '') + Math.round(Math.abs(s.v) / 1000) + 'k' : ''}</b><i style="height:${Math.max(2, Math.round(Math.abs(s.v) / maxSav * 80))}px${s.v < 0 ? ';background:#F0C4A6' : ''}"></i><span>${mShort(s.k)}</span></div>`).join('')}</div>
+      <span class="muted small">Lo que entró menos lo que salió de tu cuenta de ahorro (${esc(savNames)}). Si sacás plata para el día a día, ese mes baja.</span>
     </div>
     <div class="card dark">
       <div><h2>Ganancia con dólares</h2><div class="muted small">Lo que ganaste vendiendo más caro de lo que compraste</div></div>
@@ -509,6 +532,7 @@ function viewStats() {
 
 function viewSettings() {
   const rows = data.accounts.map((a) => `<div class="card" style="gap:8px"><div class="between"><b>${esc(a.name)}</b><button class="iconbtn" data-act="delacc" data-v="${esc(a.id)}" aria-label="Quitar ${esc(a.name)}">Quitar</button></div>
+    <div class="seg"><button class="${a.savings ? '' : 'on'}" data-act="savings" data-v="${esc(a.id)}|0">Día a día</button><button class="${a.savings ? 'on' : ''}" data-act="savings" data-v="${esc(a.id)}|1">Ahorro</button></div>
     <div class="grid2">${a.curs.map((c) => `<label class="field"><span class="lbl">Saldo inicial ${c === 'USD' ? 'US$' : '$'}</span><input class="input" inputmode="decimal" value="${(a.start || {})[c] || ''}" placeholder="0" data-start="${esc(a.id)}" data-cur="${c}"></label>`).join('')}</div></div>`).join('');
   return `
     <div class="between"><h1>Ajustes</h1><button class="iconbtn" data-act="closesettings">Listo</button></div>
@@ -616,6 +640,7 @@ document.addEventListener('click', (e) => {
       break;
     }
     case 'ratename': data.rateName = v; save(); break;
+    case 'savings': { const [id, on] = v.split('|'); const a = data.accounts.find((x) => x.id === id); if (a) { a.savings = on === '1'; save(); } break; }
     case 'openon': data.openOnCargar = v === 'cargar'; save(); break;
     case 'fetchrate': fetchRate(); return;
     case 'addacc': {

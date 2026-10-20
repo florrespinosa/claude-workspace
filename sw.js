@@ -1,6 +1,6 @@
 // Guarda todos los archivos de la app en el iPhone para que funcione sin internet.
 // Con internet, la app pide siempre la versión nueva; sin internet usa la guardada.
-const CACHE = 'mis-finanzas-v7';
+const CACHE = 'mis-finanzas-v8';
 const FILES = [
   './',
   'index.html',
